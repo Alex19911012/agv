@@ -1,0 +1,12 @@
+2019-04-02 09:09:47.345  INFO 23096 --- [main] group.agv01.Agv01Application             : Starting Agv01Application on shuangjiadeMacBook-Pro.local with PID 23096 (/Users/shuangjiaxu/eclipse-workspace/agv01/target/classes started by shuangjiaxu in /Users/shuangjiaxu/eclipse-workspace/agv01)
+2019-04-02 09:09:47.351  INFO 23096 --- [main] group.agv01.Agv01Application             : No active profile set, falling back to default profiles: default
+2019-04-02 09:09:48.435  INFO 23096 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-04-02 09:09:48.458  INFO 23096 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-02 09:09:48.458  INFO 23096 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-02 09:09:48.466  INFO 23096 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/shuangjiaxu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-04-02 09:09:48.548  INFO 23096 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-02 09:09:48.549  INFO 23096 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1161 ms
+2019-04-02 09:09:48.982  INFO 23096 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-02 09:09:49.231  INFO 23096 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-02 09:09:49.234  INFO 23096 --- [main] group.agv01.Agv01Application             : Started Agv01Application in 2.308 seconds (JVM running for 2.637)
+2019-04-02 09:09:53.547  INFO 23096 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
