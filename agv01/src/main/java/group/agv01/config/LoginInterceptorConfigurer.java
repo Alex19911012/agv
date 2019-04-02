@@ -7,6 +7,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
+import group.agv01.interceptor.HiseeInterceptor;
 import group.agv01.interceptor.LoginInterceptor;
 /**
  * 以前在SpringMVC中配置登录拦截器，我们配置拦截器在xml中，Configurer-配置
@@ -43,6 +44,9 @@ public class LoginInterceptorConfigurer implements WebMvcConfigurer {
 		
 		//注册拦截器
 		registry.addInterceptor(new LoginInterceptor())
+		.addPathPatterns(patterns)
+		.excludePathPatterns(excludePatterns);
+		registry.addInterceptor(new HiseeInterceptor())
 		.addPathPatterns(patterns)
 		.excludePathPatterns(excludePatterns);
 	

@@ -1,0 +1,8 @@
+2019-04-01 16:59:45.873  INFO 21329 --- [main] group.agv01.log.LogTestCase              : Starting LogTestCase on shuangjiadeMacBook-Pro.local with PID 21329 (started by shuangjiaxu in /Users/shuangjiaxu/eclipse-workspace/agv01)
+2019-04-01 16:59:45.875  INFO 21329 --- [main] group.agv01.log.LogTestCase              : No active profile set, falling back to default profiles: default
+2019-04-01 16:59:47.077  INFO 21329 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-01 16:59:47.430  INFO 21329 --- [main] group.agv01.log.LogTestCase              : Started LogTestCase in 1.868 seconds (JVM running for 2.444)
+2019-04-01 16:59:47.587  INFO 21329 --- [main] org.slf4j.Logger                         : info日志
+2019-04-01 16:59:47.587  WARN 21329 --- [main] org.slf4j.Logger                         : warn日志
+2019-04-01 16:59:47.587 ERROR 21329 --- [main] org.slf4j.Logger                         : error日志
+2019-04-01 16:59:47.599  INFO 21329 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
