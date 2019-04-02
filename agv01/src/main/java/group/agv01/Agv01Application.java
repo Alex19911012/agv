@@ -14,6 +14,9 @@ public class Agv01Application {
 	public static void main(String[] args) {
 		SpringApplication.run(Agv01Application.class, args);
 	}
+	public void testGit() {
+		
+	}
 	
 
 }
