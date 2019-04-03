@@ -1,0 +1,43 @@
+2019-04-02 09:09:47.345  INFO 23096 --- [main] group.agv01.Agv01Application             : Starting Agv01Application on shuangjiadeMacBook-Pro.local with PID 23096 (/Users/shuangjiaxu/eclipse-workspace/agv01/target/classes started by shuangjiaxu in /Users/shuangjiaxu/eclipse-workspace/agv01)
+2019-04-02 09:09:47.351  INFO 23096 --- [main] group.agv01.Agv01Application             : No active profile set, falling back to default profiles: default
+2019-04-02 09:09:48.435  INFO 23096 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-04-02 09:09:48.458  INFO 23096 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-02 09:09:48.458  INFO 23096 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-02 09:09:48.466  INFO 23096 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/shuangjiaxu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-04-02 09:09:48.548  INFO 23096 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-02 09:09:48.549  INFO 23096 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1161 ms
+2019-04-02 09:09:48.982  INFO 23096 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-02 09:09:49.231  INFO 23096 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-02 09:09:49.234  INFO 23096 --- [main] group.agv01.Agv01Application             : Started Agv01Application in 2.308 seconds (JVM running for 2.637)
+2019-04-02 09:09:53.547  INFO 23096 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-02 13:59:04.425  INFO 6417 --- [main] group.agv01.Agv01Application             : Starting Agv01Application on shuangjiadeMacBook-Pro.local with PID 6417 (/Users/shuangjiaxu/git/repository/agv01/target/classes started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-02 13:59:04.427  INFO 6417 --- [main] group.agv01.Agv01Application             : No active profile set, falling back to default profiles: default
+2019-04-02 13:59:05.681  INFO 6417 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-04-02 13:59:05.710  INFO 6417 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-02 13:59:05.710  INFO 6417 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-02 13:59:05.720  INFO 6417 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/shuangjiaxu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-04-02 13:59:05.801  INFO 6417 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-02 13:59:05.802  INFO 6417 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1317 ms
+2019-04-02 13:59:06.323  INFO 6417 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-02 13:59:06.613  INFO 6417 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-02 13:59:06.616  INFO 6417 --- [main] group.agv01.Agv01Application             : Started Agv01Application in 2.491 seconds (JVM running for 2.875)
+2019-04-02 14:08:19.236  INFO 6417 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-02 14:08:19.237  INFO 6417 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-04-02 14:08:19.249  INFO 6417 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2019-04-02 14:08:19.320  INFO 6417 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-02 14:08:19.508  INFO 6417 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-02 14:51:18.170  INFO 6417 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-02 14:51:18.171  INFO 6417 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-02 14:51:18.179  INFO 6417 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-02 15:50:38.441  INFO 11589 --- [main] group.agv01.Agv01Application             : Starting Agv01Application on shuangjiadeMacBook-Pro.local with PID 11589 (/Users/shuangjiaxu/git/repository/agv01/target/classes started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-02 15:50:38.443  INFO 11589 --- [main] group.agv01.Agv01Application             : No active profile set, falling back to default profiles: default
+2019-04-02 15:50:39.607  INFO 11589 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-04-02 15:50:39.633  INFO 11589 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-02 15:50:39.633  INFO 11589 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-02 15:50:39.643  INFO 11589 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/shuangjiaxu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-04-02 15:50:39.736  INFO 11589 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-02 15:50:39.736  INFO 11589 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1257 ms
+2019-04-02 15:50:40.212  INFO 11589 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-02 15:50:40.492  INFO 11589 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-02 15:50:40.496  INFO 11589 --- [main] group.agv01.Agv01Application             : Started Agv01Application in 2.549 seconds (JVM running for 2.886)
+2019-04-02 15:50:46.513  INFO 11589 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'

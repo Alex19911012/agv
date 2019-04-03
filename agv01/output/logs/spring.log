@@ -1,43 +1,518 @@
-2019-04-02 09:09:47.345  INFO 23096 --- [main] group.agv01.Agv01Application             : Starting Agv01Application on shuangjiadeMacBook-Pro.local with PID 23096 (/Users/shuangjiaxu/eclipse-workspace/agv01/target/classes started by shuangjiaxu in /Users/shuangjiaxu/eclipse-workspace/agv01)
-2019-04-02 09:09:47.351  INFO 23096 --- [main] group.agv01.Agv01Application             : No active profile set, falling back to default profiles: default
-2019-04-02 09:09:48.435  INFO 23096 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-04-02 09:09:48.458  INFO 23096 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-04-02 09:09:48.458  INFO 23096 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
-2019-04-02 09:09:48.466  INFO 23096 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/shuangjiaxu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
-2019-04-02 09:09:48.548  INFO 23096 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-04-02 09:09:48.549  INFO 23096 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1161 ms
-2019-04-02 09:09:48.982  INFO 23096 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-04-02 09:09:49.231  INFO 23096 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-04-02 09:09:49.234  INFO 23096 --- [main] group.agv01.Agv01Application             : Started Agv01Application in 2.308 seconds (JVM running for 2.637)
-2019-04-02 09:09:53.547  INFO 23096 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-04-02 13:59:04.425  INFO 6417 --- [main] group.agv01.Agv01Application             : Starting Agv01Application on shuangjiadeMacBook-Pro.local with PID 6417 (/Users/shuangjiaxu/git/repository/agv01/target/classes started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
-2019-04-02 13:59:04.427  INFO 6417 --- [main] group.agv01.Agv01Application             : No active profile set, falling back to default profiles: default
-2019-04-02 13:59:05.681  INFO 6417 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-04-02 13:59:05.710  INFO 6417 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-04-02 13:59:05.710  INFO 6417 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
-2019-04-02 13:59:05.720  INFO 6417 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/shuangjiaxu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
-2019-04-02 13:59:05.801  INFO 6417 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-04-02 13:59:05.802  INFO 6417 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1317 ms
-2019-04-02 13:59:06.323  INFO 6417 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-04-02 13:59:06.613  INFO 6417 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-04-02 13:59:06.616  INFO 6417 --- [main] group.agv01.Agv01Application             : Started Agv01Application in 2.491 seconds (JVM running for 2.875)
-2019-04-02 14:08:19.236  INFO 6417 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-04-02 14:08:19.237  INFO 6417 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-04-02 14:08:19.249  INFO 6417 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
-2019-04-02 14:08:19.320  INFO 6417 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-04-02 14:08:19.508  INFO 6417 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-04-02 14:51:18.170  INFO 6417 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2019-04-02 14:51:18.171  INFO 6417 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2019-04-02 14:51:18.179  INFO 6417 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2019-04-02 15:50:38.441  INFO 11589 --- [main] group.agv01.Agv01Application             : Starting Agv01Application on shuangjiadeMacBook-Pro.local with PID 11589 (/Users/shuangjiaxu/git/repository/agv01/target/classes started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
-2019-04-02 15:50:38.443  INFO 11589 --- [main] group.agv01.Agv01Application             : No active profile set, falling back to default profiles: default
-2019-04-02 15:50:39.607  INFO 11589 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2019-04-02 15:50:39.633  INFO 11589 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-04-02 15:50:39.633  INFO 11589 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
-2019-04-02 15:50:39.643  INFO 11589 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/shuangjiaxu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
-2019-04-02 15:50:39.736  INFO 11589 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-04-02 15:50:39.736  INFO 11589 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1257 ms
-2019-04-02 15:50:40.212  INFO 11589 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-04-02 15:50:40.492  INFO 11589 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2019-04-02 15:50:40.496  INFO 11589 --- [main] group.agv01.Agv01Application             : Started Agv01Application in 2.549 seconds (JVM running for 2.886)
-2019-04-02 15:50:46.513  INFO 11589 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-03 08:54:08.794  INFO 16616 --- [main] group.agv01.Agv01Application             : Starting Agv01Application on shuangjiadeMacBook-Pro.local with PID 16616 (/Users/shuangjiaxu/git/repository/agv01/target/classes started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-03 08:54:08.802  INFO 16616 --- [main] group.agv01.Agv01Application             : No active profile set, falling back to default profiles: default
+2019-04-03 08:54:10.133  INFO 16616 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-04-03 08:54:10.156  INFO 16616 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-03 08:54:10.156  INFO 16616 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-03 08:54:10.165  INFO 16616 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/shuangjiaxu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-04-03 08:54:10.255  INFO 16616 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-03 08:54:10.256  INFO 16616 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1409 ms
+2019-04-03 08:54:10.734  INFO 16616 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-03 08:54:11.033  INFO 16616 --- [main] uration$$EnhancerBySpringCGLIB$$199875d2 : No deployment resources were found for autodeployment
+2019-04-03 08:54:11.135  INFO 16616 --- [main] uration$$EnhancerBySpringCGLIB$$7119b7c4 : No deployment resources were found for autodeployment
+2019-04-03 08:54:11.172  INFO 16616 --- [main] uration$$EnhancerBySpringCGLIB$$b53f3232 : No deployment resources were found for autodeployment
+2019-04-03 08:54:11.240  INFO 16616 --- [main] uration$$EnhancerBySpringCGLIB$$f11eb531 : No deployment resources were found for autodeployment
+2019-04-03 08:54:11.300  INFO 16616 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : Found 5 Engine Configurators in total:
+2019-04-03 08:54:11.303  INFO 16616 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : class org.flowable.spring.configurator.SpringIdmEngineConfigurator (priority:100000)
+2019-04-03 08:54:11.303  INFO 16616 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2019-04-03 08:54:11.303  INFO 16616 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+2019-04-03 08:54:11.303  INFO 16616 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+2019-04-03 08:54:11.303  INFO 16616 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2019-04-03 08:54:11.303  INFO 16616 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : Executing beforeInit() of class org.flowable.spring.configurator.SpringIdmEngineConfigurator (priority:100000)
+2019-04-03 08:54:11.306  INFO 16616 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : Executing beforeInit() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2019-04-03 08:54:11.309  INFO 16616 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : Executing beforeInit() of class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+2019-04-03 08:54:11.312  INFO 16616 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : Executing beforeInit() of class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+2019-04-03 08:54:11.313  INFO 16616 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : Executing beforeInit() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2019-04-03 08:54:11.346  INFO 16616 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-03 08:54:11.540  INFO 16616 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-03 08:54:12.324  INFO 16616 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : Executing configure() of class org.flowable.spring.configurator.SpringIdmEngineConfigurator (priority:100000)
+2019-04-03 08:54:12.381  INFO 16616 --- [main] .d.AbstractSqlScriptBasedDbSchemaManager : performing create on identity with resource org/flowable/idm/db/create/flowable.mysql.create.identity.sql
+2019-04-03 08:54:12.382  INFO 16616 --- [main] .d.AbstractSqlScriptBasedDbSchemaManager : Found MySQL: majorVersion=5 minorVersion=5
+2019-04-03 08:54:12.562  INFO 16616 --- [main] o.f.idm.engine.impl.IdmEngineImpl        : IdmEngine default created
+2019-04-03 08:54:12.563  INFO 16616 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : Executing configure() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2019-04-03 08:54:12.975  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM agv01.ACT_DMN_DATABASECHANGELOGLOCK
+2019-04-03 08:54:12.998  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE agv01.ACT_DMN_DATABASECHANGELOGLOCK (ID INT NOT NULL, `LOCKED` BIT(1) NOT NULL, LOCKGRANTED datetime NULL, LOCKEDBY VARCHAR(255) NULL, CONSTRAINT PK_ACT_DMN_DATABASECHANGELOGLOCK PRIMARY KEY (ID))
+2019-04-03 08:54:13.009  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM agv01.ACT_DMN_DATABASECHANGELOGLOCK
+2019-04-03 08:54:13.018  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : DELETE FROM agv01.ACT_DMN_DATABASECHANGELOGLOCK
+2019-04-03 08:54:13.018  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO agv01.ACT_DMN_DATABASECHANGELOGLOCK (ID, `LOCKED`) VALUES (1, 0)
+2019-04-03 08:54:13.021  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT `LOCKED` FROM agv01.ACT_DMN_DATABASECHANGELOGLOCK WHERE ID=1
+2019-04-03 08:54:13.029  INFO 16616 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2019-04-03 08:54:13.814  INFO 16616 --- [main] l.c.StandardChangeLogHistoryService      : Creating database history table with name: agv01.ACT_DMN_DATABASECHANGELOG
+2019-04-03 08:54:13.815  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE agv01.ACT_DMN_DATABASECHANGELOG (ID VARCHAR(255) NOT NULL, AUTHOR VARCHAR(255) NOT NULL, FILENAME VARCHAR(255) NOT NULL, DATEEXECUTED datetime NOT NULL, ORDEREXECUTED INT NOT NULL, EXECTYPE VARCHAR(10) NOT NULL, MD5SUM VARCHAR(35) NULL, `DESCRIPTION` VARCHAR(255) NULL, COMMENTS VARCHAR(255) NULL, TAG VARCHAR(255) NULL, LIQUIBASE VARCHAR(20) NULL, CONTEXTS VARCHAR(255) NULL, LABELS VARCHAR(255) NULL, DEPLOYMENT_ID VARCHAR(10) NULL)
+2019-04-03 08:54:13.827  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM agv01.ACT_DMN_DATABASECHANGELOG
+2019-04-03 08:54:13.828  INFO 16616 --- [main] l.c.StandardChangeLogHistoryService      : Reading from agv01.ACT_DMN_DATABASECHANGELOG
+2019-04-03 08:54:13.829  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM agv01.ACT_DMN_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2019-04-03 08:54:13.830  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM agv01.ACT_DMN_DATABASECHANGELOGLOCK
+2019-04-03 08:54:13.850  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE agv01.ACT_DMN_DEPLOYMENT (ID_ VARCHAR(255) NOT NULL, NAME_ VARCHAR(255) NULL, CATEGORY_ VARCHAR(255) NULL, DEPLOY_TIME_ datetime NULL, TENANT_ID_ VARCHAR(255) NULL, PARENT_DEPLOYMENT_ID_ VARCHAR(255) NULL, CONSTRAINT PK_ACT_DMN_DEPLOYMENT PRIMARY KEY (ID_))
+2019-04-03 08:54:13.858  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Table ACT_DMN_DEPLOYMENT created
+2019-04-03 08:54:13.859  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE agv01.ACT_DMN_DEPLOYMENT_RESOURCE (ID_ VARCHAR(255) NOT NULL, NAME_ VARCHAR(255) NULL, DEPLOYMENT_ID_ VARCHAR(255) NULL, RESOURCE_BYTES_ LONGBLOB NULL, CONSTRAINT PK_ACT_DMN_DEPLOYMENT_RESOURCE PRIMARY KEY (ID_))
+2019-04-03 08:54:13.868  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Table ACT_DMN_DEPLOYMENT_RESOURCE created
+2019-04-03 08:54:13.869  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE agv01.ACT_DMN_DECISION_TABLE (ID_ VARCHAR(255) NOT NULL, NAME_ VARCHAR(255) NULL, VERSION_ INT NULL, KEY_ VARCHAR(255) NULL, CATEGORY_ VARCHAR(255) NULL, DEPLOYMENT_ID_ VARCHAR(255) NULL, PARENT_DEPLOYMENT_ID_ VARCHAR(255) NULL, TENANT_ID_ VARCHAR(255) NULL, RESOURCE_NAME_ VARCHAR(255) NULL, DESCRIPTION_ VARCHAR(255) NULL, CONSTRAINT PK_ACT_DMN_DECISION_TABLE PRIMARY KEY (ID_))
+2019-04-03 08:54:13.877  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Table ACT_DMN_DECISION_TABLE created
+2019-04-03 08:54:13.878  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : ChangeSet org/flowable/dmn/db/liquibase/flowable-dmn-db-changelog.xml::1::activiti ran successfully in 30ms
+2019-04-03 08:54:13.878  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MAX(ORDEREXECUTED) FROM agv01.ACT_DMN_DATABASECHANGELOG
+2019-04-03 08:54:13.881  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO agv01.ACT_DMN_DATABASECHANGELOG (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, `DESCRIPTION`, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('1', 'activiti', 'org/flowable/dmn/db/liquibase/flowable-dmn-db-changelog.xml', NOW(), 1, '8:c8701f1c71018b55029f450b2e9a10a1', 'createTable tableName=ACT_DMN_DEPLOYMENT; createTable tableName=ACT_DMN_DEPLOYMENT_RESOURCE; createTable tableName=ACT_DMN_DECISION_TABLE', '', 'EXECUTED', NULL, NULL, '3.6.3', '4252853830')
+2019-04-03 08:54:13.884  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE agv01.ACT_DMN_HI_DECISION_EXECUTION (ID_ VARCHAR(255) NOT NULL, DECISION_DEFINITION_ID_ VARCHAR(255) NULL, DEPLOYMENT_ID_ VARCHAR(255) NULL, START_TIME_ datetime NULL, END_TIME_ datetime NULL, INSTANCE_ID_ VARCHAR(255) NULL, EXECUTION_ID_ VARCHAR(255) NULL, ACTIVITY_ID_ VARCHAR(255) NULL, FAILED_ BIT(1) DEFAULT 0 NULL, TENANT_ID_ VARCHAR(255) NULL, EXECUTION_JSON_ LONGTEXT NULL, CONSTRAINT PK_ACT_DMN_HI_DECISION_EXECUTION PRIMARY KEY (ID_))
+2019-04-03 08:54:13.892  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Table ACT_DMN_HI_DECISION_EXECUTION created
+2019-04-03 08:54:13.893  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : ChangeSet org/flowable/dmn/db/liquibase/flowable-dmn-db-changelog.xml::2::flowable ran successfully in 10ms
+2019-04-03 08:54:13.894  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO agv01.ACT_DMN_DATABASECHANGELOG (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, `DESCRIPTION`, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('2', 'flowable', 'org/flowable/dmn/db/liquibase/flowable-dmn-db-changelog.xml', NOW(), 2, '8:47f94b27feb7df8a30d4e338c7bd5fb8', 'createTable tableName=ACT_DMN_HI_DECISION_EXECUTION', '', 'EXECUTED', NULL, NULL, '3.6.3', '4252853830')
+2019-04-03 08:54:13.896  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : ALTER TABLE agv01.ACT_DMN_HI_DECISION_EXECUTION ADD SCOPE_TYPE_ VARCHAR(255) NULL
+2019-04-03 08:54:13.901  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Columns SCOPE_TYPE_(varchar(255)) added to ACT_DMN_HI_DECISION_EXECUTION
+2019-04-03 08:54:13.902  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : ChangeSet org/flowable/dmn/db/liquibase/flowable-dmn-db-changelog.xml::3::flowable ran successfully in 7ms
+2019-04-03 08:54:13.903  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO agv01.ACT_DMN_DATABASECHANGELOG (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, `DESCRIPTION`, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('3', 'flowable', 'org/flowable/dmn/db/liquibase/flowable-dmn-db-changelog.xml', NOW(), 3, '8:ac17eae89fbdccb6e08daf3c7797b579', 'addColumn tableName=ACT_DMN_HI_DECISION_EXECUTION', '', 'EXECUTED', NULL, NULL, '3.6.3', '4252853830')
+2019-04-03 08:54:13.905  INFO 16616 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
+2019-04-03 08:54:13.911  INFO 16616 --- [main] o.f.dmn.engine.impl.DmnEngineImpl        : DmnEngine default created
+2019-04-03 08:54:13.912  INFO 16616 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : Executing configure() of class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+2019-04-03 08:54:13.918  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM agv01.ACT_FO_DATABASECHANGELOGLOCK
+2019-04-03 08:54:13.919  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE agv01.ACT_FO_DATABASECHANGELOGLOCK (ID INT NOT NULL, `LOCKED` BIT(1) NOT NULL, LOCKGRANTED datetime NULL, LOCKEDBY VARCHAR(255) NULL, CONSTRAINT PK_ACT_FO_DATABASECHANGELOGLOCK PRIMARY KEY (ID))
+2019-04-03 08:54:13.929  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM agv01.ACT_FO_DATABASECHANGELOGLOCK
+2019-04-03 08:54:13.930  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : DELETE FROM agv01.ACT_FO_DATABASECHANGELOGLOCK
+2019-04-03 08:54:13.930  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO agv01.ACT_FO_DATABASECHANGELOGLOCK (ID, `LOCKED`) VALUES (1, 0)
+2019-04-03 08:54:13.931  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT `LOCKED` FROM agv01.ACT_FO_DATABASECHANGELOGLOCK WHERE ID=1
+2019-04-03 08:54:13.933  INFO 16616 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2019-04-03 08:54:13.950  INFO 16616 --- [main] l.c.StandardChangeLogHistoryService      : Creating database history table with name: agv01.ACT_FO_DATABASECHANGELOG
+2019-04-03 08:54:13.951  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE agv01.ACT_FO_DATABASECHANGELOG (ID VARCHAR(255) NOT NULL, AUTHOR VARCHAR(255) NOT NULL, FILENAME VARCHAR(255) NOT NULL, DATEEXECUTED datetime NOT NULL, ORDEREXECUTED INT NOT NULL, EXECTYPE VARCHAR(10) NOT NULL, MD5SUM VARCHAR(35) NULL, `DESCRIPTION` VARCHAR(255) NULL, COMMENTS VARCHAR(255) NULL, TAG VARCHAR(255) NULL, LIQUIBASE VARCHAR(20) NULL, CONTEXTS VARCHAR(255) NULL, LABELS VARCHAR(255) NULL, DEPLOYMENT_ID VARCHAR(10) NULL)
+2019-04-03 08:54:13.960  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM agv01.ACT_FO_DATABASECHANGELOG
+2019-04-03 08:54:13.961  INFO 16616 --- [main] l.c.StandardChangeLogHistoryService      : Reading from agv01.ACT_FO_DATABASECHANGELOG
+2019-04-03 08:54:13.961  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM agv01.ACT_FO_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2019-04-03 08:54:13.961  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM agv01.ACT_FO_DATABASECHANGELOGLOCK
+2019-04-03 08:54:13.972  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE agv01.ACT_FO_FORM_DEPLOYMENT (ID_ VARCHAR(255) NOT NULL, NAME_ VARCHAR(255) NULL, CATEGORY_ VARCHAR(255) NULL, DEPLOY_TIME_ datetime NULL, TENANT_ID_ VARCHAR(255) NULL, PARENT_DEPLOYMENT_ID_ VARCHAR(255) NULL, CONSTRAINT PK_ACT_FO_FORM_DEPLOYMENT PRIMARY KEY (ID_))
+2019-04-03 08:54:13.981  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Table ACT_FO_FORM_DEPLOYMENT created
+2019-04-03 08:54:13.982  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE agv01.ACT_FO_FORM_RESOURCE (ID_ VARCHAR(255) NOT NULL, NAME_ VARCHAR(255) NULL, DEPLOYMENT_ID_ VARCHAR(255) NULL, RESOURCE_BYTES_ LONGBLOB NULL, CONSTRAINT PK_ACT_FO_FORM_RESOURCE PRIMARY KEY (ID_))
+2019-04-03 08:54:13.991  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Table ACT_FO_FORM_RESOURCE created
+2019-04-03 08:54:13.992  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE agv01.ACT_FO_FORM_DEFINITION (ID_ VARCHAR(255) NOT NULL, NAME_ VARCHAR(255) NULL, VERSION_ INT NULL, KEY_ VARCHAR(255) NULL, CATEGORY_ VARCHAR(255) NULL, DEPLOYMENT_ID_ VARCHAR(255) NULL, PARENT_DEPLOYMENT_ID_ VARCHAR(255) NULL, TENANT_ID_ VARCHAR(255) NULL, RESOURCE_NAME_ VARCHAR(255) NULL, DESCRIPTION_ VARCHAR(255) NULL, CONSTRAINT PK_ACT_FO_FORM_DEFINITION PRIMARY KEY (ID_))
+2019-04-03 08:54:14.001  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Table ACT_FO_FORM_DEFINITION created
+2019-04-03 08:54:14.002  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE agv01.ACT_FO_FORM_INSTANCE (ID_ VARCHAR(255) NOT NULL, FORM_DEFINITION_ID_ VARCHAR(255) NOT NULL, TASK_ID_ VARCHAR(255) NULL, PROC_INST_ID_ VARCHAR(255) NULL, PROC_DEF_ID_ VARCHAR(255) NULL, SUBMITTED_DATE_ datetime NULL, SUBMITTED_BY_ VARCHAR(255) NULL, FORM_VALUES_ID_ VARCHAR(255) NULL, TENANT_ID_ VARCHAR(255) NULL, CONSTRAINT PK_ACT_FO_FORM_INSTANCE PRIMARY KEY (ID_))
+2019-04-03 08:54:14.012  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Table ACT_FO_FORM_INSTANCE created
+2019-04-03 08:54:14.012  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : ChangeSet org/flowable/form/db/liquibase/flowable-form-db-changelog.xml::1::activiti ran successfully in 41ms
+2019-04-03 08:54:14.012  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MAX(ORDEREXECUTED) FROM agv01.ACT_FO_DATABASECHANGELOG
+2019-04-03 08:54:14.013  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO agv01.ACT_FO_DATABASECHANGELOG (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, `DESCRIPTION`, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('1', 'activiti', 'org/flowable/form/db/liquibase/flowable-form-db-changelog.xml', NOW(), 1, '8:033ebf9380889aed7c453927ecc3250d', 'createTable tableName=ACT_FO_FORM_DEPLOYMENT; createTable tableName=ACT_FO_FORM_RESOURCE; createTable tableName=ACT_FO_FORM_DEFINITION; createTable tableName=ACT_FO_FORM_INSTANCE', '', 'EXECUTED', NULL, NULL, '3.6.3', '4252853962')
+2019-04-03 08:54:14.015  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : ALTER TABLE agv01.ACT_FO_FORM_INSTANCE ADD SCOPE_ID_ VARCHAR(255) NULL, ADD SCOPE_TYPE_ VARCHAR(255) NULL, ADD SCOPE_DEFINITION_ID_ VARCHAR(255) NULL
+2019-04-03 08:54:14.020  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Columns SCOPE_ID_(varchar(255)),SCOPE_TYPE_(varchar(255)),SCOPE_DEFINITION_ID_(varchar(255)) added to ACT_FO_FORM_INSTANCE
+2019-04-03 08:54:14.020  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : ChangeSet org/flowable/form/db/liquibase/flowable-form-db-changelog.xml::2::flowable ran successfully in 6ms
+2019-04-03 08:54:14.021  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO agv01.ACT_FO_DATABASECHANGELOG (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, `DESCRIPTION`, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('2', 'flowable', 'org/flowable/form/db/liquibase/flowable-form-db-changelog.xml', NOW(), 2, '8:986365ceb40445ce3b27a8e6b40f159b', 'addColumn tableName=ACT_FO_FORM_INSTANCE', '', 'EXECUTED', NULL, NULL, '3.6.3', '4252853962')
+2019-04-03 08:54:14.026  INFO 16616 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
+2019-04-03 08:54:14.032  INFO 16616 --- [main] o.f.form.engine.impl.FormEngineImpl      : FormEngine default created
+2019-04-03 08:54:14.033  INFO 16616 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : Executing configure() of class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+2019-04-03 08:54:14.039  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM agv01.ACT_CO_DATABASECHANGELOGLOCK
+2019-04-03 08:54:14.040  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE agv01.ACT_CO_DATABASECHANGELOGLOCK (ID INT NOT NULL, `LOCKED` BIT(1) NOT NULL, LOCKGRANTED datetime NULL, LOCKEDBY VARCHAR(255) NULL, CONSTRAINT PK_ACT_CO_DATABASECHANGELOGLOCK PRIMARY KEY (ID))
+2019-04-03 08:54:14.049  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM agv01.ACT_CO_DATABASECHANGELOGLOCK
+2019-04-03 08:54:14.050  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : DELETE FROM agv01.ACT_CO_DATABASECHANGELOGLOCK
+2019-04-03 08:54:14.051  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO agv01.ACT_CO_DATABASECHANGELOGLOCK (ID, `LOCKED`) VALUES (1, 0)
+2019-04-03 08:54:14.052  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT `LOCKED` FROM agv01.ACT_CO_DATABASECHANGELOGLOCK WHERE ID=1
+2019-04-03 08:54:14.054  INFO 16616 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2019-04-03 08:54:14.067  INFO 16616 --- [main] l.c.StandardChangeLogHistoryService      : Creating database history table with name: agv01.ACT_CO_DATABASECHANGELOG
+2019-04-03 08:54:14.068  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE agv01.ACT_CO_DATABASECHANGELOG (ID VARCHAR(255) NOT NULL, AUTHOR VARCHAR(255) NOT NULL, FILENAME VARCHAR(255) NOT NULL, DATEEXECUTED datetime NOT NULL, ORDEREXECUTED INT NOT NULL, EXECTYPE VARCHAR(10) NOT NULL, MD5SUM VARCHAR(35) NULL, `DESCRIPTION` VARCHAR(255) NULL, COMMENTS VARCHAR(255) NULL, TAG VARCHAR(255) NULL, LIQUIBASE VARCHAR(20) NULL, CONTEXTS VARCHAR(255) NULL, LABELS VARCHAR(255) NULL, DEPLOYMENT_ID VARCHAR(10) NULL)
+2019-04-03 08:54:14.078  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM agv01.ACT_CO_DATABASECHANGELOG
+2019-04-03 08:54:14.078  INFO 16616 --- [main] l.c.StandardChangeLogHistoryService      : Reading from agv01.ACT_CO_DATABASECHANGELOG
+2019-04-03 08:54:14.078  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM agv01.ACT_CO_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2019-04-03 08:54:14.079  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM agv01.ACT_CO_DATABASECHANGELOGLOCK
+2019-04-03 08:54:14.085  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE agv01.ACT_CO_CONTENT_ITEM (ID_ VARCHAR(255) NOT NULL, NAME_ VARCHAR(255) NOT NULL, MIME_TYPE_ VARCHAR(255) NULL, TASK_ID_ VARCHAR(255) NULL, PROC_INST_ID_ VARCHAR(255) NULL, CONTENT_STORE_ID_ VARCHAR(255) NULL, CONTENT_STORE_NAME_ VARCHAR(255) NULL, FIELD_ VARCHAR(400) NULL, CONTENT_AVAILABLE_ BIT(1) DEFAULT 0 NULL, CREATED_ timestamp(6) NULL, CREATED_BY_ VARCHAR(255) NULL, LAST_MODIFIED_ timestamp(6) NULL, LAST_MODIFIED_BY_ VARCHAR(255) NULL, CONTENT_SIZE_ BIGINT DEFAULT 0 NULL, TENANT_ID_ VARCHAR(255) NULL, CONSTRAINT PK_ACT_CO_CONTENT_ITEM PRIMARY KEY (ID_))
+2019-04-03 08:54:14.095  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Table ACT_CO_CONTENT_ITEM created
+2019-04-03 08:54:14.095  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE INDEX idx_contitem_taskid ON agv01.ACT_CO_CONTENT_ITEM(TASK_ID_)
+2019-04-03 08:54:14.098  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Index idx_contitem_taskid created
+2019-04-03 08:54:14.099  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE INDEX idx_contitem_procid ON agv01.ACT_CO_CONTENT_ITEM(PROC_INST_ID_)
+2019-04-03 08:54:14.101  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Index idx_contitem_procid created
+2019-04-03 08:54:14.102  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : ChangeSet org/flowable/content/db/liquibase/flowable-content-db-changelog.xml::1::activiti ran successfully in 17ms
+2019-04-03 08:54:14.102  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MAX(ORDEREXECUTED) FROM agv01.ACT_CO_DATABASECHANGELOG
+2019-04-03 08:54:14.103  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO agv01.ACT_CO_DATABASECHANGELOG (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, `DESCRIPTION`, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('1', 'activiti', 'org/flowable/content/db/liquibase/flowable-content-db-changelog.xml', NOW(), 1, '8:7644d7165cfe799200a2abdd3419e8b6', 'createTable tableName=ACT_CO_CONTENT_ITEM; createIndex indexName=idx_contitem_taskid, tableName=ACT_CO_CONTENT_ITEM; createIndex indexName=idx_contitem_procid, tableName=ACT_CO_CONTENT_ITEM', '', 'EXECUTED', NULL, NULL, '3.6.3', '4252854079')
+2019-04-03 08:54:14.105  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : ALTER TABLE agv01.ACT_CO_CONTENT_ITEM ADD SCOPE_ID_ VARCHAR(255) NULL, ADD SCOPE_TYPE_ VARCHAR(255) NULL
+2019-04-03 08:54:14.110  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Columns SCOPE_ID_(varchar(255)),SCOPE_TYPE_(varchar(255)) added to ACT_CO_CONTENT_ITEM
+2019-04-03 08:54:14.111  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE INDEX idx_contitem_scope ON agv01.ACT_CO_CONTENT_ITEM(SCOPE_ID_, SCOPE_TYPE_)
+2019-04-03 08:54:14.113  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Index idx_contitem_scope created
+2019-04-03 08:54:14.113  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : ChangeSet org/flowable/content/db/liquibase/flowable-content-db-changelog.xml::2::flowable ran successfully in 9ms
+2019-04-03 08:54:14.114  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO agv01.ACT_CO_DATABASECHANGELOG (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, `DESCRIPTION`, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('2', 'flowable', 'org/flowable/content/db/liquibase/flowable-content-db-changelog.xml', NOW(), 2, '8:fe7b11ac7dbbf9c43006b23bbab60bab', 'addColumn tableName=ACT_CO_CONTENT_ITEM; createIndex indexName=idx_contitem_scope, tableName=ACT_CO_CONTENT_ITEM', '', 'EXECUTED', NULL, NULL, '3.6.3', '4252854079')
+2019-04-03 08:54:14.116  INFO 16616 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
+2019-04-03 08:54:14.120  INFO 16616 --- [main] o.f.c.engine.ContentEngineConfiguration  : Content file system root : /Users/shuangjiaxu/content
+2019-04-03 08:54:14.125  INFO 16616 --- [main] f.c.e.i.f.SimpleFileSystemContentStorage : Created content folder in /Users/shuangjiaxu/content/task-content
+2019-04-03 08:54:14.126  INFO 16616 --- [main] f.c.e.i.f.SimpleFileSystemContentStorage : Created content folder in /Users/shuangjiaxu/content/process-instance-content
+2019-04-03 08:54:14.126  INFO 16616 --- [main] f.c.e.i.f.SimpleFileSystemContentStorage : Created content folder in /Users/shuangjiaxu/content/cmmn
+2019-04-03 08:54:14.126  INFO 16616 --- [main] f.c.e.i.f.SimpleFileSystemContentStorage : Created content folder in /Users/shuangjiaxu/content/uncategorized
+2019-04-03 08:54:14.127  INFO 16616 --- [main] o.f.c.engine.impl.ContentEngineImpl      : ContentEngine default created
+2019-04-03 08:54:14.128  INFO 16616 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : Executing configure() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2019-04-03 08:54:14.131  INFO 16616 --- [main] o.f.cmmn.engine.CmmnEngineConfiguration  : Found 1 Engine Configurators in total:
+2019-04-03 08:54:14.132  INFO 16616 --- [main] o.f.cmmn.engine.CmmnEngineConfiguration  : class org.flowable.cmmn.engine.impl.cfg.IdmEngineConfigurator (priority:100000)
+2019-04-03 08:54:14.132  INFO 16616 --- [main] o.f.cmmn.engine.CmmnEngineConfiguration  : Executing beforeInit() of class org.flowable.cmmn.engine.impl.cfg.IdmEngineConfigurator (priority:100000)
+2019-04-03 08:54:14.157  INFO 16616 --- [main] o.f.cmmn.engine.CmmnEngineConfiguration  : Executing configure() of class org.flowable.cmmn.engine.impl.cfg.IdmEngineConfigurator (priority:100000)
+2019-04-03 08:54:14.180  INFO 16616 --- [main] o.f.idm.engine.impl.IdmEngineImpl        : IdmEngine default created
+2019-04-03 08:54:14.195  INFO 16616 --- [main] .d.AbstractSqlScriptBasedDbSchemaManager : performing create on common with resource org/flowable/common/db/create/flowable.mysql.create.common.sql
+2019-04-03 08:54:14.195  INFO 16616 --- [main] .d.AbstractSqlScriptBasedDbSchemaManager : Found MySQL: majorVersion=5 minorVersion=5
+2019-04-03 08:54:14.223  INFO 16616 --- [main] .d.AbstractSqlScriptBasedDbSchemaManager : performing create on identitylink with resource org/flowable/identitylink/service/db/create/flowable.mysql.create.identitylink.sql
+2019-04-03 08:54:14.223  INFO 16616 --- [main] .d.AbstractSqlScriptBasedDbSchemaManager : Found MySQL: majorVersion=5 minorVersion=5
+2019-04-03 08:54:14.242  INFO 16616 --- [main] .d.AbstractSqlScriptBasedDbSchemaManager : performing create on identitylink.history with resource org/flowable/identitylink/service/db/create/flowable.mysql.create.identitylink.history.sql
+2019-04-03 08:54:14.242  INFO 16616 --- [main] .d.AbstractSqlScriptBasedDbSchemaManager : Found MySQL: majorVersion=5 minorVersion=5
+2019-04-03 08:54:14.262  INFO 16616 --- [main] .d.AbstractSqlScriptBasedDbSchemaManager : performing create on task with resource org/flowable/task/service/db/create/flowable.mysql.create.task.sql
+2019-04-03 08:54:14.262  INFO 16616 --- [main] .d.AbstractSqlScriptBasedDbSchemaManager : Found MySQL: majorVersion=5 minorVersion=5
+2019-04-03 08:54:14.281  INFO 16616 --- [main] .d.AbstractSqlScriptBasedDbSchemaManager : performing create on task.history with resource org/flowable/task/service/db/create/flowable.mysql.create.task.history.sql
+2019-04-03 08:54:14.282  INFO 16616 --- [main] .d.AbstractSqlScriptBasedDbSchemaManager : Found MySQL: majorVersion=5 minorVersion=5
+2019-04-03 08:54:14.301  INFO 16616 --- [main] .d.AbstractSqlScriptBasedDbSchemaManager : performing create on variable with resource org/flowable/variable/service/db/create/flowable.mysql.create.variable.sql
+2019-04-03 08:54:14.301  INFO 16616 --- [main] .d.AbstractSqlScriptBasedDbSchemaManager : Found MySQL: majorVersion=5 minorVersion=5
+2019-04-03 08:54:14.328  INFO 16616 --- [main] .d.AbstractSqlScriptBasedDbSchemaManager : performing create on variable.history with resource org/flowable/variable/service/db/create/flowable.mysql.create.variable.history.sql
+2019-04-03 08:54:14.328  INFO 16616 --- [main] .d.AbstractSqlScriptBasedDbSchemaManager : Found MySQL: majorVersion=5 minorVersion=5
+2019-04-03 08:54:14.352  INFO 16616 --- [main] .d.AbstractSqlScriptBasedDbSchemaManager : performing create on job with resource org/flowable/job/service/db/create/flowable.mysql.create.job.sql
+2019-04-03 08:54:14.353  INFO 16616 --- [main] .d.AbstractSqlScriptBasedDbSchemaManager : Found MySQL: majorVersion=5 minorVersion=5
+2019-04-03 08:54:14.587  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM agv01.ACT_CMMN_DATABASECHANGELOGLOCK
+2019-04-03 08:54:14.588  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE agv01.ACT_CMMN_DATABASECHANGELOGLOCK (ID INT NOT NULL, `LOCKED` BIT(1) NOT NULL, LOCKGRANTED datetime NULL, LOCKEDBY VARCHAR(255) NULL, CONSTRAINT PK_ACT_CMMN_DATABASECHANGELOGLOCK PRIMARY KEY (ID))
+2019-04-03 08:54:14.599  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM agv01.ACT_CMMN_DATABASECHANGELOGLOCK
+2019-04-03 08:54:14.600  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : DELETE FROM agv01.ACT_CMMN_DATABASECHANGELOGLOCK
+2019-04-03 08:54:14.601  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO agv01.ACT_CMMN_DATABASECHANGELOGLOCK (ID, `LOCKED`) VALUES (1, 0)
+2019-04-03 08:54:14.601  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT `LOCKED` FROM agv01.ACT_CMMN_DATABASECHANGELOGLOCK WHERE ID=1
+2019-04-03 08:54:14.603  INFO 16616 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2019-04-03 08:54:14.623  INFO 16616 --- [main] l.c.StandardChangeLogHistoryService      : Creating database history table with name: agv01.ACT_CMMN_DATABASECHANGELOG
+2019-04-03 08:54:14.624  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE agv01.ACT_CMMN_DATABASECHANGELOG (ID VARCHAR(255) NOT NULL, AUTHOR VARCHAR(255) NOT NULL, FILENAME VARCHAR(255) NOT NULL, DATEEXECUTED datetime NOT NULL, ORDEREXECUTED INT NOT NULL, EXECTYPE VARCHAR(10) NOT NULL, MD5SUM VARCHAR(35) NULL, `DESCRIPTION` VARCHAR(255) NULL, COMMENTS VARCHAR(255) NULL, TAG VARCHAR(255) NULL, LIQUIBASE VARCHAR(20) NULL, CONTEXTS VARCHAR(255) NULL, LABELS VARCHAR(255) NULL, DEPLOYMENT_ID VARCHAR(10) NULL)
+2019-04-03 08:54:14.635  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM agv01.ACT_CMMN_DATABASECHANGELOG
+2019-04-03 08:54:14.636  INFO 16616 --- [main] l.c.StandardChangeLogHistoryService      : Reading from agv01.ACT_CMMN_DATABASECHANGELOG
+2019-04-03 08:54:14.636  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM agv01.ACT_CMMN_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2019-04-03 08:54:14.637  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM agv01.ACT_CMMN_DATABASECHANGELOGLOCK
+2019-04-03 08:54:14.661  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE agv01.ACT_CMMN_DEPLOYMENT (ID_ VARCHAR(255) NOT NULL, NAME_ VARCHAR(255) NULL, CATEGORY_ VARCHAR(255) NULL, KEY_ VARCHAR(255) NULL, DEPLOY_TIME_ datetime NULL, PARENT_DEPLOYMENT_ID_ VARCHAR(255) NULL, TENANT_ID_ VARCHAR(255) DEFAULT '' NULL, CONSTRAINT PK_ACT_CMMN_DEPLOYMENT PRIMARY KEY (ID_))
+2019-04-03 08:54:14.670  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Table ACT_CMMN_DEPLOYMENT created
+2019-04-03 08:54:14.671  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE agv01.ACT_CMMN_DEPLOYMENT_RESOURCE (ID_ VARCHAR(255) NOT NULL, NAME_ VARCHAR(255) NULL, DEPLOYMENT_ID_ VARCHAR(255) NULL, RESOURCE_BYTES_ LONGBLOB NULL, CONSTRAINT PK_CMMN_DEPLOYMENT_RESOURCE PRIMARY KEY (ID_))
+2019-04-03 08:54:14.681  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Table ACT_CMMN_DEPLOYMENT_RESOURCE created
+2019-04-03 08:54:14.682  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : ALTER TABLE agv01.ACT_CMMN_DEPLOYMENT_RESOURCE ADD CONSTRAINT ACT_FK_CMMN_RSRC_DPL FOREIGN KEY (DEPLOYMENT_ID_) REFERENCES agv01.ACT_CMMN_DEPLOYMENT (ID_)
+2019-04-03 08:54:14.697  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Foreign key constraint added to ACT_CMMN_DEPLOYMENT_RESOURCE (DEPLOYMENT_ID_)
+2019-04-03 08:54:14.697  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE INDEX ACT_IDX_CMMN_RSRC_DPL ON agv01.ACT_CMMN_DEPLOYMENT_RESOURCE(DEPLOYMENT_ID_)
+2019-04-03 08:54:14.701  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Index ACT_IDX_CMMN_RSRC_DPL created
+2019-04-03 08:54:14.701  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE agv01.ACT_CMMN_CASEDEF (ID_ VARCHAR(255) NOT NULL, REV_ INT NOT NULL, NAME_ VARCHAR(255) NULL, KEY_ VARCHAR(255) NOT NULL, VERSION_ INT NOT NULL, CATEGORY_ VARCHAR(255) NULL, DEPLOYMENT_ID_ VARCHAR(255) NULL, RESOURCE_NAME_ VARCHAR(4000) NULL, DESCRIPTION_ VARCHAR(4000) NULL, HAS_GRAPHICAL_NOTATION_ BIT(1) NULL, TENANT_ID_ VARCHAR(255) DEFAULT '' NULL, CONSTRAINT PK_ACT_CMMN_CASEDEF PRIMARY KEY (ID_))
+2019-04-03 08:54:14.711  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Table ACT_CMMN_CASEDEF created
+2019-04-03 08:54:14.712  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : ALTER TABLE agv01.ACT_CMMN_CASEDEF ADD CONSTRAINT ACT_FK_CASE_DEF_DPLY FOREIGN KEY (DEPLOYMENT_ID_) REFERENCES agv01.ACT_CMMN_DEPLOYMENT (ID_)
+2019-04-03 08:54:14.726  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Foreign key constraint added to ACT_CMMN_CASEDEF (DEPLOYMENT_ID_)
+2019-04-03 08:54:14.726  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE INDEX ACT_IDX_CASE_DEF_DPLY ON agv01.ACT_CMMN_CASEDEF(DEPLOYMENT_ID_)
+2019-04-03 08:54:14.729  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Index ACT_IDX_CASE_DEF_DPLY created
+2019-04-03 08:54:14.730  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE agv01.ACT_CMMN_RU_CASE_INST (ID_ VARCHAR(255) NOT NULL, REV_ INT NOT NULL, BUSINESS_KEY_ VARCHAR(255) NULL, NAME_ VARCHAR(255) NULL, PARENT_ID_ VARCHAR(255) NULL, CASE_DEF_ID_ VARCHAR(255) NULL, STATE_ VARCHAR(255) NULL, START_TIME_ datetime NULL, START_USER_ID_ VARCHAR(255) NULL, CALLBACK_ID_ VARCHAR(255) NULL, CALLBACK_TYPE_ VARCHAR(255) NULL, TENANT_ID_ VARCHAR(255) DEFAULT '' NULL, CONSTRAINT PK_ACT_CMMN_RU_CASE_INST PRIMARY KEY (ID_))
+2019-04-03 08:54:14.740  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Table ACT_CMMN_RU_CASE_INST created
+2019-04-03 08:54:14.741  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : ALTER TABLE agv01.ACT_CMMN_RU_CASE_INST ADD CONSTRAINT ACT_FK_CASE_INST_CASE_DEF FOREIGN KEY (CASE_DEF_ID_) REFERENCES agv01.ACT_CMMN_CASEDEF (ID_)
+2019-04-03 08:54:14.754  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Foreign key constraint added to ACT_CMMN_RU_CASE_INST (CASE_DEF_ID_)
+2019-04-03 08:54:14.755  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE INDEX ACT_IDX_CASE_INST_CASE_DEF ON agv01.ACT_CMMN_RU_CASE_INST(CASE_DEF_ID_)
+2019-04-03 08:54:14.757  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Index ACT_IDX_CASE_INST_CASE_DEF created
+2019-04-03 08:54:14.758  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE INDEX ACT_IDX_CASE_INST_PARENT ON agv01.ACT_CMMN_RU_CASE_INST(PARENT_ID_)
+2019-04-03 08:54:14.759  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Index ACT_IDX_CASE_INST_PARENT created
+2019-04-03 08:54:14.760  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE agv01.ACT_CMMN_RU_PLAN_ITEM_INST (ID_ VARCHAR(255) NOT NULL, REV_ INT NOT NULL, CASE_DEF_ID_ VARCHAR(255) NULL, CASE_INST_ID_ VARCHAR(255) NULL, STAGE_INST_ID_ VARCHAR(255) NULL, IS_STAGE_ BIT(1) NULL, ELEMENT_ID_ VARCHAR(255) NULL, NAME_ VARCHAR(255) NULL, STATE_ VARCHAR(255) NULL, START_TIME_ datetime NULL, START_USER_ID_ VARCHAR(255) NULL, REFERENCE_ID_ VARCHAR(255) NULL, REFERENCE_TYPE_ VARCHAR(255) NULL, TENANT_ID_ VARCHAR(255) DEFAULT '' NULL, CONSTRAINT PK_CMMN_PLAN_ITEM_INST PRIMARY KEY (ID_))
+2019-04-03 08:54:14.769  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Table ACT_CMMN_RU_PLAN_ITEM_INST created
+2019-04-03 08:54:14.769  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : ALTER TABLE agv01.ACT_CMMN_RU_PLAN_ITEM_INST ADD CONSTRAINT ACT_FK_PLAN_ITEM_CASE_DEF FOREIGN KEY (CASE_DEF_ID_) REFERENCES agv01.ACT_CMMN_CASEDEF (ID_)
+2019-04-03 08:54:14.782  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Foreign key constraint added to ACT_CMMN_RU_PLAN_ITEM_INST (CASE_DEF_ID_)
+2019-04-03 08:54:14.782  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE INDEX ACT_IDX_PLAN_ITEM_CASE_DEF ON agv01.ACT_CMMN_RU_PLAN_ITEM_INST(CASE_DEF_ID_)
+2019-04-03 08:54:14.785  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Index ACT_IDX_PLAN_ITEM_CASE_DEF created
+2019-04-03 08:54:14.785  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : ALTER TABLE agv01.ACT_CMMN_RU_PLAN_ITEM_INST ADD CONSTRAINT ACT_FK_PLAN_ITEM_CASE_INST FOREIGN KEY (CASE_INST_ID_) REFERENCES agv01.ACT_CMMN_RU_CASE_INST (ID_)
+2019-04-03 08:54:14.800  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Foreign key constraint added to ACT_CMMN_RU_PLAN_ITEM_INST (CASE_INST_ID_)
+2019-04-03 08:54:14.801  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE INDEX ACT_IDX_PLAN_ITEM_CASE_INST ON agv01.ACT_CMMN_RU_PLAN_ITEM_INST(CASE_INST_ID_)
+2019-04-03 08:54:14.804  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Index ACT_IDX_PLAN_ITEM_CASE_INST created
+2019-04-03 08:54:14.805  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE agv01.ACT_CMMN_RU_SENTRY_PART_INST (ID_ VARCHAR(255) NOT NULL, REV_ INT NOT NULL, CASE_DEF_ID_ VARCHAR(255) NULL, CASE_INST_ID_ VARCHAR(255) NULL, PLAN_ITEM_INST_ID_ VARCHAR(255) NULL, ON_PART_ID_ VARCHAR(255) NULL, IF_PART_ID_ VARCHAR(255) NULL, TIME_STAMP_ datetime NULL, CONSTRAINT PK_CMMN_SENTRY_PART_INST PRIMARY KEY (ID_))
+2019-04-03 08:54:14.815  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Table ACT_CMMN_RU_SENTRY_PART_INST created
+2019-04-03 08:54:14.815  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : ALTER TABLE agv01.ACT_CMMN_RU_SENTRY_PART_INST ADD CONSTRAINT ACT_FK_SENTRY_CASE_DEF FOREIGN KEY (CASE_DEF_ID_) REFERENCES agv01.ACT_CMMN_CASEDEF (ID_)
+2019-04-03 08:54:14.829  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Foreign key constraint added to ACT_CMMN_RU_SENTRY_PART_INST (CASE_DEF_ID_)
+2019-04-03 08:54:14.829  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE INDEX ACT_IDX_SENTRY_CASE_DEF ON agv01.ACT_CMMN_RU_SENTRY_PART_INST(CASE_DEF_ID_)
+2019-04-03 08:54:14.832  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Index ACT_IDX_SENTRY_CASE_DEF created
+2019-04-03 08:54:14.832  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : ALTER TABLE agv01.ACT_CMMN_RU_SENTRY_PART_INST ADD CONSTRAINT ACT_FK_SENTRY_CASE_INST FOREIGN KEY (CASE_INST_ID_) REFERENCES agv01.ACT_CMMN_RU_CASE_INST (ID_)
+2019-04-03 08:54:14.849  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Foreign key constraint added to ACT_CMMN_RU_SENTRY_PART_INST (CASE_INST_ID_)
+2019-04-03 08:54:14.849  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE INDEX ACT_IDX_SENTRY_CASE_INST ON agv01.ACT_CMMN_RU_SENTRY_PART_INST(CASE_INST_ID_)
+2019-04-03 08:54:14.852  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Index ACT_IDX_SENTRY_CASE_INST created
+2019-04-03 08:54:14.853  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : ALTER TABLE agv01.ACT_CMMN_RU_SENTRY_PART_INST ADD CONSTRAINT ACT_FK_SENTRY_PLAN_ITEM FOREIGN KEY (PLAN_ITEM_INST_ID_) REFERENCES agv01.ACT_CMMN_RU_PLAN_ITEM_INST (ID_)
+2019-04-03 08:54:14.867  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Foreign key constraint added to ACT_CMMN_RU_SENTRY_PART_INST (PLAN_ITEM_INST_ID_)
+2019-04-03 08:54:14.868  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE INDEX ACT_IDX_SENTRY_PLAN_ITEM ON agv01.ACT_CMMN_RU_SENTRY_PART_INST(PLAN_ITEM_INST_ID_)
+2019-04-03 08:54:14.870  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Index ACT_IDX_SENTRY_PLAN_ITEM created
+2019-04-03 08:54:14.871  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE agv01.ACT_CMMN_RU_MIL_INST (ID_ VARCHAR(255) NOT NULL, NAME_ VARCHAR(255) NOT NULL, TIME_STAMP_ datetime NOT NULL, CASE_INST_ID_ VARCHAR(255) NOT NULL, CASE_DEF_ID_ VARCHAR(255) NOT NULL, ELEMENT_ID_ VARCHAR(255) NOT NULL, CONSTRAINT PK_ACT_CMMN_RU_MIL_INST PRIMARY KEY (ID_))
+2019-04-03 08:54:14.881  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Table ACT_CMMN_RU_MIL_INST created
+2019-04-03 08:54:14.881  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : ALTER TABLE agv01.ACT_CMMN_RU_MIL_INST ADD CONSTRAINT ACT_FK_MIL_CASE_DEF FOREIGN KEY (CASE_DEF_ID_) REFERENCES agv01.ACT_CMMN_CASEDEF (ID_)
+2019-04-03 08:54:14.896  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Foreign key constraint added to ACT_CMMN_RU_MIL_INST (CASE_DEF_ID_)
+2019-04-03 08:54:14.896  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE INDEX ACT_IDX_MIL_CASE_DEF ON agv01.ACT_CMMN_RU_MIL_INST(CASE_DEF_ID_)
+2019-04-03 08:54:14.899  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Index ACT_IDX_MIL_CASE_DEF created
+2019-04-03 08:54:14.899  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : ALTER TABLE agv01.ACT_CMMN_RU_MIL_INST ADD CONSTRAINT ACT_FK_MIL_CASE_INST FOREIGN KEY (CASE_INST_ID_) REFERENCES agv01.ACT_CMMN_RU_CASE_INST (ID_)
+2019-04-03 08:54:14.916  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Foreign key constraint added to ACT_CMMN_RU_MIL_INST (CASE_INST_ID_)
+2019-04-03 08:54:14.917  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE INDEX ACT_IDX_MIL_CASE_INST ON agv01.ACT_CMMN_RU_MIL_INST(CASE_INST_ID_)
+2019-04-03 08:54:14.920  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Index ACT_IDX_MIL_CASE_INST created
+2019-04-03 08:54:14.920  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE agv01.ACT_CMMN_HI_CASE_INST (ID_ VARCHAR(255) NOT NULL, REV_ INT NOT NULL, BUSINESS_KEY_ VARCHAR(255) NULL, NAME_ VARCHAR(255) NULL, PARENT_ID_ VARCHAR(255) NULL, CASE_DEF_ID_ VARCHAR(255) NULL, STATE_ VARCHAR(255) NULL, START_TIME_ datetime NULL, END_TIME_ datetime NULL, START_USER_ID_ VARCHAR(255) NULL, CALLBACK_ID_ VARCHAR(255) NULL, CALLBACK_TYPE_ VARCHAR(255) NULL, TENANT_ID_ VARCHAR(255) DEFAULT '' NULL, CONSTRAINT PK_ACT_CMMN_HI_CASE_INST PRIMARY KEY (ID_))
+2019-04-03 08:54:14.929  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Table ACT_CMMN_HI_CASE_INST created
+2019-04-03 08:54:14.930  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE agv01.ACT_CMMN_HI_MIL_INST (ID_ VARCHAR(255) NOT NULL, REV_ INT NOT NULL, NAME_ VARCHAR(255) NOT NULL, TIME_STAMP_ datetime NOT NULL, CASE_INST_ID_ VARCHAR(255) NOT NULL, CASE_DEF_ID_ VARCHAR(255) NOT NULL, ELEMENT_ID_ VARCHAR(255) NOT NULL, CONSTRAINT PK_ACT_CMMN_HI_MIL_INST PRIMARY KEY (ID_))
+2019-04-03 08:54:14.939  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Table ACT_CMMN_HI_MIL_INST created
+2019-04-03 08:54:14.939  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : ChangeSet org/flowable/cmmn/db/liquibase/flowable-cmmn-db-changelog.xml::1::flowable ran successfully in 279ms
+2019-04-03 08:54:14.939  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MAX(ORDEREXECUTED) FROM agv01.ACT_CMMN_DATABASECHANGELOG
+2019-04-03 08:54:14.941  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO agv01.ACT_CMMN_DATABASECHANGELOG (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, `DESCRIPTION`, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('1', 'flowable', 'org/flowable/cmmn/db/liquibase/flowable-cmmn-db-changelog.xml', NOW(), 1, '8:8b4b922d90b05ff27483abefc9597aa6', 'createTable tableName=ACT_CMMN_DEPLOYMENT; createTable tableName=ACT_CMMN_DEPLOYMENT_RESOURCE; addForeignKeyConstraint baseTableName=ACT_CMMN_DEPLOYMENT_RESOURCE, constraintName=ACT_FK_CMMN_RSRC_DPL, referencedTableName=ACT_CMMN_DEPLOYMENT; create...', '', 'EXECUTED', NULL, NULL, '3.6.3', '4252854637')
+2019-04-03 08:54:14.942  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : ALTER TABLE agv01.ACT_CMMN_CASEDEF ADD DGRM_RESOURCE_NAME_ VARCHAR(4000) NULL, ADD HAS_START_FORM_KEY_ BIT(1) NULL
+2019-04-03 08:54:14.947  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Columns DGRM_RESOURCE_NAME_(varchar(4000)),HAS_START_FORM_KEY_(boolean) added to ACT_CMMN_CASEDEF
+2019-04-03 08:54:14.947  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : ALTER TABLE agv01.ACT_CMMN_DEPLOYMENT_RESOURCE ADD GENERATED_ BIT(1) NULL
+2019-04-03 08:54:14.952  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Columns GENERATED_(boolean) added to ACT_CMMN_DEPLOYMENT_RESOURCE
+2019-04-03 08:54:14.952  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : ALTER TABLE agv01.ACT_CMMN_RU_CASE_INST ADD LOCK_TIME_ datetime NULL
+2019-04-03 08:54:14.957  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Columns LOCK_TIME_(datetime) added to ACT_CMMN_RU_CASE_INST
+2019-04-03 08:54:14.958  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : ALTER TABLE agv01.ACT_CMMN_RU_PLAN_ITEM_INST ADD ITEM_DEFINITION_ID_ VARCHAR(255) NULL, ADD ITEM_DEFINITION_TYPE_ VARCHAR(255) NULL
+2019-04-03 08:54:14.963  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Columns ITEM_DEFINITION_ID_(varchar(255)),ITEM_DEFINITION_TYPE_(varchar(255)) added to ACT_CMMN_RU_PLAN_ITEM_INST
+2019-04-03 08:54:14.963  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : ChangeSet org/flowable/cmmn/db/liquibase/flowable-cmmn-db-changelog.xml::2::flowable ran successfully in 21ms
+2019-04-03 08:54:14.964  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO agv01.ACT_CMMN_DATABASECHANGELOG (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, `DESCRIPTION`, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('2', 'flowable', 'org/flowable/cmmn/db/liquibase/flowable-cmmn-db-changelog.xml', NOW(), 2, '8:65e39b3d385706bb261cbeffe7533cbe', 'addColumn tableName=ACT_CMMN_CASEDEF; addColumn tableName=ACT_CMMN_DEPLOYMENT_RESOURCE; addColumn tableName=ACT_CMMN_RU_CASE_INST; addColumn tableName=ACT_CMMN_RU_PLAN_ITEM_INST', '', 'EXECUTED', NULL, NULL, '3.6.3', '4252854637')
+2019-04-03 08:54:14.966  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : ALTER TABLE agv01.ACT_CMMN_RU_PLAN_ITEM_INST ADD IS_COMPLETEABLE_ BIT(1) NULL
+2019-04-03 08:54:14.973  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Columns IS_COMPLETEABLE_(boolean) added to ACT_CMMN_RU_PLAN_ITEM_INST
+2019-04-03 08:54:14.974  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : ALTER TABLE agv01.ACT_CMMN_RU_CASE_INST ADD IS_COMPLETEABLE_ BIT(1) NULL
+2019-04-03 08:54:14.983  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Columns IS_COMPLETEABLE_(boolean) added to ACT_CMMN_RU_CASE_INST
+2019-04-03 08:54:14.983  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : CREATE INDEX ACT_IDX_PLAN_ITEM_STAGE_INST ON agv01.ACT_CMMN_RU_PLAN_ITEM_INST(STAGE_INST_ID_)
+2019-04-03 08:54:14.986  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Index ACT_IDX_PLAN_ITEM_STAGE_INST created
+2019-04-03 08:54:14.986  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : ALTER TABLE agv01.ACT_CMMN_RU_PLAN_ITEM_INST ADD IS_COUNT_ENABLED_ BIT(1) NULL
+2019-04-03 08:54:14.995  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Columns IS_COUNT_ENABLED_(boolean) added to ACT_CMMN_RU_PLAN_ITEM_INST
+2019-04-03 08:54:14.996  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : ALTER TABLE agv01.ACT_CMMN_RU_PLAN_ITEM_INST ADD VAR_COUNT_ INT NULL
+2019-04-03 08:54:15.002  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Columns VAR_COUNT_(integer) added to ACT_CMMN_RU_PLAN_ITEM_INST
+2019-04-03 08:54:15.003  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : ALTER TABLE agv01.ACT_CMMN_RU_PLAN_ITEM_INST ADD SENTRY_PART_INST_COUNT_ INT NULL
+2019-04-03 08:54:15.009  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : Columns SENTRY_PART_INST_COUNT_(integer) added to ACT_CMMN_RU_PLAN_ITEM_INST
+2019-04-03 08:54:15.009  INFO 16616 --- [main] liquibase.changelog.ChangeSet            : ChangeSet org/flowable/cmmn/db/liquibase/flowable-cmmn-db-changelog.xml::3::flowable ran successfully in 43ms
+2019-04-03 08:54:15.010  INFO 16616 --- [main] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO agv01.ACT_CMMN_DATABASECHANGELOG (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, `DESCRIPTION`, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('3', 'flowable', 'org/flowable/cmmn/db/liquibase/flowable-cmmn-db-changelog.xml', NOW(), 3, '8:c01f6e802b49436b4489040da3012359', 'addColumn tableName=ACT_CMMN_RU_PLAN_ITEM_INST; addColumn tableName=ACT_CMMN_RU_CASE_INST; createIndex indexName=ACT_IDX_PLAN_ITEM_STAGE_INST, tableName=ACT_CMMN_RU_PLAN_ITEM_INST; addColumn tableName=ACT_CMMN_RU_PLAN_ITEM_INST; addColumn tableNam...', '', 'EXECUTED', NULL, NULL, '3.6.3', '4252854637')
+2019-04-03 08:54:15.012  INFO 16616 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
+2019-04-03 08:54:15.013  INFO 16616 --- [main] o.f.cmmn.engine.impl.CmmnEngineImpl      : CmmnEngine default created
+2019-04-03 08:54:15.062  INFO 16616 --- [main] .d.AbstractSqlScriptBasedDbSchemaManager : performing create on engine with resource org/flowable/db/create/flowable.mysql.create.engine.sql
+2019-04-03 08:54:15.062  INFO 16616 --- [main] .d.AbstractSqlScriptBasedDbSchemaManager : Found MySQL: majorVersion=5 minorVersion=5
+2019-04-03 08:54:15.708  INFO 16616 --- [main] .d.AbstractSqlScriptBasedDbSchemaManager : performing create on history with resource org/flowable/db/create/flowable.mysql.create.history.sql
+2019-04-03 08:54:15.708  INFO 16616 --- [main] .d.AbstractSqlScriptBasedDbSchemaManager : Found MySQL: majorVersion=5 minorVersion=5
+2019-04-03 08:54:15.794  INFO 16616 --- [main] o.f.engine.impl.ProcessEngineImpl        : ProcessEngine default created
+2019-04-03 08:54:15.837  INFO 16616 --- [main] o.f.e.impl.cmd.ValidateV5EntitiesCmd     : Total of v5 deployments found: 0
+2019-04-03 08:54:16.063  INFO 16616 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-03 08:54:16.066  INFO 16616 --- [main] group.agv01.Agv01Application             : Started Agv01Application in 7.631 seconds (JVM running for 8.031)
+2019-04-03 08:56:32.736  INFO 16616 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-03 08:56:32.736  INFO 16616 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-04-03 08:56:32.746  INFO 16616 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2019-04-03 08:57:26.506  INFO 16616 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-03 08:57:26.507  INFO 16616 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-03 08:57:26.514  INFO 16616 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-03 11:37:45.405  INFO 23507 --- [main] group.agv01.Agv01Application             : Starting Agv01Application on shuangjiadeMacBook-Pro.local with PID 23507 (/Users/shuangjiaxu/git/repository/agv01/target/classes started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-03 11:37:45.407  INFO 23507 --- [main] group.agv01.Agv01Application             : No active profile set, falling back to default profiles: default
+2019-04-03 11:37:46.829  INFO 23507 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-04-03 11:37:46.850  INFO 23507 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-03 11:37:46.850  INFO 23507 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-03 11:37:46.857  INFO 23507 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/shuangjiaxu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-04-03 11:37:46.941  INFO 23507 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-03 11:37:46.942  INFO 23507 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1501 ms
+2019-04-03 11:37:47.455  INFO 23507 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-03 11:37:47.747  INFO 23507 --- [main] uration$$EnhancerBySpringCGLIB$$4fd1bd8f : No deployment resources were found for autodeployment
+2019-04-03 11:37:47.834  INFO 23507 --- [main] uration$$EnhancerBySpringCGLIB$$a752ff81 : No deployment resources were found for autodeployment
+2019-04-03 11:37:47.876  INFO 23507 --- [main] uration$$EnhancerBySpringCGLIB$$eb7879ef : No deployment resources were found for autodeployment
+2019-04-03 11:37:47.948  INFO 23507 --- [main] uration$$EnhancerBySpringCGLIB$$2757fcee : No deployment resources were found for autodeployment
+2019-04-03 11:37:48.022  INFO 23507 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : Found 5 Engine Configurators in total:
+2019-04-03 11:37:48.024  INFO 23507 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : class org.flowable.spring.configurator.SpringIdmEngineConfigurator (priority:100000)
+2019-04-03 11:37:48.024  INFO 23507 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2019-04-03 11:37:48.024  INFO 23507 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+2019-04-03 11:37:48.024  INFO 23507 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+2019-04-03 11:37:48.024  INFO 23507 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2019-04-03 11:37:48.024  INFO 23507 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : Executing beforeInit() of class org.flowable.spring.configurator.SpringIdmEngineConfigurator (priority:100000)
+2019-04-03 11:37:48.028  INFO 23507 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : Executing beforeInit() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2019-04-03 11:37:48.030  INFO 23507 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : Executing beforeInit() of class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+2019-04-03 11:37:48.033  INFO 23507 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : Executing beforeInit() of class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+2019-04-03 11:37:48.035  INFO 23507 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : Executing beforeInit() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2019-04-03 11:37:48.064  INFO 23507 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-03 11:37:48.246  INFO 23507 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-03 11:37:49.036  INFO 23507 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : Executing configure() of class org.flowable.spring.configurator.SpringIdmEngineConfigurator (priority:100000)
+2019-04-03 11:37:49.086  INFO 23507 --- [main] o.f.idm.engine.impl.IdmEngineImpl        : IdmEngine default created
+2019-04-03 11:37:49.087  INFO 23507 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : Executing configure() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2019-04-03 11:37:49.553  INFO 23507 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM agv01.ACT_DMN_DATABASECHANGELOGLOCK
+2019-04-03 11:37:49.556  INFO 23507 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM agv01.ACT_DMN_DATABASECHANGELOGLOCK
+2019-04-03 11:37:49.558  INFO 23507 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT `LOCKED` FROM agv01.ACT_DMN_DATABASECHANGELOGLOCK WHERE ID=1
+2019-04-03 11:37:49.570  INFO 23507 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2019-04-03 11:37:50.212  INFO 23507 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MD5SUM FROM agv01.ACT_DMN_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+2019-04-03 11:37:50.213  INFO 23507 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM agv01.ACT_DMN_DATABASECHANGELOG
+2019-04-03 11:37:50.213  INFO 23507 --- [main] l.c.StandardChangeLogHistoryService      : Reading from agv01.ACT_DMN_DATABASECHANGELOG
+2019-04-03 11:37:50.214  INFO 23507 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM agv01.ACT_DMN_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2019-04-03 11:37:50.235  INFO 23507 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
+2019-04-03 11:37:50.242  INFO 23507 --- [main] o.f.dmn.engine.impl.DmnEngineImpl        : DmnEngine default created
+2019-04-03 11:37:50.243  INFO 23507 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : Executing configure() of class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+2019-04-03 11:37:50.250  INFO 23507 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM agv01.ACT_FO_DATABASECHANGELOGLOCK
+2019-04-03 11:37:50.251  INFO 23507 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM agv01.ACT_FO_DATABASECHANGELOGLOCK
+2019-04-03 11:37:50.252  INFO 23507 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT `LOCKED` FROM agv01.ACT_FO_DATABASECHANGELOGLOCK WHERE ID=1
+2019-04-03 11:37:50.253  INFO 23507 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2019-04-03 11:37:50.275  INFO 23507 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MD5SUM FROM agv01.ACT_FO_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+2019-04-03 11:37:50.276  INFO 23507 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM agv01.ACT_FO_DATABASECHANGELOG
+2019-04-03 11:37:50.277  INFO 23507 --- [main] l.c.StandardChangeLogHistoryService      : Reading from agv01.ACT_FO_DATABASECHANGELOG
+2019-04-03 11:37:50.277  INFO 23507 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM agv01.ACT_FO_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2019-04-03 11:37:50.288  INFO 23507 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
+2019-04-03 11:37:50.294  INFO 23507 --- [main] o.f.form.engine.impl.FormEngineImpl      : FormEngine default created
+2019-04-03 11:37:50.295  INFO 23507 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : Executing configure() of class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+2019-04-03 11:37:50.304  INFO 23507 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM agv01.ACT_CO_DATABASECHANGELOGLOCK
+2019-04-03 11:37:50.305  INFO 23507 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM agv01.ACT_CO_DATABASECHANGELOGLOCK
+2019-04-03 11:37:50.306  INFO 23507 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT `LOCKED` FROM agv01.ACT_CO_DATABASECHANGELOGLOCK WHERE ID=1
+2019-04-03 11:37:50.307  INFO 23507 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2019-04-03 11:37:50.327  INFO 23507 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MD5SUM FROM agv01.ACT_CO_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+2019-04-03 11:37:50.328  INFO 23507 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM agv01.ACT_CO_DATABASECHANGELOG
+2019-04-03 11:37:50.329  INFO 23507 --- [main] l.c.StandardChangeLogHistoryService      : Reading from agv01.ACT_CO_DATABASECHANGELOG
+2019-04-03 11:37:50.329  INFO 23507 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM agv01.ACT_CO_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2019-04-03 11:37:50.336  INFO 23507 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
+2019-04-03 11:37:50.341  INFO 23507 --- [main] o.f.c.engine.ContentEngineConfiguration  : Content file system root : /Users/shuangjiaxu/content
+2019-04-03 11:37:50.349  INFO 23507 --- [main] o.f.c.engine.impl.ContentEngineImpl      : ContentEngine default created
+2019-04-03 11:37:50.352  INFO 23507 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : Executing configure() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2019-04-03 11:37:50.358  INFO 23507 --- [main] o.f.cmmn.engine.CmmnEngineConfiguration  : Found 1 Engine Configurators in total:
+2019-04-03 11:37:50.358  INFO 23507 --- [main] o.f.cmmn.engine.CmmnEngineConfiguration  : class org.flowable.cmmn.engine.impl.cfg.IdmEngineConfigurator (priority:100000)
+2019-04-03 11:37:50.358  INFO 23507 --- [main] o.f.cmmn.engine.CmmnEngineConfiguration  : Executing beforeInit() of class org.flowable.cmmn.engine.impl.cfg.IdmEngineConfigurator (priority:100000)
+2019-04-03 11:37:50.387  INFO 23507 --- [main] o.f.cmmn.engine.CmmnEngineConfiguration  : Executing configure() of class org.flowable.cmmn.engine.impl.cfg.IdmEngineConfigurator (priority:100000)
+2019-04-03 11:37:50.395  INFO 23507 --- [main] o.f.idm.engine.impl.IdmEngineImpl        : IdmEngine default created
+2019-04-03 11:37:50.460  INFO 23507 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM agv01.ACT_CMMN_DATABASECHANGELOGLOCK
+2019-04-03 11:37:50.461  INFO 23507 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM agv01.ACT_CMMN_DATABASECHANGELOGLOCK
+2019-04-03 11:37:50.461  INFO 23507 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT `LOCKED` FROM agv01.ACT_CMMN_DATABASECHANGELOGLOCK WHERE ID=1
+2019-04-03 11:37:50.463  INFO 23507 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2019-04-03 11:37:50.494  INFO 23507 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MD5SUM FROM agv01.ACT_CMMN_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+2019-04-03 11:37:50.495  INFO 23507 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM agv01.ACT_CMMN_DATABASECHANGELOG
+2019-04-03 11:37:50.496  INFO 23507 --- [main] l.c.StandardChangeLogHistoryService      : Reading from agv01.ACT_CMMN_DATABASECHANGELOG
+2019-04-03 11:37:50.496  INFO 23507 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM agv01.ACT_CMMN_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2019-04-03 11:37:50.522  INFO 23507 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
+2019-04-03 11:37:50.522  INFO 23507 --- [main] o.f.cmmn.engine.impl.CmmnEngineImpl      : CmmnEngine default created
+2019-04-03 11:37:50.583  INFO 23507 --- [main] o.f.engine.impl.ProcessEngineImpl        : ProcessEngine default created
+2019-04-03 11:37:50.621  INFO 23507 --- [main] o.f.e.impl.cmd.ValidateV5EntitiesCmd     : Total of v5 deployments found: 0
+2019-04-03 11:37:50.849  INFO 23507 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-03 11:37:50.852  INFO 23507 --- [main] group.agv01.Agv01Application             : Started Agv01Application in 5.753 seconds (JVM running for 6.111)
+2019-04-03 11:38:12.546  INFO 23507 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-03 11:38:12.546  INFO 23507 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-03 11:38:12.551  INFO 23507 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-03 11:49:17.144  INFO 24020 --- [main] group.agv01.Agv01Application             : Starting Agv01Application on shuangjiadeMacBook-Pro.local with PID 24020 (/Users/shuangjiaxu/git/repository/agv01/target/classes started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-03 11:49:17.146  INFO 24020 --- [main] group.agv01.Agv01Application             : No active profile set, falling back to default profiles: default
+2019-04-03 11:49:18.415  INFO 24020 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-04-03 11:49:18.439  INFO 24020 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-03 11:49:18.439  INFO 24020 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-03 11:49:18.447  INFO 24020 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/shuangjiaxu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-04-03 11:49:18.531  INFO 24020 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-03 11:49:18.532  INFO 24020 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1352 ms
+2019-04-03 11:49:18.971  INFO 24020 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-03 11:49:19.197  INFO 24020 --- [main] uration$$EnhancerBySpringCGLIB$$4fd1bd8f : No deployment resources were found for autodeployment
+2019-04-03 11:49:19.285  INFO 24020 --- [main] uration$$EnhancerBySpringCGLIB$$a752ff81 : No deployment resources were found for autodeployment
+2019-04-03 11:49:19.338  INFO 24020 --- [main] uration$$EnhancerBySpringCGLIB$$eb7879ef : No deployment resources were found for autodeployment
+2019-04-03 11:49:19.410  INFO 24020 --- [main] uration$$EnhancerBySpringCGLIB$$2757fcee : No deployment resources were found for autodeployment
+2019-04-03 11:49:19.496  INFO 24020 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : Found 5 Engine Configurators in total:
+2019-04-03 11:49:19.497  INFO 24020 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : class org.flowable.spring.configurator.SpringIdmEngineConfigurator (priority:100000)
+2019-04-03 11:49:19.497  INFO 24020 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2019-04-03 11:49:19.498  INFO 24020 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+2019-04-03 11:49:19.498  INFO 24020 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+2019-04-03 11:49:19.498  INFO 24020 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2019-04-03 11:49:19.498  INFO 24020 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : Executing beforeInit() of class org.flowable.spring.configurator.SpringIdmEngineConfigurator (priority:100000)
+2019-04-03 11:49:19.501  INFO 24020 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : Executing beforeInit() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2019-04-03 11:49:19.504  INFO 24020 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : Executing beforeInit() of class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+2019-04-03 11:49:19.507  INFO 24020 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : Executing beforeInit() of class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+2019-04-03 11:49:19.509  INFO 24020 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : Executing beforeInit() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2019-04-03 11:49:19.539  INFO 24020 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-03 11:49:19.707  INFO 24020 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-03 11:49:20.481  INFO 24020 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : Executing configure() of class org.flowable.spring.configurator.SpringIdmEngineConfigurator (priority:100000)
+2019-04-03 11:49:20.528  INFO 24020 --- [main] o.f.idm.engine.impl.IdmEngineImpl        : IdmEngine default created
+2019-04-03 11:49:20.529  INFO 24020 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : Executing configure() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2019-04-03 11:49:20.952  INFO 24020 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM agv01.ACT_DMN_DATABASECHANGELOGLOCK
+2019-04-03 11:49:20.954  INFO 24020 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM agv01.ACT_DMN_DATABASECHANGELOGLOCK
+2019-04-03 11:49:20.956  INFO 24020 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT `LOCKED` FROM agv01.ACT_DMN_DATABASECHANGELOGLOCK WHERE ID=1
+2019-04-03 11:49:20.968  INFO 24020 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2019-04-03 11:49:21.599  INFO 24020 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MD5SUM FROM agv01.ACT_DMN_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+2019-04-03 11:49:21.600  INFO 24020 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM agv01.ACT_DMN_DATABASECHANGELOG
+2019-04-03 11:49:21.601  INFO 24020 --- [main] l.c.StandardChangeLogHistoryService      : Reading from agv01.ACT_DMN_DATABASECHANGELOG
+2019-04-03 11:49:21.601  INFO 24020 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM agv01.ACT_DMN_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2019-04-03 11:49:21.620  INFO 24020 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
+2019-04-03 11:49:21.627  INFO 24020 --- [main] o.f.dmn.engine.impl.DmnEngineImpl        : DmnEngine default created
+2019-04-03 11:49:21.628  INFO 24020 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : Executing configure() of class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+2019-04-03 11:49:21.634  INFO 24020 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM agv01.ACT_FO_DATABASECHANGELOGLOCK
+2019-04-03 11:49:21.635  INFO 24020 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM agv01.ACT_FO_DATABASECHANGELOGLOCK
+2019-04-03 11:49:21.635  INFO 24020 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT `LOCKED` FROM agv01.ACT_FO_DATABASECHANGELOGLOCK WHERE ID=1
+2019-04-03 11:49:21.637  INFO 24020 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2019-04-03 11:49:21.658  INFO 24020 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MD5SUM FROM agv01.ACT_FO_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+2019-04-03 11:49:21.659  INFO 24020 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM agv01.ACT_FO_DATABASECHANGELOG
+2019-04-03 11:49:21.659  INFO 24020 --- [main] l.c.StandardChangeLogHistoryService      : Reading from agv01.ACT_FO_DATABASECHANGELOG
+2019-04-03 11:49:21.660  INFO 24020 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM agv01.ACT_FO_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2019-04-03 11:49:21.671  INFO 24020 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
+2019-04-03 11:49:21.676  INFO 24020 --- [main] o.f.form.engine.impl.FormEngineImpl      : FormEngine default created
+2019-04-03 11:49:21.677  INFO 24020 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : Executing configure() of class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+2019-04-03 11:49:21.683  INFO 24020 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM agv01.ACT_CO_DATABASECHANGELOGLOCK
+2019-04-03 11:49:21.684  INFO 24020 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM agv01.ACT_CO_DATABASECHANGELOGLOCK
+2019-04-03 11:49:21.686  INFO 24020 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT `LOCKED` FROM agv01.ACT_CO_DATABASECHANGELOGLOCK WHERE ID=1
+2019-04-03 11:49:21.690  INFO 24020 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2019-04-03 11:49:21.708  INFO 24020 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MD5SUM FROM agv01.ACT_CO_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+2019-04-03 11:49:21.709  INFO 24020 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM agv01.ACT_CO_DATABASECHANGELOG
+2019-04-03 11:49:21.709  INFO 24020 --- [main] l.c.StandardChangeLogHistoryService      : Reading from agv01.ACT_CO_DATABASECHANGELOG
+2019-04-03 11:49:21.709  INFO 24020 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM agv01.ACT_CO_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2019-04-03 11:49:21.716  INFO 24020 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
+2019-04-03 11:49:21.720  INFO 24020 --- [main] o.f.c.engine.ContentEngineConfiguration  : Content file system root : /Users/shuangjiaxu/content
+2019-04-03 11:49:21.727  INFO 24020 --- [main] o.f.c.engine.impl.ContentEngineImpl      : ContentEngine default created
+2019-04-03 11:49:21.728  INFO 24020 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : Executing configure() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2019-04-03 11:49:21.731  INFO 24020 --- [main] o.f.cmmn.engine.CmmnEngineConfiguration  : Found 1 Engine Configurators in total:
+2019-04-03 11:49:21.731  INFO 24020 --- [main] o.f.cmmn.engine.CmmnEngineConfiguration  : class org.flowable.cmmn.engine.impl.cfg.IdmEngineConfigurator (priority:100000)
+2019-04-03 11:49:21.731  INFO 24020 --- [main] o.f.cmmn.engine.CmmnEngineConfiguration  : Executing beforeInit() of class org.flowable.cmmn.engine.impl.cfg.IdmEngineConfigurator (priority:100000)
+2019-04-03 11:49:21.757  INFO 24020 --- [main] o.f.cmmn.engine.CmmnEngineConfiguration  : Executing configure() of class org.flowable.cmmn.engine.impl.cfg.IdmEngineConfigurator (priority:100000)
+2019-04-03 11:49:21.768  INFO 24020 --- [main] o.f.idm.engine.impl.IdmEngineImpl        : IdmEngine default created
+2019-04-03 11:49:21.828  INFO 24020 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM agv01.ACT_CMMN_DATABASECHANGELOGLOCK
+2019-04-03 11:49:21.829  INFO 24020 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM agv01.ACT_CMMN_DATABASECHANGELOGLOCK
+2019-04-03 11:49:21.830  INFO 24020 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT `LOCKED` FROM agv01.ACT_CMMN_DATABASECHANGELOGLOCK WHERE ID=1
+2019-04-03 11:49:21.832  INFO 24020 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2019-04-03 11:49:21.868  INFO 24020 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MD5SUM FROM agv01.ACT_CMMN_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+2019-04-03 11:49:21.869  INFO 24020 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM agv01.ACT_CMMN_DATABASECHANGELOG
+2019-04-03 11:49:21.869  INFO 24020 --- [main] l.c.StandardChangeLogHistoryService      : Reading from agv01.ACT_CMMN_DATABASECHANGELOG
+2019-04-03 11:49:21.869  INFO 24020 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM agv01.ACT_CMMN_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2019-04-03 11:49:21.893  INFO 24020 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
+2019-04-03 11:49:21.894  INFO 24020 --- [main] o.f.cmmn.engine.impl.CmmnEngineImpl      : CmmnEngine default created
+2019-04-03 11:49:21.962  INFO 24020 --- [main] o.f.engine.impl.ProcessEngineImpl        : ProcessEngine default created
+2019-04-03 11:49:21.998  INFO 24020 --- [main] o.f.e.impl.cmd.ValidateV5EntitiesCmd     : Total of v5 deployments found: 0
+2019-04-03 11:49:22.231  INFO 24020 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-03 11:49:22.233  INFO 24020 --- [main] group.agv01.Agv01Application             : Started Agv01Application in 5.547 seconds (JVM running for 5.885)
+2019-04-03 11:49:33.259  INFO 24040 --- [main] group.agv01.service.UserServiceTestCase  : Starting UserServiceTestCase on shuangjiadeMacBook-Pro.local with PID 24040 (started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-03 11:49:33.260  INFO 24040 --- [main] group.agv01.service.UserServiceTestCase  : No active profile set, falling back to default profiles: default
+2019-04-03 11:49:34.966  INFO 24040 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-03 11:49:35.346  INFO 24040 --- [main] uration$$EnhancerBySpringCGLIB$$57eed8ea : No deployment resources were found for autodeployment
+2019-04-03 11:49:35.486  INFO 24040 --- [main] uration$$EnhancerBySpringCGLIB$$af701adc : No deployment resources were found for autodeployment
+2019-04-03 11:49:35.544  INFO 24040 --- [main] uration$$EnhancerBySpringCGLIB$$f395954a : No deployment resources were found for autodeployment
+2019-04-03 11:49:35.632  INFO 24040 --- [main] uration$$EnhancerBySpringCGLIB$$2f751849 : No deployment resources were found for autodeployment
+2019-04-03 11:49:35.730  INFO 24040 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : Found 5 Engine Configurators in total:
+2019-04-03 11:49:35.731  INFO 24040 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : class org.flowable.spring.configurator.SpringIdmEngineConfigurator (priority:100000)
+2019-04-03 11:49:35.731  INFO 24040 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2019-04-03 11:49:35.731  INFO 24040 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+2019-04-03 11:49:35.731  INFO 24040 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+2019-04-03 11:49:35.731  INFO 24040 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2019-04-03 11:49:35.731  INFO 24040 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : Executing beforeInit() of class org.flowable.spring.configurator.SpringIdmEngineConfigurator (priority:100000)
+2019-04-03 11:49:35.734  INFO 24040 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : Executing beforeInit() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2019-04-03 11:49:35.736  INFO 24040 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : Executing beforeInit() of class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+2019-04-03 11:49:35.739  INFO 24040 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : Executing beforeInit() of class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+2019-04-03 11:49:35.740  INFO 24040 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : Executing beforeInit() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2019-04-03 11:49:35.764  INFO 24040 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-03 11:49:35.898  INFO 24040 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-03 11:49:36.672  INFO 24040 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : Executing configure() of class org.flowable.spring.configurator.SpringIdmEngineConfigurator (priority:100000)
+2019-04-03 11:49:36.730  INFO 24040 --- [main] o.f.idm.engine.impl.IdmEngineImpl        : IdmEngine default created
+2019-04-03 11:49:36.731  INFO 24040 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : Executing configure() of class org.flowable.dmn.spring.configurator.SpringDmnEngineConfigurator (priority:200000)
+2019-04-03 11:49:37.176  INFO 24040 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM agv01.ACT_DMN_DATABASECHANGELOGLOCK
+2019-04-03 11:49:37.179  INFO 24040 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM agv01.ACT_DMN_DATABASECHANGELOGLOCK
+2019-04-03 11:49:37.181  INFO 24040 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT `LOCKED` FROM agv01.ACT_DMN_DATABASECHANGELOGLOCK WHERE ID=1
+2019-04-03 11:49:37.194  INFO 24040 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2019-04-03 11:49:37.812  INFO 24040 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MD5SUM FROM agv01.ACT_DMN_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+2019-04-03 11:49:37.813  INFO 24040 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM agv01.ACT_DMN_DATABASECHANGELOG
+2019-04-03 11:49:37.813  INFO 24040 --- [main] l.c.StandardChangeLogHistoryService      : Reading from agv01.ACT_DMN_DATABASECHANGELOG
+2019-04-03 11:49:37.814  INFO 24040 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM agv01.ACT_DMN_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2019-04-03 11:49:37.836  INFO 24040 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
+2019-04-03 11:49:37.843  INFO 24040 --- [main] o.f.dmn.engine.impl.DmnEngineImpl        : DmnEngine default created
+2019-04-03 11:49:37.844  INFO 24040 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : Executing configure() of class org.flowable.form.spring.configurator.SpringFormEngineConfigurator (priority:300000)
+2019-04-03 11:49:37.851  INFO 24040 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM agv01.ACT_FO_DATABASECHANGELOGLOCK
+2019-04-03 11:49:37.852  INFO 24040 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM agv01.ACT_FO_DATABASECHANGELOGLOCK
+2019-04-03 11:49:37.853  INFO 24040 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT `LOCKED` FROM agv01.ACT_FO_DATABASECHANGELOGLOCK WHERE ID=1
+2019-04-03 11:49:37.854  INFO 24040 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2019-04-03 11:49:37.875  INFO 24040 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MD5SUM FROM agv01.ACT_FO_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+2019-04-03 11:49:37.876  INFO 24040 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM agv01.ACT_FO_DATABASECHANGELOG
+2019-04-03 11:49:37.877  INFO 24040 --- [main] l.c.StandardChangeLogHistoryService      : Reading from agv01.ACT_FO_DATABASECHANGELOG
+2019-04-03 11:49:37.877  INFO 24040 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM agv01.ACT_FO_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2019-04-03 11:49:37.893  INFO 24040 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
+2019-04-03 11:49:37.901  INFO 24040 --- [main] o.f.form.engine.impl.FormEngineImpl      : FormEngine default created
+2019-04-03 11:49:37.902  INFO 24040 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : Executing configure() of class org.flowable.content.spring.configurator.SpringContentEngineConfigurator (priority:400000)
+2019-04-03 11:49:37.910  INFO 24040 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM agv01.ACT_CO_DATABASECHANGELOGLOCK
+2019-04-03 11:49:37.911  INFO 24040 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM agv01.ACT_CO_DATABASECHANGELOGLOCK
+2019-04-03 11:49:37.912  INFO 24040 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT `LOCKED` FROM agv01.ACT_CO_DATABASECHANGELOGLOCK WHERE ID=1
+2019-04-03 11:49:37.914  INFO 24040 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2019-04-03 11:49:37.935  INFO 24040 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MD5SUM FROM agv01.ACT_CO_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+2019-04-03 11:49:37.936  INFO 24040 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM agv01.ACT_CO_DATABASECHANGELOG
+2019-04-03 11:49:37.936  INFO 24040 --- [main] l.c.StandardChangeLogHistoryService      : Reading from agv01.ACT_CO_DATABASECHANGELOG
+2019-04-03 11:49:37.937  INFO 24040 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM agv01.ACT_CO_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2019-04-03 11:49:37.945  INFO 24040 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
+2019-04-03 11:49:37.950  INFO 24040 --- [main] o.f.c.engine.ContentEngineConfiguration  : Content file system root : /Users/shuangjiaxu/content
+2019-04-03 11:49:37.958  INFO 24040 --- [main] o.f.c.engine.impl.ContentEngineImpl      : ContentEngine default created
+2019-04-03 11:49:37.959  INFO 24040 --- [main] o.f.e.i.c.ProcessEngineConfigurationImpl : Executing configure() of class org.flowable.cmmn.spring.configurator.SpringCmmnEngineConfigurator (priority:500000)
+2019-04-03 11:49:37.964  INFO 24040 --- [main] o.f.cmmn.engine.CmmnEngineConfiguration  : Found 1 Engine Configurators in total:
+2019-04-03 11:49:37.964  INFO 24040 --- [main] o.f.cmmn.engine.CmmnEngineConfiguration  : class org.flowable.cmmn.engine.impl.cfg.IdmEngineConfigurator (priority:100000)
+2019-04-03 11:49:37.964  INFO 24040 --- [main] o.f.cmmn.engine.CmmnEngineConfiguration  : Executing beforeInit() of class org.flowable.cmmn.engine.impl.cfg.IdmEngineConfigurator (priority:100000)
+2019-04-03 11:49:38.174  INFO 24040 --- [main] o.f.cmmn.engine.CmmnEngineConfiguration  : Executing configure() of class org.flowable.cmmn.engine.impl.cfg.IdmEngineConfigurator (priority:100000)
+2019-04-03 11:49:38.181  INFO 24040 --- [main] o.f.idm.engine.impl.IdmEngineImpl        : IdmEngine default created
+2019-04-03 11:49:38.222  INFO 24040 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM agv01.ACT_CMMN_DATABASECHANGELOGLOCK
+2019-04-03 11:49:38.222  INFO 24040 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM agv01.ACT_CMMN_DATABASECHANGELOGLOCK
+2019-04-03 11:49:38.223  INFO 24040 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT `LOCKED` FROM agv01.ACT_CMMN_DATABASECHANGELOGLOCK WHERE ID=1
+2019-04-03 11:49:38.224  INFO 24040 --- [main] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2019-04-03 11:49:38.249  INFO 24040 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT MD5SUM FROM agv01.ACT_CMMN_DATABASECHANGELOG WHERE MD5SUM IS NOT NULL LIMIT 1
+2019-04-03 11:49:38.250  INFO 24040 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM agv01.ACT_CMMN_DATABASECHANGELOG
+2019-04-03 11:49:38.250  INFO 24040 --- [main] l.c.StandardChangeLogHistoryService      : Reading from agv01.ACT_CMMN_DATABASECHANGELOG
+2019-04-03 11:49:38.250  INFO 24040 --- [main] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM agv01.ACT_CMMN_DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2019-04-03 11:49:38.268  INFO 24040 --- [main] l.lockservice.StandardLockService        : Successfully released change log lock
+2019-04-03 11:49:38.269  INFO 24040 --- [main] o.f.cmmn.engine.impl.CmmnEngineImpl      : CmmnEngine default created
+2019-04-03 11:49:38.323  INFO 24040 --- [main] o.f.engine.impl.ProcessEngineImpl        : ProcessEngine default created
+2019-04-03 11:49:38.358  INFO 24040 --- [main] o.f.e.impl.cmd.ValidateV5EntitiesCmd     : Total of v5 deployments found: 0
+2019-04-03 11:49:38.622  INFO 24040 --- [main] group.agv01.service.UserServiceTestCase  : Started UserServiceTestCase in 5.649 seconds (JVM running for 6.364)
+2019-04-03 11:49:38.903  INFO 24040 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-03 11:49:38.904  INFO 24040 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-03 11:49:38.907  INFO 24040 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-03 12:41:17.134  WARN 24020 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=42m27s269ms).
+2019-04-03 13:08:36.711  WARN 24020 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=27m19s577ms).
+2019-04-03 15:18:14.020  INFO 24020 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-03 15:18:14.021  INFO 24020 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-03 15:18:14.025  INFO 24020 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
