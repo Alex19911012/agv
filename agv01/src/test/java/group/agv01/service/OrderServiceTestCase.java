@@ -35,7 +35,25 @@ public class OrderServiceTestCase {
 		System.err.println("完成1");
 	}
 	
+	@Test
+	public void testAddTask() {	
+		Order order = new Order();
+		order.setOrderID("test2");
+		service.addOrder(order);
+		System.err.println("完成1");
+	}
 	
+	@Test
+	public void testDeleteTask() {
+		service.delete("test2");
+		System.err.println("完成1");
+	}
+	
+	@Test
+	public void testChangeTask() {	
+		service.changeInfo("test2", "tt");
+		System.err.println("完成1");
+	}
 		
 	
 }

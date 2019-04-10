@@ -34,7 +34,25 @@ public class TaskServiceTestCase {
 		System.err.println("完成1");
 	}
 	
+	@Test
+	public void testAddTask() {	
+		Task t = new Task();
+		t.setTaskID("test2");
+		service.addTask(t);
+		System.err.println("完成1");
+	}
 	
+	@Test
+	public void testDeleteTask() {
+		service.delete("test2");
+		System.err.println("完成1");
+	}
+	
+	@Test
+	public void testChangeTask() {	
+		service.changeInfo("test2", "tt");
+		System.err.println("完成1");
+	}
 		
 	
 }

@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import group.agv01.entity.Order;
@@ -32,6 +33,25 @@ public class OrderController extends BaseController{
 		return new ResponseResult<List<Order>>(SUCCESS,list);
 	}
 	
+	@PostMapping("/addOrder")
+	public ResponseResult<Void> addOrder(Order order) {	
+		System.err.println(order);
+		orderService.addOrder(order);				
+		return new ResponseResult<Void>(SUCCESS);
+	}
+	
+	@PostMapping("/delete")
+	public ResponseResult<Void> delete(String OrderID){
+		System.err.println(OrderID);
+		orderService.delete(OrderID);
+		return new ResponseResult<Void>(SUCCESS);
+	}
+	
+	@PostMapping("/updateOType")
+	public ResponseResult<Void> updateOrder(@RequestParam String OrderID,@RequestParam String OType){		
+		orderService.changeInfo(OrderID, OType);
+		return new ResponseResult<Void>(SUCCESS);
+	}
 	
 	
 }

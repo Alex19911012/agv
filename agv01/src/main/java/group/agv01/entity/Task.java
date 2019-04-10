@@ -1,7 +1,9 @@
 package group.agv01.entity;
 
 import java.io.Serializable;
-import java.util.Date;
+import java.sql.Date;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
 
 public class Task implements Serializable{
 
@@ -25,11 +27,12 @@ public class Task implements Serializable{
 	String DestPosiID;
 
 	//距离
-
+	
+	
 	double Dist;
 
 	//最后期限
-
+	
 	Date Deadline;
 
 	//货物名称
@@ -45,7 +48,7 @@ public class Task implements Serializable{
 	String TStat;
 
 	//任务创建时间
-
+	
 	Date CreatDate;
 
 	//用户ID

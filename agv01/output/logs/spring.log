@@ -10,3 +10,716 @@
 2019-04-10 09:12:37.986  INFO 83588 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
 2019-04-10 09:12:37.989  INFO 83588 --- [main] group.agv01.Agv01Application             : Started Agv01Application in 2.652 seconds (JVM running for 3.002)
 2019-04-10 09:12:39.310  INFO 83588 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 09:49:23.791  INFO 85380 --- [main] group.agv01.mapper.TaskMapperTestCase    : Starting TaskMapperTestCase on shuangjiadeMacBook-Pro.local with PID 85380 (started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-10 09:49:23.792  INFO 85380 --- [main] group.agv01.mapper.TaskMapperTestCase    : No active profile set, falling back to default profiles: default
+2019-04-10 09:49:25.355  INFO 85380 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-10 09:49:25.719  INFO 85380 --- [main] group.agv01.mapper.TaskMapperTestCase    : Started TaskMapperTestCase in 2.21 seconds (JVM running for 2.882)
+2019-04-10 09:49:25.973  INFO 85380 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-10 09:49:26.161  INFO 85380 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-10 09:49:26.200  INFO 85380 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 09:49:26.201  INFO 85380 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-10 09:49:26.203  INFO 85380 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-10 09:49:39.820  INFO 85392 --- [main] group.agv01.mapper.TaskMapperTestCase    : Starting TaskMapperTestCase on shuangjiadeMacBook-Pro.local with PID 85392 (started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-10 09:49:39.821  INFO 85392 --- [main] group.agv01.mapper.TaskMapperTestCase    : No active profile set, falling back to default profiles: default
+2019-04-10 09:49:41.341  INFO 85392 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-10 09:49:41.710  INFO 85392 --- [main] group.agv01.mapper.TaskMapperTestCase    : Started TaskMapperTestCase in 2.069 seconds (JVM running for 2.636)
+2019-04-10 09:49:41.915  INFO 85392 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-10 09:49:42.072  INFO 85392 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-10 09:49:42.130  INFO 85392 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 09:49:42.131  INFO 85392 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-10 09:49:42.133  INFO 85392 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-10 09:51:25.303  INFO 85476 --- [main] group.agv01.mapper.TaskMapperTestCase    : Starting TaskMapperTestCase on shuangjiadeMacBook-Pro.local with PID 85476 (started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-10 09:51:25.304  INFO 85476 --- [main] group.agv01.mapper.TaskMapperTestCase    : No active profile set, falling back to default profiles: default
+2019-04-10 09:51:26.775  INFO 85476 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-10 09:51:27.111  INFO 85476 --- [main] group.agv01.mapper.TaskMapperTestCase    : Started TaskMapperTestCase in 2.111 seconds (JVM running for 2.705)
+2019-04-10 09:51:27.275  INFO 85476 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-10 09:51:27.439  INFO 85476 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-10 09:51:27.476  INFO 85476 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 09:51:27.477  INFO 85476 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-10 09:51:27.479  INFO 85476 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-10 09:51:37.989  INFO 85489 --- [main] group.agv01.mapper.TaskMapperTestCase    : Starting TaskMapperTestCase on shuangjiadeMacBook-Pro.local with PID 85489 (started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-10 09:51:37.990  INFO 85489 --- [main] group.agv01.mapper.TaskMapperTestCase    : No active profile set, falling back to default profiles: default
+2019-04-10 09:51:39.513  INFO 85489 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-10 09:51:39.855  INFO 85489 --- [main] group.agv01.mapper.TaskMapperTestCase    : Started TaskMapperTestCase in 2.047 seconds (JVM running for 2.649)
+2019-04-10 09:51:40.028  INFO 85489 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-10 09:51:40.184  INFO 85489 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-10 09:51:40.236  INFO 85489 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 09:51:40.237  INFO 85489 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-10 09:51:40.239  INFO 85489 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-10 09:54:13.818  INFO 85608 --- [main] group.agv01.mapper.TaskMapperTestCase    : Starting TaskMapperTestCase on shuangjiadeMacBook-Pro.local with PID 85608 (started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-10 09:54:13.819  INFO 85608 --- [main] group.agv01.mapper.TaskMapperTestCase    : No active profile set, falling back to default profiles: default
+2019-04-10 09:54:15.343  INFO 85608 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-10 09:54:15.709  INFO 85608 --- [main] group.agv01.mapper.TaskMapperTestCase    : Started TaskMapperTestCase in 2.231 seconds (JVM running for 2.812)
+2019-04-10 09:54:15.895  INFO 85608 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-10 09:54:16.032  INFO 85608 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-10 09:54:16.067  INFO 85608 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 09:54:16.068  INFO 85608 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-10 09:54:16.070  INFO 85608 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-10 09:54:25.466  INFO 85618 --- [main] group.agv01.mapper.TaskMapperTestCase    : Starting TaskMapperTestCase on shuangjiadeMacBook-Pro.local with PID 85618 (started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-10 09:54:25.468  INFO 85618 --- [main] group.agv01.mapper.TaskMapperTestCase    : No active profile set, falling back to default profiles: default
+2019-04-10 09:54:27.007  INFO 85618 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-10 09:54:27.379  INFO 85618 --- [main] group.agv01.mapper.TaskMapperTestCase    : Started TaskMapperTestCase in 2.092 seconds (JVM running for 2.665)
+2019-04-10 09:54:27.578  INFO 85618 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-10 09:54:27.756  INFO 85618 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-10 09:54:27.783  INFO 85618 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 09:54:27.784  INFO 85618 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-10 09:54:27.786  INFO 85618 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-10 09:54:36.706  INFO 85628 --- [main] group.agv01.mapper.TaskMapperTestCase    : Starting TaskMapperTestCase on shuangjiadeMacBook-Pro.local with PID 85628 (started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-10 09:54:36.707  INFO 85628 --- [main] group.agv01.mapper.TaskMapperTestCase    : No active profile set, falling back to default profiles: default
+2019-04-10 09:54:38.230  INFO 85628 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-10 09:54:38.600  INFO 85628 --- [main] group.agv01.mapper.TaskMapperTestCase    : Started TaskMapperTestCase in 2.072 seconds (JVM running for 2.644)
+2019-04-10 09:54:38.798  INFO 85628 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-10 09:54:38.957  INFO 85628 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-10 09:54:39.011  INFO 85628 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 09:54:39.012  INFO 85628 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-10 09:54:39.014  INFO 85628 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-10 10:32:59.152  INFO 87414 --- [main] group.agv01.mapper.TaskMapperTestCase    : Starting TaskMapperTestCase on shuangjiadeMacBook-Pro.local with PID 87414 (started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-10 10:32:59.153  INFO 87414 --- [main] group.agv01.mapper.TaskMapperTestCase    : No active profile set, falling back to default profiles: default
+2019-04-10 10:33:00.706  INFO 87414 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-10 10:33:01.078  INFO 87414 --- [main] group.agv01.mapper.TaskMapperTestCase    : Started TaskMapperTestCase in 2.11 seconds (JVM running for 2.704)
+2019-04-10 10:33:01.270  INFO 87414 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-10 10:33:01.430  INFO 87414 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-10 10:33:01.482  INFO 87414 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 10:33:01.483  INFO 87414 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-10 10:33:01.485  INFO 87414 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-10 10:45:31.298  INFO 88001 --- [main] group.agv01.service.TaskServiceTestCase  : Starting TaskServiceTestCase on shuangjiadeMacBook-Pro.local with PID 88001 (started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-10 10:45:31.299  INFO 88001 --- [main] group.agv01.service.TaskServiceTestCase  : No active profile set, falling back to default profiles: default
+2019-04-10 10:45:32.780  INFO 88001 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-10 10:45:33.113  INFO 88001 --- [main] group.agv01.service.TaskServiceTestCase  : Started TaskServiceTestCase in 2.112 seconds (JVM running for 2.685)
+2019-04-10 10:45:33.315  INFO 88001 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-10 10:45:33.493  INFO 88001 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-10 10:45:33.566  INFO 88001 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 10:45:33.568  INFO 88001 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-10 10:45:33.573  INFO 88001 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-10 10:46:07.521  INFO 88029 --- [main] group.agv01.service.TaskServiceTestCase  : Starting TaskServiceTestCase on shuangjiadeMacBook-Pro.local with PID 88029 (started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-10 10:46:07.522  INFO 88029 --- [main] group.agv01.service.TaskServiceTestCase  : No active profile set, falling back to default profiles: default
+2019-04-10 10:46:09.044  INFO 88029 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-10 10:46:09.386  INFO 88029 --- [main] group.agv01.service.TaskServiceTestCase  : Started TaskServiceTestCase in 2.032 seconds (JVM running for 2.628)
+2019-04-10 10:46:09.568  INFO 88029 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-10 10:46:09.731  INFO 88029 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-10 10:46:09.795  INFO 88029 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 10:46:09.796  INFO 88029 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-10 10:46:09.799  INFO 88029 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-10 10:48:52.920  INFO 88163 --- [main] group.agv01.service.TaskServiceTestCase  : Starting TaskServiceTestCase on shuangjiadeMacBook-Pro.local with PID 88163 (started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-10 10:48:52.921  INFO 88163 --- [main] group.agv01.service.TaskServiceTestCase  : No active profile set, falling back to default profiles: default
+2019-04-10 10:48:54.471  INFO 88163 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-10 10:48:54.803  INFO 88163 --- [main] group.agv01.service.TaskServiceTestCase  : Started TaskServiceTestCase in 2.178 seconds (JVM running for 2.783)
+2019-04-10 10:48:54.979  INFO 88163 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-10 10:48:55.145  INFO 88163 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-10 10:48:55.195  INFO 88163 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 10:48:55.196  INFO 88163 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-10 10:48:55.198  INFO 88163 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-10 10:49:18.480  INFO 88184 --- [main] group.agv01.service.TaskServiceTestCase  : Starting TaskServiceTestCase on shuangjiadeMacBook-Pro.local with PID 88184 (started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-10 10:49:18.481  INFO 88184 --- [main] group.agv01.service.TaskServiceTestCase  : No active profile set, falling back to default profiles: default
+2019-04-10 10:49:20.040  INFO 88184 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-10 10:49:20.408  INFO 88184 --- [main] group.agv01.service.TaskServiceTestCase  : Started TaskServiceTestCase in 2.107 seconds (JVM running for 2.684)
+2019-04-10 10:49:20.599  INFO 88184 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-10 10:49:20.758  INFO 88184 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-10 10:49:20.810  INFO 88184 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 10:49:20.811  INFO 88184 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-10 10:49:20.813  INFO 88184 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-10 10:50:57.715  INFO 88265 --- [main] group.agv01.service.TaskServiceTestCase  : Starting TaskServiceTestCase on shuangjiadeMacBook-Pro.local with PID 88265 (started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-10 10:50:57.716  INFO 88265 --- [main] group.agv01.service.TaskServiceTestCase  : No active profile set, falling back to default profiles: default
+2019-04-10 10:50:59.242  INFO 88265 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-10 10:50:59.578  INFO 88265 --- [main] group.agv01.service.TaskServiceTestCase  : Started TaskServiceTestCase in 2.045 seconds (JVM running for 2.635)
+2019-04-10 10:50:59.753  INFO 88265 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-10 10:50:59.927  INFO 88265 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-10 10:50:59.959  INFO 88265 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 10:50:59.960  INFO 88265 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-10 10:50:59.963  INFO 88265 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-10 10:52:46.813  INFO 88351 --- [main] group.agv01.service.TaskServiceTestCase  : Starting TaskServiceTestCase on shuangjiadeMacBook-Pro.local with PID 88351 (started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-10 10:52:46.814  INFO 88351 --- [main] group.agv01.service.TaskServiceTestCase  : No active profile set, falling back to default profiles: default
+2019-04-10 10:52:48.303  INFO 88351 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-10 10:52:48.639  INFO 88351 --- [main] group.agv01.service.TaskServiceTestCase  : Started TaskServiceTestCase in 2.114 seconds (JVM running for 2.668)
+2019-04-10 10:52:48.819  INFO 88351 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-10 10:52:48.996  INFO 88351 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-10 10:52:49.050  INFO 88351 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 10:52:49.051  INFO 88351 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-10 10:52:49.064  INFO 88351 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-10 10:53:03.213  INFO 88361 --- [main] group.agv01.service.TaskServiceTestCase  : Starting TaskServiceTestCase on shuangjiadeMacBook-Pro.local with PID 88361 (started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-10 10:53:03.214  INFO 88361 --- [main] group.agv01.service.TaskServiceTestCase  : No active profile set, falling back to default profiles: default
+2019-04-10 10:53:04.761  INFO 88361 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-10 10:53:05.123  INFO 88361 --- [main] group.agv01.service.TaskServiceTestCase  : Started TaskServiceTestCase in 2.082 seconds (JVM running for 2.697)
+2019-04-10 10:53:05.294  INFO 88361 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-10 10:53:05.453  INFO 88361 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-10 10:53:05.570  INFO 88361 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 10:53:05.571  INFO 88361 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-10 10:53:05.575  INFO 88361 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-10 10:55:06.568  INFO 88458 --- [main] group.agv01.service.TaskServiceTestCase  : Starting TaskServiceTestCase on shuangjiadeMacBook-Pro.local with PID 88458 (started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-10 10:55:06.569  INFO 88458 --- [main] group.agv01.service.TaskServiceTestCase  : No active profile set, falling back to default profiles: default
+2019-04-10 10:55:08.132  INFO 88458 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-10 10:55:08.475  INFO 88458 --- [main] group.agv01.service.TaskServiceTestCase  : Started TaskServiceTestCase in 2.084 seconds (JVM running for 2.656)
+2019-04-10 10:55:08.658  INFO 88458 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-10 10:55:08.811  INFO 88458 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-10 10:55:08.870  INFO 88458 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 10:55:08.871  INFO 88458 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-10 10:55:08.873  INFO 88458 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-10 11:47:50.016  INFO 90570 --- [main] group.agv01.mapper.OrderMapperTestCase   : Starting OrderMapperTestCase on shuangjiadeMacBook-Pro.local with PID 90570 (started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-10 11:47:50.018  INFO 90570 --- [main] group.agv01.mapper.OrderMapperTestCase   : No active profile set, falling back to default profiles: default
+2019-04-10 11:47:51.543  INFO 90570 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-10 11:47:51.861  INFO 90570 --- [main] group.agv01.mapper.OrderMapperTestCase   : Started OrderMapperTestCase in 2.029 seconds (JVM running for 2.621)
+2019-04-10 11:47:52.028  INFO 90570 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-10 11:47:52.195  INFO 90570 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-10 11:47:52.258  INFO 90570 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 11:47:52.260  INFO 90570 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-10 11:47:52.264  INFO 90570 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-10 11:48:01.576  INFO 90580 --- [main] group.agv01.mapper.OrderMapperTestCase   : Starting OrderMapperTestCase on shuangjiadeMacBook-Pro.local with PID 90580 (started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-10 11:48:01.577  INFO 90580 --- [main] group.agv01.mapper.OrderMapperTestCase   : No active profile set, falling back to default profiles: default
+2019-04-10 11:48:03.043  INFO 90580 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-10 11:48:03.382  INFO 90580 --- [main] group.agv01.mapper.OrderMapperTestCase   : Started OrderMapperTestCase in 1.983 seconds (JVM running for 2.58)
+2019-04-10 11:48:03.551  INFO 90580 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-10 11:48:03.720  INFO 90580 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-10 11:48:03.758  INFO 90580 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 11:48:03.759  INFO 90580 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-10 11:48:03.761  INFO 90580 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-10 11:48:21.719  INFO 90590 --- [main] group.agv01.mapper.OrderMapperTestCase   : Starting OrderMapperTestCase on shuangjiadeMacBook-Pro.local with PID 90590 (started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-10 11:48:21.720  INFO 90590 --- [main] group.agv01.mapper.OrderMapperTestCase   : No active profile set, falling back to default profiles: default
+2019-04-10 11:48:23.298  INFO 90590 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-10 11:48:23.660  INFO 90590 --- [main] group.agv01.mapper.OrderMapperTestCase   : Started OrderMapperTestCase in 2.12 seconds (JVM running for 2.693)
+2019-04-10 11:48:23.848  INFO 90590 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-10 11:48:24.009  INFO 90590 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-10 11:48:24.043  INFO 90590 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 11:48:24.044  INFO 90590 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-10 11:48:24.047  INFO 90590 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-10 11:48:36.328  INFO 90602 --- [main] group.agv01.mapper.OrderMapperTestCase   : Starting OrderMapperTestCase on shuangjiadeMacBook-Pro.local with PID 90602 (started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-10 11:48:36.330  INFO 90602 --- [main] group.agv01.mapper.OrderMapperTestCase   : No active profile set, falling back to default profiles: default
+2019-04-10 11:48:38.078  INFO 90602 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-10 11:48:38.434  INFO 90602 --- [main] group.agv01.mapper.OrderMapperTestCase   : Started OrderMapperTestCase in 2.309 seconds (JVM running for 2.941)
+2019-04-10 11:48:38.597  INFO 90602 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-10 11:48:38.770  INFO 90602 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-10 11:48:38.810  INFO 90602 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 11:48:38.811  INFO 90602 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-10 11:48:38.814  INFO 90602 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-10 11:48:52.838  INFO 90619 --- [main] group.agv01.mapper.OrderMapperTestCase   : Starting OrderMapperTestCase on shuangjiadeMacBook-Pro.local with PID 90619 (started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-10 11:48:52.839  INFO 90619 --- [main] group.agv01.mapper.OrderMapperTestCase   : No active profile set, falling back to default profiles: default
+2019-04-10 11:48:54.425  INFO 90619 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-10 11:48:54.824  INFO 90619 --- [main] group.agv01.mapper.OrderMapperTestCase   : Started OrderMapperTestCase in 2.166 seconds (JVM running for 2.766)
+2019-04-10 11:48:54.993  INFO 90619 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-10 11:48:55.170  INFO 90619 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-10 11:48:55.209  INFO 90619 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 11:48:55.210  INFO 90619 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-10 11:48:55.213  INFO 90619 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-10 11:49:06.577  INFO 90629 --- [main] group.agv01.mapper.OrderMapperTestCase   : Starting OrderMapperTestCase on shuangjiadeMacBook-Pro.local with PID 90629 (started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-10 11:49:06.579  INFO 90629 --- [main] group.agv01.mapper.OrderMapperTestCase   : No active profile set, falling back to default profiles: default
+2019-04-10 11:49:08.134  INFO 90629 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-10 11:49:08.484  INFO 90629 --- [main] group.agv01.mapper.OrderMapperTestCase   : Started OrderMapperTestCase in 2.087 seconds (JVM running for 2.658)
+2019-04-10 11:49:08.654  INFO 90629 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-10 11:49:08.834  INFO 90629 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-10 11:49:08.942  INFO 90629 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 11:49:08.945  INFO 90629 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-10 11:49:08.947  INFO 90629 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-10 11:49:31.426  INFO 90648 --- [main] group.agv01.mapper.OrderMapperTestCase   : Starting OrderMapperTestCase on shuangjiadeMacBook-Pro.local with PID 90648 (started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-10 11:49:31.428  INFO 90648 --- [main] group.agv01.mapper.OrderMapperTestCase   : No active profile set, falling back to default profiles: default
+2019-04-10 11:49:33.031  INFO 90648 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-10 11:49:33.389  INFO 90648 --- [main] group.agv01.mapper.OrderMapperTestCase   : Started OrderMapperTestCase in 2.132 seconds (JVM running for 2.72)
+2019-04-10 11:49:33.568  INFO 90648 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-10 11:49:33.742  INFO 90648 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-10 11:49:33.848  INFO 90648 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 11:49:33.849  INFO 90648 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-10 11:49:33.852  INFO 90648 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-10 11:51:04.936  INFO 90714 --- [main] group.agv01.mapper.OrderMapperTestCase   : Starting OrderMapperTestCase on shuangjiadeMacBook-Pro.local with PID 90714 (started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-10 11:51:04.938  INFO 90714 --- [main] group.agv01.mapper.OrderMapperTestCase   : No active profile set, falling back to default profiles: default
+2019-04-10 11:51:06.495  INFO 90714 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-10 11:51:06.836  INFO 90714 --- [main] group.agv01.mapper.OrderMapperTestCase   : Started OrderMapperTestCase in 2.088 seconds (JVM running for 2.674)
+2019-04-10 11:51:07.007  INFO 90714 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-10 11:51:07.169  INFO 90714 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-10 11:51:07.217  INFO 90714 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 11:51:07.218  INFO 90714 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-10 11:51:07.220  INFO 90714 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-10 13:23:47.291  INFO 92780 --- [main] g.agv01.service.OrderServiceTestCase     : Starting OrderServiceTestCase on shuangjiadeMacBook-Pro.local with PID 92780 (started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-10 13:23:47.293  INFO 92780 --- [main] g.agv01.service.OrderServiceTestCase     : No active profile set, falling back to default profiles: default
+2019-04-10 13:23:48.799  INFO 92780 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-10 13:23:49.135  INFO 92780 --- [main] g.agv01.service.OrderServiceTestCase     : Started OrderServiceTestCase in 2.024 seconds (JVM running for 2.597)
+2019-04-10 13:23:49.310  INFO 92780 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-10 13:23:49.473  INFO 92780 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-10 13:23:49.532  INFO 92780 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 13:23:49.533  INFO 92780 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-10 13:23:49.536  INFO 92780 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-10 13:23:59.980  INFO 92790 --- [main] g.agv01.service.OrderServiceTestCase     : Starting OrderServiceTestCase on shuangjiadeMacBook-Pro.local with PID 92790 (started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-10 13:23:59.982  INFO 92790 --- [main] g.agv01.service.OrderServiceTestCase     : No active profile set, falling back to default profiles: default
+2019-04-10 13:24:01.558  INFO 92790 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-10 13:24:01.907  INFO 92790 --- [main] g.agv01.service.OrderServiceTestCase     : Started OrderServiceTestCase in 2.115 seconds (JVM running for 2.696)
+2019-04-10 13:24:02.075  INFO 92790 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-10 13:24:02.248  INFO 92790 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-10 13:24:02.282  INFO 92790 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 13:24:02.283  INFO 92790 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-10 13:24:02.285  INFO 92790 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-10 13:24:14.030  INFO 92801 --- [main] g.agv01.service.OrderServiceTestCase     : Starting OrderServiceTestCase on shuangjiadeMacBook-Pro.local with PID 92801 (started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-10 13:24:14.031  INFO 92801 --- [main] g.agv01.service.OrderServiceTestCase     : No active profile set, falling back to default profiles: default
+2019-04-10 13:24:15.645  INFO 92801 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-10 13:24:16.007  INFO 92801 --- [main] g.agv01.service.OrderServiceTestCase     : Started OrderServiceTestCase in 2.159 seconds (JVM running for 2.749)
+2019-04-10 13:24:16.192  INFO 92801 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-10 13:24:16.367  INFO 92801 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-10 13:24:16.425  INFO 92801 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 13:24:16.426  INFO 92801 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-10 13:24:16.428  INFO 92801 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-10 13:24:40.618  INFO 92820 --- [main] g.agv01.service.OrderServiceTestCase     : Starting OrderServiceTestCase on shuangjiadeMacBook-Pro.local with PID 92820 (started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-10 13:24:40.619  INFO 92820 --- [main] g.agv01.service.OrderServiceTestCase     : No active profile set, falling back to default profiles: default
+2019-04-10 13:24:42.149  INFO 92820 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-10 13:24:42.489  INFO 92820 --- [main] g.agv01.service.OrderServiceTestCase     : Started OrderServiceTestCase in 2.053 seconds (JVM running for 2.645)
+2019-04-10 13:24:42.666  INFO 92820 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-10 13:24:42.849  INFO 92820 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-10 13:24:42.905  INFO 92820 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 13:24:42.906  INFO 92820 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-10 13:24:42.908  INFO 92820 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-10 13:24:51.117  INFO 92830 --- [main] g.agv01.service.OrderServiceTestCase     : Starting OrderServiceTestCase on shuangjiadeMacBook-Pro.local with PID 92830 (started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-10 13:24:51.118  INFO 92830 --- [main] g.agv01.service.OrderServiceTestCase     : No active profile set, falling back to default profiles: default
+2019-04-10 13:24:52.621  INFO 92830 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-10 13:24:52.955  INFO 92830 --- [main] g.agv01.service.OrderServiceTestCase     : Started OrderServiceTestCase in 2.017 seconds (JVM running for 2.59)
+2019-04-10 13:24:53.139  INFO 92830 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-10 13:24:53.317  INFO 92830 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-10 13:24:53.381  INFO 92830 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 13:24:53.382  INFO 92830 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-10 13:24:53.385  INFO 92830 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-10 13:31:17.917  INFO 93118 --- [main] group.agv01.Agv01Application             : Starting Agv01Application on shuangjiadeMacBook-Pro.local with PID 93118 (/Users/shuangjiaxu/git/repository/agv01/target/classes started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-10 13:31:17.919  INFO 93118 --- [main] group.agv01.Agv01Application             : No active profile set, falling back to default profiles: default
+2019-04-10 13:31:19.001  INFO 93118 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-04-10 13:31:19.025  INFO 93118 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-10 13:31:19.025  INFO 93118 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-10 13:31:19.034  INFO 93118 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/shuangjiaxu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-04-10 13:31:19.130  INFO 93118 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-10 13:31:19.130  INFO 93118 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1175 ms
+2019-04-10 13:31:19.628  INFO 93118 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-10 13:31:19.898  INFO 93118 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-10 13:31:19.901  INFO 93118 --- [main] group.agv01.Agv01Application             : Started Agv01Application in 2.359 seconds (JVM running for 2.664)
+2019-04-10 13:31:35.747  INFO 93118 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-10 13:31:35.748  INFO 93118 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-04-10 13:31:35.756  INFO 93118 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2019-04-10 13:31:42.576  INFO 93118 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-10 13:31:42.698  INFO 93118 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-10 13:51:52.588  INFO 93118 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 13:51:52.589  INFO 93118 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-10 13:51:52.595  INFO 93118 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-10 13:52:27.725  INFO 94077 --- [main] group.agv01.Agv01Application             : Starting Agv01Application on shuangjiadeMacBook-Pro.local with PID 94077 (/Users/shuangjiaxu/git/repository/agv01/target/classes started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-10 13:52:27.727  INFO 94077 --- [main] group.agv01.Agv01Application             : No active profile set, falling back to default profiles: default
+2019-04-10 13:52:28.836  INFO 94077 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-04-10 13:52:28.862  INFO 94077 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-10 13:52:28.863  INFO 94077 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-10 13:52:28.871  INFO 94077 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/shuangjiaxu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-04-10 13:52:28.957  INFO 94077 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-10 13:52:28.957  INFO 94077 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1194 ms
+2019-04-10 13:52:29.490  INFO 94077 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-10 13:52:29.760  INFO 94077 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-10 13:52:29.763  INFO 94077 --- [main] group.agv01.Agv01Application             : Started Agv01Application in 2.47 seconds (JVM running for 2.756)
+2019-04-10 13:52:36.353  INFO 94077 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-10 13:52:36.354  INFO 94077 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-04-10 13:52:36.363  INFO 94077 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2019-04-10 14:33:36.336  INFO 94077 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 14:33:53.705  INFO 95903 --- [main] group.agv01.Agv01Application             : Starting Agv01Application on shuangjiadeMacBook-Pro.local with PID 95903 (/Users/shuangjiaxu/git/repository/agv01/target/classes started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-10 14:33:53.707  INFO 95903 --- [main] group.agv01.Agv01Application             : No active profile set, falling back to default profiles: default
+2019-04-10 14:33:54.841  INFO 95903 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-04-10 14:33:54.865  INFO 95903 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-10 14:33:54.866  INFO 95903 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-10 14:33:54.875  INFO 95903 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/shuangjiaxu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-04-10 14:33:54.968  INFO 95903 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-10 14:33:54.968  INFO 95903 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1219 ms
+2019-04-10 14:33:55.574  INFO 95903 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-10 14:33:55.864  INFO 95903 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-10 14:33:55.867  INFO 95903 --- [main] group.agv01.Agv01Application             : Started Agv01Application in 2.573 seconds (JVM running for 2.923)
+2019-04-10 14:34:12.797  INFO 95903 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-10 14:34:12.798  INFO 95903 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-04-10 14:34:12.805  INFO 95903 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2019-04-10 14:38:41.512  INFO 95903 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 14:38:46.760  INFO 96124 --- [main] group.agv01.Agv01Application             : Starting Agv01Application on shuangjiadeMacBook-Pro.local with PID 96124 (/Users/shuangjiaxu/git/repository/agv01/target/classes started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-10 14:38:46.762  INFO 96124 --- [main] group.agv01.Agv01Application             : No active profile set, falling back to default profiles: default
+2019-04-10 14:38:47.812  INFO 96124 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-04-10 14:38:47.838  INFO 96124 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-10 14:38:47.838  INFO 96124 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-10 14:38:47.847  INFO 96124 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/shuangjiaxu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-04-10 14:38:47.923  INFO 96124 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-10 14:38:47.923  INFO 96124 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1126 ms
+2019-04-10 14:38:48.452  INFO 96124 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-10 14:38:48.749  INFO 96124 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-10 14:38:48.752  INFO 96124 --- [main] group.agv01.Agv01Application             : Started Agv01Application in 2.37 seconds (JVM running for 2.686)
+2019-04-10 14:38:52.650  INFO 96124 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-10 14:38:52.650  INFO 96124 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-04-10 14:38:52.656  INFO 96124 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-04-10 14:45:20.078  INFO 96124 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 14:45:30.100  INFO 96423 --- [main] group.agv01.Agv01Application             : Starting Agv01Application on shuangjiadeMacBook-Pro.local with PID 96423 (/Users/shuangjiaxu/git/repository/agv01/target/classes started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-10 14:45:30.102  INFO 96423 --- [main] group.agv01.Agv01Application             : No active profile set, falling back to default profiles: default
+2019-04-10 14:45:31.142  INFO 96423 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-04-10 14:45:31.167  INFO 96423 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-10 14:45:31.167  INFO 96423 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-10 14:45:31.176  INFO 96423 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/shuangjiaxu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-04-10 14:45:31.260  INFO 96423 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-10 14:45:31.260  INFO 96423 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1124 ms
+2019-04-10 14:45:31.786  INFO 96423 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-10 14:45:32.066  INFO 96423 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-10 14:45:32.069  INFO 96423 --- [main] group.agv01.Agv01Application             : Started Agv01Application in 2.366 seconds (JVM running for 2.67)
+2019-04-10 14:45:36.562  INFO 96423 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-10 14:45:36.562  INFO 96423 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-04-10 14:45:36.569  INFO 96423 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2019-04-10 14:48:16.698  INFO 96423 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 14:48:35.523  INFO 96563 --- [main] group.agv01.Agv01Application             : Starting Agv01Application on shuangjiadeMacBook-Pro.local with PID 96563 (/Users/shuangjiaxu/git/repository/agv01/target/classes started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-10 14:48:35.525  INFO 96563 --- [main] group.agv01.Agv01Application             : No active profile set, falling back to default profiles: default
+2019-04-10 14:48:36.504  INFO 96563 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-04-10 14:48:36.523  INFO 96563 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-10 14:48:36.524  INFO 96563 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-10 14:48:36.530  INFO 96563 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/shuangjiaxu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-04-10 14:48:36.608  INFO 96563 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-10 14:48:36.608  INFO 96563 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1056 ms
+2019-04-10 14:48:37.120  INFO 96563 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-10 14:48:37.401  INFO 96563 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-10 14:48:37.404  INFO 96563 --- [main] group.agv01.Agv01Application             : Started Agv01Application in 2.295 seconds (JVM running for 2.608)
+2019-04-10 14:48:46.979  INFO 96563 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-10 14:48:46.979  INFO 96563 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-04-10 14:48:46.986  INFO 96563 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-04-10 14:49:11.815  INFO 96563 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-10 14:49:11.933  INFO 96563 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-10 14:51:44.486  INFO 96563 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 14:51:44.487  INFO 96563 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-10 14:51:44.498  INFO 96563 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-10 14:51:55.844  INFO 96711 --- [main] group.agv01.Agv01Application             : Starting Agv01Application on shuangjiadeMacBook-Pro.local with PID 96711 (/Users/shuangjiaxu/git/repository/agv01/target/classes started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-10 14:51:55.846  INFO 96711 --- [main] group.agv01.Agv01Application             : No active profile set, falling back to default profiles: default
+2019-04-10 14:51:56.965  INFO 96711 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-04-10 14:51:56.988  INFO 96711 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-10 14:51:56.989  INFO 96711 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-10 14:51:56.997  INFO 96711 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/shuangjiaxu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-04-10 14:51:57.085  INFO 96711 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-10 14:51:57.085  INFO 96711 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1211 ms
+2019-04-10 14:51:57.692  INFO 96711 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-10 14:51:58.034  INFO 96711 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-10 14:51:58.037  INFO 96711 --- [main] group.agv01.Agv01Application             : Started Agv01Application in 2.611 seconds (JVM running for 2.936)
+2019-04-10 14:54:09.240  INFO 96711 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-10 14:54:09.240  INFO 96711 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-04-10 14:54:09.246  INFO 96711 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-04-10 14:54:12.262  INFO 96711 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-10 14:54:12.385  INFO 96711 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-10 15:00:49.607  INFO 96711 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 15:00:49.608  INFO 96711 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-10 15:00:49.614  INFO 96711 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-10 15:00:54.280  INFO 97111 --- [main] group.agv01.Agv01Application             : Starting Agv01Application on shuangjiadeMacBook-Pro.local with PID 97111 (/Users/shuangjiaxu/git/repository/agv01/target/classes started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-10 15:00:54.283  INFO 97111 --- [main] group.agv01.Agv01Application             : No active profile set, falling back to default profiles: default
+2019-04-10 15:00:55.398  INFO 97111 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-04-10 15:00:55.422  INFO 97111 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-10 15:00:55.423  INFO 97111 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-10 15:00:55.431  INFO 97111 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/shuangjiaxu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-04-10 15:00:55.521  INFO 97111 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-10 15:00:55.522  INFO 97111 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1195 ms
+2019-04-10 15:00:56.018  INFO 97111 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-10 15:00:56.295  INFO 97111 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-10 15:00:56.297  INFO 97111 --- [main] group.agv01.Agv01Application             : Started Agv01Application in 2.276 seconds (JVM running for 2.569)
+2019-04-10 15:01:01.678  INFO 97111 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-10 15:01:01.678  INFO 97111 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-04-10 15:01:01.685  INFO 97111 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2019-04-10 15:01:04.341  INFO 97111 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-10 15:01:04.463  INFO 97111 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-10 15:03:23.517  INFO 97111 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 15:03:23.518  INFO 97111 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-10 15:03:23.525  INFO 97111 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-10 15:03:42.173  INFO 97238 --- [main] group.agv01.Agv01Application             : Starting Agv01Application on shuangjiadeMacBook-Pro.local with PID 97238 (/Users/shuangjiaxu/git/repository/agv01/target/classes started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-10 15:03:42.176  INFO 97238 --- [main] group.agv01.Agv01Application             : No active profile set, falling back to default profiles: default
+2019-04-10 15:03:43.220  INFO 97238 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-04-10 15:03:43.243  INFO 97238 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-10 15:03:43.243  INFO 97238 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-10 15:03:43.252  INFO 97238 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/shuangjiaxu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-04-10 15:03:43.338  INFO 97238 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-10 15:03:43.338  INFO 97238 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1123 ms
+2019-04-10 15:03:43.850  INFO 97238 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-10 15:03:44.150  INFO 97238 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-10 15:03:44.153  INFO 97238 --- [main] group.agv01.Agv01Application             : Started Agv01Application in 2.358 seconds (JVM running for 2.691)
+2019-04-10 15:03:48.415  INFO 97238 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-10 15:03:48.415  INFO 97238 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-04-10 15:03:48.421  INFO 97238 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-04-10 15:04:09.237  INFO 97238 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-10 15:04:09.362  INFO 97238 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-10 15:05:01.049  INFO 97238 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 15:05:01.049  INFO 97238 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-10 15:05:01.056  INFO 97238 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-10 15:05:05.917  INFO 97307 --- [main] group.agv01.Agv01Application             : Starting Agv01Application on shuangjiadeMacBook-Pro.local with PID 97307 (/Users/shuangjiaxu/git/repository/agv01/target/classes started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-10 15:05:05.919  INFO 97307 --- [main] group.agv01.Agv01Application             : No active profile set, falling back to default profiles: default
+2019-04-10 15:05:07.320  INFO 97307 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-04-10 15:05:07.348  INFO 97307 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-10 15:05:07.348  INFO 97307 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-10 15:05:07.357  INFO 97307 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/shuangjiaxu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-04-10 15:05:07.450  INFO 97307 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-10 15:05:07.450  INFO 97307 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1473 ms
+2019-04-10 15:05:08.031  INFO 97307 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-10 15:05:08.321  INFO 97307 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-10 15:05:08.324  INFO 97307 --- [main] group.agv01.Agv01Application             : Started Agv01Application in 2.64 seconds (JVM running for 2.959)
+2019-04-10 15:05:09.745  INFO 97307 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-10 15:05:09.746  INFO 97307 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-04-10 15:05:09.753  INFO 97307 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2019-04-10 15:05:11.892  INFO 97307 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-10 15:05:12.038  INFO 97307 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-10 15:07:04.654  INFO 97307 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 15:07:04.655  INFO 97307 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-10 15:07:04.660  INFO 97307 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-10 15:07:13.894  INFO 97400 --- [main] group.agv01.Agv01Application             : Starting Agv01Application on shuangjiadeMacBook-Pro.local with PID 97400 (/Users/shuangjiaxu/git/repository/agv01/target/classes started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-10 15:07:13.897  INFO 97400 --- [main] group.agv01.Agv01Application             : No active profile set, falling back to default profiles: default
+2019-04-10 15:07:15.299  INFO 97400 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-04-10 15:07:15.326  INFO 97400 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-10 15:07:15.327  INFO 97400 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-10 15:07:15.336  INFO 97400 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/shuangjiaxu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-04-10 15:07:15.428  INFO 97400 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-10 15:07:15.428  INFO 97400 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1465 ms
+2019-04-10 15:07:15.975  INFO 97400 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-10 15:07:16.259  INFO 97400 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-10 15:07:16.262  INFO 97400 --- [main] group.agv01.Agv01Application             : Started Agv01Application in 2.816 seconds (JVM running for 3.144)
+2019-04-10 15:07:18.379  INFO 97400 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-10 15:07:18.379  INFO 97400 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-04-10 15:07:18.386  INFO 97400 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2019-04-10 15:07:20.802  INFO 97400 --- [http-nio-8080-exec-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-10 15:07:20.926  INFO 97400 --- [http-nio-8080-exec-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-10 15:11:37.151  INFO 97400 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 15:11:37.151  INFO 97400 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-10 15:11:37.156  INFO 97400 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-10 15:11:42.472  INFO 97599 --- [main] group.agv01.Agv01Application             : Starting Agv01Application on shuangjiadeMacBook-Pro.local with PID 97599 (/Users/shuangjiaxu/git/repository/agv01/target/classes started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-10 15:11:42.481  INFO 97599 --- [main] group.agv01.Agv01Application             : No active profile set, falling back to default profiles: default
+2019-04-10 15:11:43.655  INFO 97599 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-04-10 15:11:43.681  INFO 97599 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-10 15:11:43.682  INFO 97599 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-10 15:11:43.691  INFO 97599 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/shuangjiaxu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-04-10 15:11:43.779  INFO 97599 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-10 15:11:43.779  INFO 97599 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1264 ms
+2019-04-10 15:11:44.275  INFO 97599 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-10 15:11:44.550  INFO 97599 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-10 15:11:44.553  INFO 97599 --- [main] group.agv01.Agv01Application             : Started Agv01Application in 2.314 seconds (JVM running for 2.632)
+2019-04-10 15:11:59.580  INFO 97599 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-10 15:11:59.581  INFO 97599 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-04-10 15:11:59.587  INFO 97599 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-04-10 15:12:01.957  INFO 97599 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-10 15:12:02.081  INFO 97599 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-10 15:14:11.526  INFO 97599 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 15:14:11.527  INFO 97599 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-10 15:14:11.533  INFO 97599 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-10 15:14:17.063  INFO 97712 --- [main] group.agv01.Agv01Application             : Starting Agv01Application on shuangjiadeMacBook-Pro.local with PID 97712 (/Users/shuangjiaxu/git/repository/agv01/target/classes started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-10 15:14:17.066  INFO 97712 --- [main] group.agv01.Agv01Application             : No active profile set, falling back to default profiles: default
+2019-04-10 15:14:18.545  INFO 97712 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-04-10 15:14:18.577  INFO 97712 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-10 15:14:18.578  INFO 97712 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-10 15:14:18.589  INFO 97712 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/shuangjiaxu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-04-10 15:14:18.693  INFO 97712 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-10 15:14:18.693  INFO 97712 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1575 ms
+2019-04-10 15:14:19.206  INFO 97712 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-10 15:14:19.505  INFO 97712 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-10 15:14:19.508  INFO 97712 --- [main] group.agv01.Agv01Application             : Started Agv01Application in 2.825 seconds (JVM running for 3.12)
+2019-04-10 15:14:20.587  INFO 97712 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-10 15:14:20.588  INFO 97712 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-04-10 15:14:20.595  INFO 97712 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2019-04-10 15:14:23.352  INFO 97712 --- [http-nio-8080-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-10 15:14:23.476  INFO 97712 --- [http-nio-8080-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-10 15:15:18.144  INFO 97712 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 15:15:18.146  INFO 97712 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-10 15:15:18.152  INFO 97712 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-10 15:15:23.240  INFO 97758 --- [main] group.agv01.Agv01Application             : Starting Agv01Application on shuangjiadeMacBook-Pro.local with PID 97758 (/Users/shuangjiaxu/git/repository/agv01/target/classes started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-10 15:15:23.249  INFO 97758 --- [main] group.agv01.Agv01Application             : No active profile set, falling back to default profiles: default
+2019-04-10 15:15:24.386  INFO 97758 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-04-10 15:15:24.411  INFO 97758 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-10 15:15:24.411  INFO 97758 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-10 15:15:24.420  INFO 97758 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/shuangjiaxu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-04-10 15:15:24.507  INFO 97758 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-10 15:15:24.507  INFO 97758 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1216 ms
+2019-04-10 15:15:25.023  INFO 97758 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-10 15:15:25.298  INFO 97758 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-10 15:15:25.301  INFO 97758 --- [main] group.agv01.Agv01Application             : Started Agv01Application in 2.288 seconds (JVM running for 2.604)
+2019-04-10 15:15:29.085  INFO 97758 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-10 15:15:29.085  INFO 97758 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-04-10 15:15:29.092  INFO 97758 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-04-10 15:15:32.546  INFO 97758 --- [http-nio-8080-exec-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-10 15:15:32.671  INFO 97758 --- [http-nio-8080-exec-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-10 15:16:58.557  INFO 97758 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 15:16:58.558  INFO 97758 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-10 15:16:58.564  INFO 97758 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-10 15:18:45.643  INFO 97925 --- [main] group.agv01.Agv01Application             : Starting Agv01Application on shuangjiadeMacBook-Pro.local with PID 97925 (/Users/shuangjiaxu/git/repository/agv01/target/classes started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-10 15:18:45.654  INFO 97925 --- [main] group.agv01.Agv01Application             : No active profile set, falling back to default profiles: default
+2019-04-10 15:18:46.772  INFO 97925 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-04-10 15:18:46.793  INFO 97925 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-10 15:18:46.794  INFO 97925 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-10 15:18:46.802  INFO 97925 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/shuangjiaxu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-04-10 15:18:46.893  INFO 97925 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-10 15:18:46.894  INFO 97925 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1195 ms
+2019-04-10 15:18:47.402  INFO 97925 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-10 15:18:47.676  INFO 97925 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-10 15:18:47.679  INFO 97925 --- [main] group.agv01.Agv01Application             : Started Agv01Application in 2.271 seconds (JVM running for 2.569)
+2019-04-10 15:18:57.168  INFO 97925 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-10 15:18:57.168  INFO 97925 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-04-10 15:18:57.176  INFO 97925 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2019-04-10 15:19:00.131  INFO 97925 --- [http-nio-8080-exec-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-10 15:19:00.257  INFO 97925 --- [http-nio-8080-exec-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-10 15:20:06.818  INFO 97925 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 15:20:06.819  INFO 97925 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-10 15:20:06.832  INFO 97925 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-10 15:20:12.102  INFO 97990 --- [main] group.agv01.Agv01Application             : Starting Agv01Application on shuangjiadeMacBook-Pro.local with PID 97990 (/Users/shuangjiaxu/git/repository/agv01/target/classes started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-10 15:20:12.104  INFO 97990 --- [main] group.agv01.Agv01Application             : No active profile set, falling back to default profiles: default
+2019-04-10 15:20:13.252  INFO 97990 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-04-10 15:20:13.278  INFO 97990 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-10 15:20:13.279  INFO 97990 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-10 15:20:13.289  INFO 97990 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/shuangjiaxu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-04-10 15:20:13.392  INFO 97990 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-10 15:20:13.392  INFO 97990 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1245 ms
+2019-04-10 15:20:13.899  INFO 97990 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-10 15:20:14.185  INFO 97990 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-10 15:20:14.188  INFO 97990 --- [main] group.agv01.Agv01Application             : Started Agv01Application in 2.319 seconds (JVM running for 2.65)
+2019-04-10 15:20:23.281  INFO 97990 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-10 15:20:23.281  INFO 97990 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-04-10 15:20:23.289  INFO 97990 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2019-04-10 15:20:27.048  INFO 97990 --- [http-nio-8080-exec-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-10 15:20:27.176  INFO 97990 --- [http-nio-8080-exec-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-10 15:20:55.565  INFO 97990 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 15:20:55.566  INFO 97990 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-10 15:20:55.572  INFO 97990 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-10 15:21:00.935  INFO 98027 --- [main] group.agv01.Agv01Application             : Starting Agv01Application on shuangjiadeMacBook-Pro.local with PID 98027 (/Users/shuangjiaxu/git/repository/agv01/target/classes started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-10 15:21:00.938  INFO 98027 --- [main] group.agv01.Agv01Application             : No active profile set, falling back to default profiles: default
+2019-04-10 15:21:02.372  INFO 98027 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-04-10 15:21:02.403  INFO 98027 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-10 15:21:02.403  INFO 98027 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-10 15:21:02.412  INFO 98027 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/shuangjiaxu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-04-10 15:21:02.505  INFO 98027 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-10 15:21:02.505  INFO 98027 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1526 ms
+2019-04-10 15:21:02.985  INFO 98027 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-10 15:21:03.268  INFO 98027 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-10 15:21:03.271  INFO 98027 --- [main] group.agv01.Agv01Application             : Started Agv01Application in 2.739 seconds (JVM running for 3.056)
+2019-04-10 15:21:20.254  INFO 98027 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 15:21:23.809  INFO 98043 --- [main] group.agv01.Agv01Application             : Starting Agv01Application on shuangjiadeMacBook-Pro.local with PID 98043 (/Users/shuangjiaxu/git/repository/agv01/target/classes started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-10 15:21:23.816  INFO 98043 --- [main] group.agv01.Agv01Application             : No active profile set, falling back to default profiles: default
+2019-04-10 15:21:25.285  INFO 98043 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-04-10 15:21:25.310  INFO 98043 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-10 15:21:25.310  INFO 98043 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-10 15:21:25.318  INFO 98043 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/shuangjiaxu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-04-10 15:21:25.408  INFO 98043 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-10 15:21:25.408  INFO 98043 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1527 ms
+2019-04-10 15:21:25.991  INFO 98043 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-10 15:21:26.305  INFO 98043 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-10 15:21:26.308  INFO 98043 --- [main] group.agv01.Agv01Application             : Started Agv01Application in 2.825 seconds (JVM running for 3.143)
+2019-04-10 15:21:29.433  INFO 98043 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-10 15:21:29.434  INFO 98043 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-04-10 15:21:29.440  INFO 98043 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-04-10 15:21:32.034  INFO 98043 --- [http-nio-8080-exec-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-10 15:21:32.157  INFO 98043 --- [http-nio-8080-exec-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-10 15:29:32.470  INFO 98043 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 15:29:32.471  INFO 98043 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-10 15:29:32.480  INFO 98043 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-10 15:29:38.129  INFO 98409 --- [main] group.agv01.Agv01Application             : Starting Agv01Application on shuangjiadeMacBook-Pro.local with PID 98409 (/Users/shuangjiaxu/git/repository/agv01/target/classes started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-10 15:29:38.131  INFO 98409 --- [main] group.agv01.Agv01Application             : No active profile set, falling back to default profiles: default
+2019-04-10 15:29:39.148  INFO 98409 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-04-10 15:29:39.169  INFO 98409 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-10 15:29:39.169  INFO 98409 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-10 15:29:39.176  INFO 98409 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/shuangjiaxu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-04-10 15:29:39.262  INFO 98409 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-10 15:29:39.263  INFO 98409 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1090 ms
+2019-04-10 15:29:39.770  INFO 98409 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-10 15:29:40.057  INFO 98409 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-10 15:29:40.060  INFO 98409 --- [main] group.agv01.Agv01Application             : Started Agv01Application in 2.341 seconds (JVM running for 2.65)
+2019-04-10 15:29:48.727  INFO 98409 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-10 15:29:48.728  INFO 98409 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-04-10 15:29:48.734  INFO 98409 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-04-10 15:29:50.742  INFO 98409 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-10 15:29:50.866  INFO 98409 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-10 15:30:36.914  INFO 98409 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 15:30:36.914  INFO 98409 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-10 15:30:36.920  INFO 98409 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-10 15:30:41.593  INFO 98456 --- [main] group.agv01.Agv01Application             : Starting Agv01Application on shuangjiadeMacBook-Pro.local with PID 98456 (/Users/shuangjiaxu/git/repository/agv01/target/classes started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-10 15:30:41.604  INFO 98456 --- [main] group.agv01.Agv01Application             : No active profile set, falling back to default profiles: default
+2019-04-10 15:30:42.907  INFO 98456 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-04-10 15:30:42.944  INFO 98456 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-10 15:30:42.945  INFO 98456 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-10 15:30:42.958  INFO 98456 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/shuangjiaxu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-04-10 15:30:43.101  INFO 98456 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-10 15:30:43.101  INFO 98456 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1454 ms
+2019-04-10 15:30:43.700  INFO 98456 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-10 15:30:44.038  INFO 98456 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-10 15:30:44.042  INFO 98456 --- [main] group.agv01.Agv01Application             : Started Agv01Application in 2.681 seconds (JVM running for 2.995)
+2019-04-10 15:30:50.825  INFO 98456 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-10 15:30:50.826  INFO 98456 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-04-10 15:30:50.832  INFO 98456 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-04-10 15:30:53.472  INFO 98456 --- [http-nio-8080-exec-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-10 15:30:53.598  INFO 98456 --- [http-nio-8080-exec-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-10 15:35:57.055  INFO 98456 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 15:35:57.055  INFO 98456 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-10 15:35:57.062  INFO 98456 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-10 15:36:28.666  INFO 98720 --- [main] group.agv01.Agv01Application             : Starting Agv01Application on shuangjiadeMacBook-Pro.local with PID 98720 (/Users/shuangjiaxu/git/repository/agv01/target/classes started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-10 15:36:28.669  INFO 98720 --- [main] group.agv01.Agv01Application             : No active profile set, falling back to default profiles: default
+2019-04-10 15:36:29.975  INFO 98720 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-04-10 15:36:30.000  INFO 98720 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-10 15:36:30.000  INFO 98720 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-10 15:36:30.009  INFO 98720 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/shuangjiaxu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-04-10 15:36:30.112  INFO 98720 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-10 15:36:30.112  INFO 98720 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1393 ms
+2019-04-10 15:36:30.809  INFO 98720 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-10 15:36:31.162  INFO 98720 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-10 15:36:31.166  INFO 98720 --- [main] group.agv01.Agv01Application             : Started Agv01Application in 2.981 seconds (JVM running for 3.285)
+2019-04-10 15:36:32.191  INFO 98720 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-10 15:36:32.191  INFO 98720 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-04-10 15:36:32.200  INFO 98720 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2019-04-10 15:36:34.182  INFO 98720 --- [http-nio-8080-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-10 15:36:34.317  INFO 98720 --- [http-nio-8080-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-10 15:39:31.028  INFO 98720 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 15:39:31.029  INFO 98720 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-10 15:39:31.043  INFO 98720 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-10 15:41:04.889  INFO 98931 --- [main] group.agv01.Agv01Application             : Starting Agv01Application on shuangjiadeMacBook-Pro.local with PID 98931 (/Users/shuangjiaxu/git/repository/agv01/target/classes started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-10 15:41:04.891  INFO 98931 --- [main] group.agv01.Agv01Application             : No active profile set, falling back to default profiles: default
+2019-04-10 15:41:05.966  INFO 98931 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-04-10 15:41:05.989  INFO 98931 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-10 15:41:05.990  INFO 98931 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-10 15:41:05.999  INFO 98931 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/shuangjiaxu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-04-10 15:41:06.091  INFO 98931 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-10 15:41:06.091  INFO 98931 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1161 ms
+2019-04-10 15:41:06.619  INFO 98931 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-10 15:41:06.923  INFO 98931 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-10 15:41:06.926  INFO 98931 --- [main] group.agv01.Agv01Application             : Started Agv01Application in 2.415 seconds (JVM running for 2.727)
+2019-04-10 15:41:12.609  INFO 98931 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-10 15:41:12.609  INFO 98931 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-04-10 15:41:12.615  INFO 98931 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-04-10 15:41:14.824  INFO 98931 --- [http-nio-8080-exec-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-10 15:41:14.948  INFO 98931 --- [http-nio-8080-exec-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-10 15:46:14.042  INFO 98931 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 15:46:14.043  INFO 98931 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-10 15:46:14.058  INFO 98931 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-10 15:47:24.449  INFO 99224 --- [main] group.agv01.Agv01Application             : Starting Agv01Application on shuangjiadeMacBook-Pro.local with PID 99224 (/Users/shuangjiaxu/git/repository/agv01/target/classes started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-10 15:47:24.461  INFO 99224 --- [main] group.agv01.Agv01Application             : No active profile set, falling back to default profiles: default
+2019-04-10 15:47:25.596  INFO 99224 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-04-10 15:47:25.622  INFO 99224 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-10 15:47:25.622  INFO 99224 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-10 15:47:25.630  INFO 99224 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/shuangjiaxu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-04-10 15:47:25.725  INFO 99224 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-10 15:47:25.725  INFO 99224 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1222 ms
+2019-04-10 15:47:26.230  INFO 99224 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-10 15:47:26.509  INFO 99224 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-10 15:47:26.512  INFO 99224 --- [main] group.agv01.Agv01Application             : Started Agv01Application in 2.292 seconds (JVM running for 2.59)
+2019-04-10 15:47:32.305  INFO 99224 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-10 15:47:32.305  INFO 99224 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-04-10 15:47:32.312  INFO 99224 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2019-04-10 15:47:34.148  INFO 99224 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-10 15:47:34.275  INFO 99224 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-10 15:48:11.777  INFO 99224 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 15:48:11.778  INFO 99224 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-10 15:48:11.788  INFO 99224 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-10 15:48:39.034  INFO 99280 --- [main] group.agv01.Agv01Application             : Starting Agv01Application on shuangjiadeMacBook-Pro.local with PID 99280 (/Users/shuangjiaxu/git/repository/agv01/target/classes started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-10 15:48:39.037  INFO 99280 --- [main] group.agv01.Agv01Application             : No active profile set, falling back to default profiles: default
+2019-04-10 15:48:40.437  INFO 99280 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-04-10 15:48:40.467  INFO 99280 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-10 15:48:40.468  INFO 99280 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-10 15:48:40.477  INFO 99280 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/shuangjiaxu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-04-10 15:48:40.644  INFO 99280 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-10 15:48:40.644  INFO 99280 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1541 ms
+2019-04-10 15:48:41.279  INFO 99280 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-10 15:48:41.549  INFO 99280 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-10 15:48:41.553  INFO 99280 --- [main] group.agv01.Agv01Application             : Started Agv01Application in 2.764 seconds (JVM running for 3.093)
+2019-04-10 15:48:41.946  INFO 99280 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-10 15:48:41.947  INFO 99280 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-04-10 15:48:41.954  INFO 99280 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2019-04-10 15:48:44.371  INFO 99280 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-10 15:48:44.496  INFO 99280 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-10 15:55:20.049  INFO 99280 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 15:55:20.051  INFO 99280 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-10 15:55:20.064  INFO 99280 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-10 15:55:26.510  INFO 99594 --- [main] group.agv01.Agv01Application             : Starting Agv01Application on shuangjiadeMacBook-Pro.local with PID 99594 (/Users/shuangjiaxu/git/repository/agv01/target/classes started by shuangjiaxu in /Users/shuangjiaxu/git/repository/agv01)
+2019-04-10 15:55:26.513  INFO 99594 --- [main] group.agv01.Agv01Application             : No active profile set, falling back to default profiles: default
+2019-04-10 15:55:27.559  INFO 99594 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-04-10 15:55:27.582  INFO 99594 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-10 15:55:27.583  INFO 99594 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-04-10 15:55:27.592  INFO 99594 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/shuangjiaxu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-04-10 15:55:27.677  INFO 99594 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-10 15:55:27.678  INFO 99594 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1130 ms
+2019-04-10 15:55:28.182  INFO 99594 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-10 15:55:28.491  INFO 99594 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-10 15:55:28.494  INFO 99594 --- [main] group.agv01.Agv01Application             : Started Agv01Application in 2.342 seconds (JVM running for 2.676)
+2019-04-10 15:55:38.929  INFO 99594 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-10 15:55:38.929  INFO 99594 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-04-10 15:55:38.935  INFO 99594 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-04-10 15:55:44.666  INFO 99594 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-10 15:55:44.792  INFO 99594 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-10 15:55:55.730  INFO 99594 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-10 15:55:55.731  INFO 99594 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-10 15:55:55.737  INFO 99594 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

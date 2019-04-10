@@ -20,8 +20,37 @@ import group.agv01.entity.User;
 public interface OrderMapper {
 	
 	/**
+	 * 插入订单数据
+	 * @param Order
+	 * @return
+	 */
+	Integer insertOrder(Order order);
+	
+	/**
+	 * 删除订单数据
+	 * @param OrderID
+	 * @return
+	 */
+	Integer deleteOrder(String OrderID);
+	
+	/**
+	 * 更改订单数据
+	 * @param OrderID
+	 * @param OType
+	 * @return
+	 */
+	Integer updateOrder(@Param("OrderID")String OrderID,@Param("OType")String OType);
+	
+	
+	/**
 	 * 得到订单数据
 	 */
 	List<Order> getOrders();
 	
+	/**
+	 * 根据ID得到订单
+	 * @param TaskID
+	 * @return
+	 */
+	Order getOrderByID(String OrderID);
 }

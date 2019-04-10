@@ -19,8 +19,36 @@ import group.agv01.entity.User;
 public interface TaskMapper {
 	
 	/**
+	 * 插入任务数据
+	 * @param Task
+	 * @return
+	 */
+	Integer insertTask(Task task);
+	
+	/**
+	 * 删除任务数据
+	 * @param TaskID
+	 * @return
+	 */
+	Integer deleteTask(String TaskID);
+	
+	/**
+	 * 更改任务数据
+	 * @param TaskID
+	 * @param TaskType
+	 * @return
+	 */
+	Integer updateTask(@Param("TaskID")String TaskID,@Param("TaskType")String TaskType);
+	
+	/**
 	 * 得到任务数据
 	 */
 	List<Task> getTask();
 	
+	/**
+	 * 根据ID得到Task
+	 * @param TaskID
+	 * @return
+	 */
+	Task getTaskByID(String TaskID);
 }

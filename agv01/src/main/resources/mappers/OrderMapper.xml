@@ -6,6 +6,41 @@
 <!--namespace:匹配的Java接口  -->
 <mapper namespace="group.agv01.mapper.OrderMapper">
 	
+	<!-- 插入订单数据 -->
+	<!-- Integer insertOrder(Order order); -->	
+	<insert id="insertOrder">
+		insert into TransferOrder(
+		OrderID,Grade,ONO,
+		OType,ODate,SourPosiID,
+		DestPosiID,Deadline,TStat,
+		CreatDate,UserID,Dist,OStat
+		)values (
+		#{OrderID},#{Grade},#{ONO},
+		#{OType},#{ODate},#{SourPosiID},
+		#{DestPosiID},#{Deadline},#{TStat},
+		#{CreatDate},#{UserID},#{Dist},#{OStat}
+		)	
+	</insert>
+
+	<!-- 删除订单数据 -->
+	<!--Integer deleteOrder(String OrderID); -->
+	<delete id="deleteOrder">
+	delete from
+		TransferOrder
+	where
+		OrderID=#{OrderID}	
+	</delete>
+
+	<!-- 修改订单数据 -->
+	<!-- Integer updateOrder(@Param("OrderID")String OrderID,@Param("OType")String OType); -->
+	<update id="updateOrder">
+		update
+			TransferOrder
+		set
+			OType=#{OType}
+		where
+			OrderID=#{OrderID}
+	</update>
 	
 	<!--得到订单数据-->
 	<!-- List<Order> getOrders() -->
@@ -13,6 +48,12 @@
 		select * from TransferOrder;
 	</select>
 	
+	<!-- 根据ID得到订单 -->
+	<!--Order getOrderByID(String OrderID);  -->
+	<select id="getOrderByID" resultType="group.agv01.entity.Order">
+		select * from TransferOrder
+		where OrderID=#{OrderID}
+	</select>
 
 
 

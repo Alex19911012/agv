@@ -32,6 +32,38 @@ public class TaskMapperTestCase {
 		System.err.println("完成1");
 	}
 	
+	@Test
+	public void testInsertTask() {
+		Task task = new Task();
+		task.setTaskID("test");
+		task.setTaskType("test");
+		Integer rows = mapper.insertTask(task);
+		System.err.println(rows);
+	}
+	
+	@Test
+	public void testDeleteTask() {
+		String TaskID = "test";
+		Integer rows = mapper.deleteTask(TaskID);
+		System.err.println(rows);
+	}
+	
+	@Test
+	public void testUpdateTask() {
+		String TaskID = "test";
+		String TaskType = "TTTT";
+		Integer rows = mapper.updateTask(TaskID, TaskType);
+		System.err.println(rows);
+	}
+
+	@Test
+	public void testGetTaskByID() {
+		String TaskID = "test";
+		Task t = mapper.getTaskByID(TaskID);
+		System.err.println(t);
+	}
+	
+	
 	
 	
 

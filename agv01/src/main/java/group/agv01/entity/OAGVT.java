@@ -1,7 +1,7 @@
 package group.agv01.entity;
 
 import java.io.Serializable;
-import java.util.Date;
+import java.sql.Date;
 
 public class OAGVT implements Serializable{
 	//任务订单车ID

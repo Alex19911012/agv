@@ -32,7 +32,7 @@ public abstract class BaseController {
 	 * @return
 	 */
 	protected final Integer getUidFromSession(HttpSession session) {
-		return Integer.valueOf(session.getAttribute("uid").toString());
+		return Integer.valueOf(session.getAttribute("UserID").toString());
 	}
 	
 	/**

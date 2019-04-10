@@ -6,6 +6,41 @@
 <!--namespace:匹配的Java接口  -->
 <mapper namespace="group.agv01.mapper.TaskMapper">
 	
+	<!-- 插入任务数据 -->
+	<!--Integer insertTask(Task task);  -->
+	<insert id="insertTask">
+		insert into Task(
+		TaskID,TaskType,Grade,
+		SourPosiID,DestPosiID,Dist,
+		Deadline,MateName,Quan,
+		TStat,CreatDate,UserID
+		)values (
+		#{TaskID},#{TaskType},#{Grade},
+		#{SourPosiID},#{DestPosiID},#{Dist},
+		#{Deadline},#{MateName},#{Quan},
+		#{TStat},#{CreatDate},#{UserID}
+		)			
+	</insert>	
+	
+	<!-- 删除任务数据 -->
+	<!--Integer deleteTask(String TaskID); -->
+	<delete id="deleteTask">
+	delete from
+		Task
+	where
+		TaskID=#{TaskID}	
+	</delete>
+	
+	<!-- 修改任务数据 -->
+	<!-- Integer updateTask(@Param("TaskID")Integer TaskID,@Param("TaskType")String TaskType); -->
+	<update id="updateTask">
+		update
+		Task
+		set
+		TaskType=#{TaskType}
+		where
+		TaskID=#{TaskID}
+	</update>
 	
 	<!--得到任务数据-->
 	<!-- List<Task> getTask() -->
@@ -13,7 +48,12 @@
 		select * from Task;
 	</select>
 	
-
+	<!-- 根据ID得到Task -->
+	<!--Task getTaskByID(String TaskID);  -->
+	<select id="getTaskByID" resultType="group.agv01.entity.Task">
+		select * from Task 
+		where TaskID=#{TaskID}
+	</select>
 
 
 

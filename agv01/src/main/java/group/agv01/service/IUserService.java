@@ -16,7 +16,7 @@ import group.agv01.service.ex.UserNotFoundException;
  */
 public interface IUserService {
 	
-	void regUser(User user)throws UsernameDuplicateException,InsertException;;
+	void regUser(User user)throws UsernameDuplicateException,InsertException;
 	
 	void delete(Integer UserID)throws DeleteException;
 	
