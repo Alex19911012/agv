@@ -14,7 +14,35 @@ import group.agv01.entity.User;
  *
  */
 public interface UserMapper {
-	Integer insert(User user);
+	/**
+	 * 插入用户数据
+	 * @param user
+	 * @return
+	 */
+	Integer insertUser(User user);
 	
+	/**
+	 * 删除用户数据
+	 * @param UserID
+	 * @return
+	 */
+	Integer deleteUser(Integer UserID);
+	
+	/**
+	 * 更改用户密码
+	 * @param UserID
+	 * @param PW
+	 * @return
+	 */
+	Integer updatePassword(@Param("UserID")Integer UserID,@Param("PW")String PW);
+	
+	
+	
+	/**
+	 * 得到所有用户数据
+	 * @param user
+	 * @return
+	 */
+	User getUser(User user);
 	
 }

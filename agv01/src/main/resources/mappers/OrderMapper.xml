@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+
+<!-- 这是在写映射 -->
+<!--namespace:匹配的Java接口  -->
+<mapper namespace="group.agv01.mapper.OrderMapper">
+	
+	
+	<!--得到订单数据-->
+	<!-- List<Order> getOrders() -->
+	<select id="getOrders" resultType="group.agv01.entity.Order">
+		select * from TransferOrder;
+	</select>
+	
+
+
+
+
+
+	
+	
+</mapper>

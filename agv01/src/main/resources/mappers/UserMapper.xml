@@ -6,16 +6,40 @@
 <!--namespace:匹配的Java接口  -->
 <mapper namespace="group.agv01.mapper.UserMapper">
 	<!-- 插入用户数据 -->
-	<!--Integer insert(User user)  -->
-	<insert id="insert">
-		insert into usertest(
-		name
+	<!--Integer insertUser(User user)  -->
+	<insert id="insertUser">
+		insert into UserT(
+		UserName,PW
 		)values (
-		#{name}		
+		#{UserName},#{PW}
 		)			
 	</insert>	
 	
+	<!-- 删除用户数据 -->
+	<!--Integer deleteUser(Integer UserID);  -->
+	<delete id="deleteUser">
+	delete from
+		UserT
+	where
+		UserID=#{UserID}	
+	</delete>
 	
+	<!-- 修改密码 -->
+	<!-- Integer updatePassword(@Param("UserID")Integer UserID,@Param("PW")String PW); -->
+	<update id="updatePassword">
+		update
+		UserT
+		set
+		PW=#{PW}
+		where
+		UserID=#{UserID}
+	</update>
+	
+	<!--得到用户数据-->
+	<!-- Integer getUser(User user); -->
+	<select id="getUser" resultType="group.agv01.entity.User">
+		select * from UserT where UserName=#{UserName};
+	</select>
 	
 
 

@@ -22,12 +22,24 @@ public class UserServiceTestCase {
 	IUserService service;
 
 	@Test
-	public void reg() {
+	public void regUser() {
 		User user = new User();
-		user.setName("xiao2");
-		service.reg(user);
+		user.setUserName("root");
+		user.setPW("123");
+		service.regUser(user);
 		System.err.println("完成2");
 	}
+	
+	@Test
+	public void getUser() {
+		User u = new User();
+		u.setUserName("admin");
+		User user = service.findUser(u);
+		System.err.println(user.getPW());
+		System.err.println("完成22");
+	}
+	
+	
 		
 	
 }

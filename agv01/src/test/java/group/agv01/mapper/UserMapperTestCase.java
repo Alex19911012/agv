@@ -20,12 +20,25 @@ public class UserMapperTestCase {
 	UserMapper userMapper;
 	
 	@Test
-	public void testInsert() {
+	public void testInsertUser() {
 		User user = new User();
-		user.setName("xiao1");
-		userMapper.insert(user);
+		user.setUserName("admin");
+		user.setPW("123");
+		Integer rows = userMapper.insertUser(user);
+		if(rows==1) {
+			System.err.println("完成1");
+		}
+	}
+	
+	@Test
+	public void testGetUser() {
+		User u = new User();
+		u.setUserName("admin2");
+		User user = userMapper.getUser(u);
+		System.err.println(user.getPW());
 		System.err.println("完成1");
 	}
+	
 	
 	
 
