@@ -6,6 +6,7 @@ import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -41,8 +42,8 @@ public class TaskController extends BaseController{
 		return new ResponseResult<Void>(SUCCESS);
 	}
 	
-	@PostMapping("/delete")
-	public ResponseResult<Void> delete(String TaskID){
+	@PostMapping("/{TaskID}/delete")
+	public ResponseResult<Void> delete(@PathVariable("TaskID")String TaskID){
 		System.err.println(TaskID);
 		taskService.delete(TaskID);
 		return new ResponseResult<Void>(SUCCESS);

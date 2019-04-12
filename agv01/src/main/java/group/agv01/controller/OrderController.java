@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -29,8 +30,8 @@ public class OrderController extends BaseController{
 	@GetMapping("/list")
 	public ResponseResult<List<Order>> orderList() {	
 		System.err.println("请求订单列表");
-		List<Order> list = orderService.findOrders();	
-		return new ResponseResult<List<Order>>(SUCCESS,list);
+		List<Order> data = orderService.findOrders();	
+		return new ResponseResult<List<Order>>(SUCCESS,data);
 	}
 	
 	@PostMapping("/addOrder")
@@ -40,8 +41,8 @@ public class OrderController extends BaseController{
 		return new ResponseResult<Void>(SUCCESS);
 	}
 	
-	@PostMapping("/delete")
-	public ResponseResult<Void> delete(String OrderID){
+	@PostMapping("/{OrderID}/delete")
+	public ResponseResult<Void> delete(@PathVariable("OrderID")String OrderID){
 		System.err.println(OrderID);
 		orderService.delete(OrderID);
 		return new ResponseResult<Void>(SUCCESS);

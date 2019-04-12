@@ -1,7 +1,9 @@
 package group.agv01.entity;
 
 import java.io.Serializable;
-import java.sql.Date;
+import java.util.Date;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
 
 public class Order implements Serializable{
 	
@@ -28,7 +30,7 @@ public class Order implements Serializable{
 	String OType;
 
 	//订单创建时间
-
+	@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
 	Date ODate;
 
 	//起点位置ID
@@ -40,7 +42,7 @@ public class Order implements Serializable{
 	String DestPosiID;
 
 	//最后期限
-
+	@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
 	Date Deadline;
 
 	//任务状态
@@ -48,7 +50,7 @@ public class Order implements Serializable{
 	String TStat;
 
 	//任务创建时间
-
+	@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
 	Date CreatDate;
 
 	//用户ID
@@ -57,7 +59,7 @@ public class Order implements Serializable{
 
 	//距离
 
-	double Dist;
+	Double Dist;
 
 	//订单状态
 

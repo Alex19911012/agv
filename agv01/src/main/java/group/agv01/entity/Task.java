@@ -1,7 +1,9 @@
 package group.agv01.entity;
 
 import java.io.Serializable;
-import java.sql.Date;
+import java.util.Date;
+
+import org.springframework.format.annotation.DateTimeFormat;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 
@@ -29,10 +31,10 @@ public class Task implements Serializable{
 	//距离
 	
 	
-	double Dist;
+	Double Dist;
 
 	//最后期限
-	
+	@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
 	Date Deadline;
 
 	//货物名称
@@ -48,7 +50,7 @@ public class Task implements Serializable{
 	String TStat;
 
 	//任务创建时间
-	
+	@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
 	Date CreatDate;
 
 	//用户ID
