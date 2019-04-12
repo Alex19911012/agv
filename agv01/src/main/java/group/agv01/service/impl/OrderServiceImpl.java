@@ -85,6 +85,11 @@ public class OrderServiceImpl implements IOrderService {
 		return getOrders();
 	};
 	
+	@Override
+	public List<Order> findOrdersByTID(String TID) {
+			return getOrdersByTID(TID);
+	}
+	
 	
 	
 	private void insertOrder(Order order) {
@@ -114,11 +119,22 @@ public class OrderServiceImpl implements IOrderService {
 	private List<Order> getOrders() {
 		return orderMapper.getOrders();
 	}
+	
+	private List<Order> getOrdersByTID(String TID) {
+		return orderMapper.getOrdersByTID(TID);
+	}
 
 
 	private Order getOrderByID(String OrderID) {
 		return orderMapper.getOrderByID(OrderID);
 	}
+
+
+
+
+
+
+	
 
 
 

@@ -53,4 +53,10 @@ public interface OrderMapper {
 	 * @return
 	 */
 	Order getOrderByID(String OrderID);
+	
+	/**
+	 * 根据任务ID得到订单
+	 * @return
+	 */
+	List<Order> getOrdersByTID(String TID);
 }

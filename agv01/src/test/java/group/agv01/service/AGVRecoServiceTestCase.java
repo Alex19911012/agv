@@ -10,7 +10,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.util.DigestUtils;
 
-import group.agv01.entity.OAGVT;
+import group.agv01.entity.AGVReco;
 import group.agv01.entity.Order;
 import group.agv01.entity.Task;
 import group.agv01.entity.User;
@@ -20,17 +20,17 @@ import group.agv01.service.IUserService;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class OAGVTServiceTestCase {
+public class AGVRecoServiceTestCase {
 
 	@Autowired
-	IOAGVTService service;
+	IAGVRecoService service;
 
 	
 	
 	@Test
 	public void testFindOAGVTs() {		
-		List<OAGVT> list = service.findOAGVTs();
-		for(OAGVT t : list) {
+		List<AGVReco> list = service.findAGVRecos();
+		for(AGVReco t : list) {
 			System.err.println(t);
 		}
 		System.err.println("完成1");

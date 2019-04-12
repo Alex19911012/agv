@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+
+<!-- 这是在写映射 -->
+<!--namespace:匹配的Java接口  -->
+<mapper namespace="group.agv01.mapper.AGVRecoMapper">
+	
+	
+	<!--得到AGV监控数据-->
+	<!-- List<AGVReco> getAGVRecos();-->
+	<select id="getAGVRecos" resultType="group.agv01.entity.AGVReco">
+		SELECT t1.*
+		FROM AGVReco AS t1
+		INNER JOIN
+		(
+		SELECT t2.AGVID, MAX(ATime) AS maxdate
+		FROM AGVReco AS t2
+		GROUP BY t2.AGVID
+		) AS t3 ON t1.AGVID = t3.AGVID AND t1.ATime = t3.maxdate;
+	</select>
+	
+
+
+
+
+
+	
+	
+</mapper>

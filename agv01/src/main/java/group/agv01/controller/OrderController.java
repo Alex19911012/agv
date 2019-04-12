@@ -54,5 +54,12 @@ public class OrderController extends BaseController{
 		return new ResponseResult<Void>(SUCCESS);
 	}
 	
+	@PostMapping("/{TID}/list")
+	public ResponseResult<List<Order>> listByTID(@PathVariable("TID")String TID){
+		System.err.println(TID);
+		List<Order> data = orderService.findOrdersByTID(TID);
+		return new ResponseResult<List<Order>>(SUCCESS,data);
+	}
+
 	
 }

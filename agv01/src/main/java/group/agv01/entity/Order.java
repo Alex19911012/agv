@@ -64,6 +64,10 @@ public class Order implements Serializable{
 	//订单状态
 
 	String OStat;
+	
+	String TID;
+	
+	String AGVID;
 
 	public String getOrderID() {
 		return OrderID;
@@ -153,11 +157,11 @@ public class Order implements Serializable{
 		UserID = userID;
 	}
 
-	public double getDist() {
+	public Double getDist() {
 		return Dist;
 	}
 
-	public void setDist(double dist) {
+	public void setDist(Double dist) {
 		Dist = dist;
 	}
 
@@ -169,13 +173,30 @@ public class Order implements Serializable{
 		OStat = oStat;
 	}
 
+	public String getTID() {
+		return TID;
+	}
+
+	public void setTID(String tID) {
+		TID = tID;
+	}
+
+	public String getAGVID() {
+		return AGVID;
+	}
+
+	public void setAGVID(String aGVID) {
+		AGVID = aGVID;
+	}
+
 	@Override
 	public String toString() {
 		return "Order [OrderID=" + OrderID + ", Grade=" + Grade + ", ONO=" + ONO + ", OType=" + OType + ", ODate="
 				+ ODate + ", SourPosiID=" + SourPosiID + ", DestPosiID=" + DestPosiID + ", Deadline=" + Deadline
 				+ ", TStat=" + TStat + ", CreatDate=" + CreatDate + ", UserID=" + UserID + ", Dist=" + Dist + ", OStat="
-				+ OStat + "]";
+				+ OStat + ", TID=" + TID + ", AGVID=" + AGVID + "]";
 	}
-	
+
+		
 	
 }

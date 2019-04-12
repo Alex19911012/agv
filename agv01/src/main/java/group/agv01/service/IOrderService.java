@@ -27,4 +27,6 @@ public interface IOrderService {
 	void changeInfo(String OrderID,String OType)throws OrderNotFoundException,UpdateException;
 	
 	List<Order> findOrders();
+	
+	List<Order> findOrdersByTID(String TID);
 }

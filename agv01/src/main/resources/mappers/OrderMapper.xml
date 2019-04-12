@@ -55,8 +55,11 @@
 		where OrderID=#{OrderID}
 	</select>
 
-
-
+	<!--根据任务ID得到订单  -->
+	<!-- List<Order> getOrdersByTID(String TID); -->
+	<select id="getOrdersByTID" resultType="group.agv01.entity.Order">
+		select * from TransferOrder where TID=#{TID} ;
+	</select>
 
 
 	

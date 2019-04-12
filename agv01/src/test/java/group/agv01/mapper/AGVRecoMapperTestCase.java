@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import group.agv01.entity.OAGVT;
+import group.agv01.entity.AGVReco;
 import group.agv01.entity.Order;
 import group.agv01.entity.Task;
 import group.agv01.entity.User;
@@ -18,18 +18,18 @@ import group.agv01.mapper.UserMapper;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class OAGVTMapperTestCase {
+public class AGVRecoMapperTestCase {
 	
 	@Autowired
-	OAGVTMapper mapper;
+	AGVRecoMapper mapper;
 	
 	
 	
 	@Test
 	public void testGetOAGVTs() {		
-		List<OAGVT> list = mapper.getOAGVTs();
-		for(OAGVT t : list) {
-			System.err.println(t);
+		List<AGVReco> list = mapper.getAGVRecos();
+		for(AGVReco r : list) {
+			System.err.println(r);
 		}
 		System.err.println("完成1");
 	}

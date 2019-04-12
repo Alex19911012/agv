@@ -4,13 +4,13 @@
 
 <!-- 这是在写映射 -->
 <!--namespace:匹配的Java接口  -->
-<mapper namespace="group.agv01.mapper.OAGVTMapper">
+<mapper namespace="group.agv01.mapper.AGVInfoMapper">
 	
 	
-	<!--得到订单数据-->
-	<!-- List<OAGVT> getOAGVTs() -->
-	<select id="getOAGVTs" resultType="group.agv01.entity.OAGVT">
-		select * from OAGVT;
+	<!--得到AGV基本信息-->
+	<!-- List<AGVInfo> getAGVInfos();-->
+	<select id="getAGVInfos" resultType="group.agv01.entity.AGVInfo">
+		select * from AGV;
 	</select>
 	
 
