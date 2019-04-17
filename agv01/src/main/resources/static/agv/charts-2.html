@@ -70,50 +70,146 @@
 		        },	
 		        tooltip:{	
 				},
-				visualMap: {
-				    show: false,
-			        min: 500,
-		            max: 600,
-					inRange: {
-					    colorLightness: [0, 1]
-					}
-				 },
-				 series:[{
-					name:'A',
+				series:[{
+					name:'时间',
 					type:'pie',
-				 	statAngle:'0',
 				 	radius:'60%',
 				 	center:['50%', '50%'],
-				 	data:[
-				 		/* {
-				 			value:70,
-				 			name:'语言1',
-				 			itemStyle:{}
-				 		},
-				 		{
-				 			value:10,
-				 			name:'语言2',
-				 			itemStyle:{}
-				 		},
-				 		{
-				 			value:30,
-				 			name:'语言3',
-				 			itemStyle:{}
-				 		} */
-				 	],
-					 
+				 	data:[],
+				 	itemStyle: {
+		                emphasis: {
+		                    shadowBlur: 10,
+		                    shadowOffsetX: 0,
+		                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+		                }
+		            }
+				 }]
+					
+		};
+		var myCharts1 = echarts.init(document.getElementById("main1"));
+		var option1 = {
+				title: {
+					 text: '运行时间统计(T1)'
+		        },	
+		        tooltip:{	
+				},
+				series:[{
+					name:'时间',
+					type:'pie',
+				 	radius:'60%',
+				 	center:['50%', '50%'],
+				 	data:[],
+				 	itemStyle: {
+		                emphasis: {
+		                    shadowBlur: 10,
+		                    shadowOffsetX: 0,
+		                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+		                }
+		            }
+				 }]
+					
+		};
+		var myCharts2 = echarts.init(document.getElementById("main2"));
+		var option2 = {
+				title: {
+					 text: '运行时间统计(T2)'
+		        },	
+		        tooltip:{	
+				},
+				series:[{
+					name:'时间',
+					type:'pie',
+				 	radius:'60%',
+				 	center:['50%', '50%'],
+				 	data:[],
+				 	itemStyle: {
+		                emphasis: {
+		                    shadowBlur: 10,
+		                    shadowOffsetX: 0,
+		                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+		                }
+		            }
+				 }]
+					
+		};
+		var myCharts3 = echarts.init(document.getElementById("main3"));
+		var option3 = {
+				title: {
+					 text: '运行时间统计(T3)'
+		        },	
+		        tooltip:{	
+				},
+				series:[{
+					name:'时间',
+					type:'pie',
+				 	radius:'60%',
+				 	center:['50%', '50%'],
+				 	data:[],
+				 	itemStyle: {
+		                emphasis: {
+		                    shadowBlur: 10,
+		                    shadowOffsetX: 0,
+		                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+		                }
+		            }
+				 }]
+					
+		};
+		var myCharts4 = echarts.init(document.getElementById("main4"));
+		var option4 = {
+				title: {
+					 text: '运行时间统计(T4)'
+		        },	
+		        tooltip:{	
+				},
+				series:[{
+					name:'时间',
+					type:'pie',
+				 	radius:'60%',
+				 	center:['50%', '50%'],
+				 	data:[],
+				 	itemStyle: {
+		                emphasis: {
+		                    shadowBlur: 10,
+		                    shadowOffsetX: 0,
+		                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+		                }
+		            }
+				 }]
+					
+		};
+		var myCharts5 = echarts.init(document.getElementById("main5"));
+		var option5 = {
+				title: {
+					 text: '运行时间统计(T5)'
+		        },	
+		        tooltip:{	
+				},
+				series:[{
+					name:'时间',
+					type:'pie',
+				 	radius:'60%',
+				 	center:['50%', '50%'],
+				 	data:[],
+				 	itemStyle: {
+		                emphasis: {
+		                    shadowBlur: 10,
+		                    shadowOffsetX: 0,
+		                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+		                }
+		            }
 				 }]
 					
 		};
 		
 		var numsA=[];
-		var names=['行驶时间','空驶时间','充电时间','等待时间','故障时间','维修保养时间'];
+		var names=[];
 		var rt = 0;
 		var et = 0;
 		var ct = 0;
 		var wt = 0;
 		var errort = 0;
-		var maint = 0;
+		var maint = 0;		
 		function showDayWorkTimeList(){
 			$.ajax({
 				"url":"/day/workTime",
@@ -151,24 +247,110 @@
 							ct +=list[i].charTime;
 							wt +=list[i].waitTime;
 							errort +=list[i].erroTime;
-							maint +=list[i].mainTime;
+							maint +=list[i].mainTime;							
 							
 							
 							
 							$("#DayWordTime-list").append(html)
-						}
-						numsA.push(rt,et,ct,wt,errort,maint);
-						myChartsA.setOption(optionA);	
-						myChartsA.setOption({
-							legend:{
-								data:names	
-							},
-							series:[{
-								name:names,
-								data:numsA
-							}]
+						};			
+							myChartsA.setOption(optionA)
+						    // 填入数据
+						    myChartsA.setOption({
+						        series: [{
+						            // 根据名字对应到相应的系列
+						        	data:[
+						                {value:rt, name:'行驶'},
+						                {value:et, name:'空驶'},
+						                {value:ct, name:'充电'},
+						                {value:wt, name:'等待'},
+						                {value:errort, name:'故障'},
+						                {value:maint, name:'维护保养'}
+						            ]
+						        }]
+						    });
+							
+							myCharts1.setOption(option1);
+						    // 填入数据
+						    myCharts1.setOption({
+						        series: [{
+						            // 根据名字对应到相应的系列
+						        	data:[
+						                {value:list[0].runTime, name:'行驶'},
+						                {value:list[0].erunTime, name:'空驶'},
+						                {value:list[0].charTime, name:'充电'},
+						                {value:list[0].waitTime, name:'等待'},
+						                {value:list[0].erroTime, name:'故障'},
+						                {value:list[0].mainTime, name:'维护保养'}
+						            ]
+						        }]
+						    });
+						    
+						    myCharts2.setOption(option2);
+						    // 填入数据
+						    myCharts2.setOption({
+						        series: [{
+						            // 根据名字对应到相应的系列
+						        	data:[
+						                {value:list[1].runTime, name:'行驶'},
+						                {value:list[1].erunTime, name:'空驶'},
+						                {value:list[1].charTime, name:'充电'},
+						                {value:list[1].waitTime, name:'等待'},
+						                {value:list[1].erroTime, name:'故障'},
+						                {value:list[1].mainTime, name:'维护保养'}
+						            ]
+						        }]
+						    });
+
+						    myCharts3.setOption(option3);
+						    // 填入数据
+						    myCharts3.setOption({
+						        series: [{
+						            // 根据名字对应到相应的系列
+						        	data:[
+						                {value:list[2].runTime, name:'行驶'},
+						                {value:list[2].erunTime, name:'空驶'},
+						                {value:list[2].charTime, name:'充电'},
+						                {value:list[2].waitTime, name:'等待'},
+						                {value:list[2].erroTime, name:'故障'},
+						                {value:list[2].mainTime, name:'维护保养'}
+						            ]
+						        }]
+						    });
+
+						    myCharts4.setOption(option4);
+						    // 填入数据
+						    myCharts4.setOption({
+						        series: [{
+						            // 根据名字对应到相应的系列
+						        	data:[
+						                {value:list[3].runTime, name:'行驶'},
+						                {value:list[3].erunTime, name:'空驶'},
+						                {value:list[3].charTime, name:'充电'},
+						                {value:list[3].waitTime, name:'等待'},
+						                {value:list[3].erroTime, name:'故障'},
+						                {value:list[3].mainTime, name:'维护保养'}
+						            ]
+						        }]
+						    });
+
+						    myCharts5.setOption(option5);
+						    // 填入数据
+						    myCharts5.setOption({
+						        series: [{
+						            // 根据名字对应到相应的系列
+						        	data:[
+						                {value:list[4].runTime, name:'行驶'},
+						                {value:list[4].erunTime, name:'空驶'},
+						                {value:list[4].charTime, name:'充电'},
+						                {value:list[4].waitTime, name:'等待'},
+						                {value:list[4].erroTime, name:'故障'},
+						                {value:list[4].mainTime, name:'维护保养'}
+						            ]
+						        }]
+						    });
+
+						    
 						
-						});
 						
 					}else{
 						alert(json.message);

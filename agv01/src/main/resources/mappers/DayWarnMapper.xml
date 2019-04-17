@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+
+<!-- 这是在写映射 -->
+<!--namespace:匹配的Java接口  -->
+<mapper namespace="group.agv01.mapper.DayWarnMapper">
+	
+	
+	<!--得到每日订单数据-->
+	<!-- List<DayWarn> getDayWarns();-->
+	<select id="getDayWarns" resultType="group.agv01.entity.DayWarn">
+		SELECT t1.*
+		FROM DayWarn AS t1
+		INNER JOIN
+		(
+		SELECT t2.AGVID, MAX(SD) AS maxdate
+		FROM DayWarn AS t2
+		GROUP BY t2.AGVID
+		) AS t3 ON t1.AGVID = t3.AGVID AND t1.SD = t3.maxdate;
+	</select>
+	
+
+
+
+
+
+	
+	
+</mapper>

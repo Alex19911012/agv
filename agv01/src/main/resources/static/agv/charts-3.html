@@ -19,91 +19,191 @@
 <script type="text/javascript" src="lib/DD_belatedPNG_0.0.8a-min.js" ></script>
 <script>DD_belatedPNG.fix('*');</script>
 <![endif]-->
-<title>区域图</title>
+<title>行驶距离统计</title>
 </head>
 <body>
-<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 统计管理 <span class="c-gray en">&gt;</span> 区域图 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 统计管理 <span class="c-gray en">&gt;</span> 行驶距离统计 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
 <div class="page-container">
-	<div class="f-14 c-error">特别声明：Highcharts 是一个用纯 JavaScript编写的一个图表库，仅免费提供给个人学习、个人网站，如果在商业项目中使用，请去Highcharts官网网站购买商业授权。或者您也可以选择其他免费的第三方图表插件，例如百度echarts。H-ui.admin不承担任何版权问题。</div>
-	<div id="container" style="min-width:700px;height:400px"></div>
+	<div class="mt-20">
+		<table class="table table-border table-bordered table-bg table-hover table-sort table-responsive">
+			<thead>
+				<tr class="text-c">
+					<!-- <th width="25"><input type="checkbox" name="" value=""></th> -->
+					<th width="100">日期</th>
+					<th width="70">导航车ID</th>
+					<th width="80">导航车编号</th>
+					<th width="80">行驶距离</th>
+					<th width="90">载重行驶距离</th>
+					<th width="90">空驶行驶距离</th>
+				</tr>
+			</thead>
+			<tbody id="DayRunDist-list">
+				
+			</tbody>
+		</table>
+	</div>
+	<div id="mainA" style="min-width:700px;height:400px">	
+	</div>
+	<div id="mainB" style="min-width:700px;height:400px">
+	</div>
 </div>
 <!--_footer 作为公共模版分离出去-->
 <script type="text/javascript" src="lib/jquery/1.9.1/jquery.min.js"></script> 
 <script type="text/javascript" src="lib/layer/2.4/layer.js"></script>
 <script type="text/javascript" src="static/h-ui/js/H-ui.min.js"></script> 
 <script type="text/javascript" src="static/h-ui.admin/js/H-ui.admin.js"></script> <!--/_footer 作为公共模版分离出去-->
-
+<script src="lib/echarts/3.4.0/echarts.common.min.js"></script>
 <!--请在下方写此页面业务相关的脚本-->
-<script type="text/javascript" src="lib/hcharts/Highcharts/5.0.6/js/highcharts.js"></script>
-<script type="text/javascript" src="lib/hcharts/Highcharts/5.0.6/js/modules/exporting.js"></script>
 <script type="text/javascript">
-$(function () {
-    $('#container').highcharts({
-        chart: {
-            type: 'area'
-        },
-        title: {
-            text: 'US and USSR nuclear stockpiles'
-        },
-        subtitle: {
-            text: 'Source: thebulletin.metapress.com'
-        },
-        xAxis: {
-            labels: {
-                formatter: function() {
-                    return this.value; // clean, unformatted number for year
-                }
-            }
-        },
-        yAxis: {
-            title: {
-                text: 'Nuclear weapon states'
-            },
-            labels: {
-                formatter: function() {
-                    return this.value / 1000 +'k';
-                }
-            }
-        },
-        tooltip: {
-            pointFormat: '{series.name} produced <b>{point.y:,.0f}</b><br/>warheads in {point.x}'
-        },
-        plotOptions: {
-            area: {
-                pointStart: 1940,
-                marker: {
-                    enabled: false,
-                    symbol: 'circle',
-                    radius: 2,
-                    states: {
-                        hover: {
-                            enabled: true
-                        }
-                    }
-                }
-            }
-        },
-        series: [{
-            name: 'USA',
-            data: [null, null, null, null, null, 6 , 11, 32, 110, 235, 369, 640,1005, 1436,
-            		2063, 3057, 4618, 6444, 9822, 15468, 20434, 24126,27387, 29459, 31056, 31982,
-            		32040, 31233, 29224, 27342, 26662,26956, 27912, 28999, 28965, 27826, 25579,
-            		25722, 24826, 24605,24304, 23464, 23708, 24099, 24357, 24237, 24401, 24344,
-            		23586,22380, 21004, 17287, 14747, 13076, 12555, 12144, 11009, 10950,
-                10871, 10824, 10577, 10527, 10475, 10421, 10358, 10295, 10104 
+		$(document).ready(function(){
+			showDayRunDistList();
+		});
+		var myChart1 = echarts.init(document.getElementById("mainA"));
+		var option1 = {
+			title:{
+				text:'日行驶距离(总表)	'
+			},	
+			tooltip:{	
+			},
+			legend:{
+				data:['距离']	
+			},
+			xAxis:{
+				data:["行驶距离","载重行驶距离","空驶行驶距离"]	
+			},
+			yAxis: {},
+			series: [{
+                name: '距离',
+                type: 'bar',
+                data: []
+            }]
+		};	
+				
+		var myChart2 = echarts.init(document.getElementById("mainB"));
+		var option2 = {
+			title:{
+				text:'日行驶距离'
+			},	
+			tooltip:{	
+			},
+			legend:{
+				data:['距离']	
+			},
+			xAxis:{
+				data:["行驶距离","载重行驶距离","空驶行驶距离"]			
+			},
+			yAxis: {},
+			series: [
+				{
+                	name: 'T1',
+                	type: 'bar',
+                	data: []	
+            	},
+				{
+                	name: 'T2',
+                	type: 'bar',
+                	data: []	
+            	},
+            	{
+                	name: 'T3',
+           			type: 'bar',
+                	data: []
+               	},
+                {
+                     name: 'T4',
+                     type: 'bar',
+                     data: []
+              	},	
+              	{
+                	name: 'T5',
+                	type: 'bar',
+                	data: []	
+            	},          
             ]
-        }, {
-            name: 'USSR/Russia',
-            data: [null, null, null, null, null, null, null , null , null ,null,5, 25, 50,
-            	120, 150, 200, 426, 660, 869, 1060, 1605, 2471, 3322,4238, 5221, 6129,
-            	7089, 8339, 9399, 10538, 11643, 13092, 14478,15915, 17385, 19055, 21205,
-            	23044, 25393, 27935, 30062, 32049,33952, 35804, 37431, 39197, 45000, 43000,
-            	41000, 39000, 37000,35000, 33000, 31000, 29000, 27000, 25000, 24000, 23000,
-            	22000,21000, 20000, 19000, 18000, 18000, 17000, 16000
-            ]
-        }]
-    });
-});
-</script>
+		};	
+		var nums=[];
+		
+		var numsA=[];
+		var r = 0;
+		var fr = 0;
+		var er = 0;
+		function showDayRunDistList(){
+			$.ajax({
+				"url":"/day/runDist",
+				"type":"GET",
+				"dataType":"json",
+				"success":function(json){
+					if(json.state == 200){		
+						$("#DayRunDist-list").empty();
+						var list = json.data;
+						
+						for(var i=0;i<list.length;i++){
+							console.log(list[i]);
+							var html = '<tr class="text-c">'
+									+'<td>#{SD}</td>'
+									+'<td>#{AGVID}</td>'
+									+'<td>#{AGVNo}</td>'
+									+'<td>#{RunDist}</td>'
+									+'<td>#{FRunDist}</td>'
+									+'<td>#{ERunDist}</td>'
+									+'</tr>';	
+							html = html.replace(/#{SD}/g,list[i].sd);	
+							html = html.replace(/#{AGVID}/g,list[i].agvid);	
+							html = html.replace(/#{AGVNo}/g,list[i].agvno);	
+							html = html.replace(/#{RunDist}/g,list[i].runDist);	
+							html = html.replace(/#{FRunDist}/g,list[i].frunDist);	
+							html = html.replace(/#{ERunDist}/g,list[i].erunDist);	
+							r +=list[i].runDist;
+							fr +=list[i].frunDist;
+							er +=list[i].erunDist;
+							$("#DayRunDist-list").append(html)
+							
+							nums.push([list[i].runDist,list[i].frunDist,list[i].erunDist]);						
+							myChart2.setOption(option2)	
+							myChart2.setOption({
+								series:[
+								{
+									name:'T1',
+									data:nums[0]
+								},
+								{
+									name:'T2',
+									data:nums[1]
+								},
+								{
+									name:'T3',
+									data:nums[2]
+								},
+								{
+									name:'T4',
+									data:nums[3]
+								},
+								{
+									name:'T5',
+									data:nums[4]
+								}			
+								]
+							})
+					}
+					numsA.push(r,fr,er);						
+					myChart1.setOption(option1)	
+					myChart1.setOption({
+						series:[{
+							name:'距离',
+							data:numsA
+						}]
+					
+					});
+					}else{
+						alert(json.message);
+						//退出登录
+						
+					}
+				}
+			});
+		};
+		
+	</script>
+
 </body>
 </html>

@@ -19,68 +19,209 @@
 <script type="text/javascript" src="lib/DD_belatedPNG_0.0.8a-min.js" ></script>
 <script>DD_belatedPNG.fix('*');</script>
 <![endif]-->
-<title>饼状图</title>
+<title>预警统计</title>
 </head>
 <body>
-<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 统计管理 <span class="c-gray en">&gt;</span> 饼状图 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 统计管理 <span class="c-gray en">&gt;</span> 预警统计 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
 <div class="page-container">
-	<div class="f-14 c-error">特别声明：Highcharts 是一个用纯 JavaScript编写的一个图表库，仅免费提供给个人学习、个人网站，如果在商业项目中使用，请去Highcharts官网网站购买商业授权。或者您也可以选择其他免费的第三方图表插件，例如百度echarts。H-ui.admin不承担任何版权问题。</div>
-	<div id="container" style="min-width:700px;height:400px"></div>
+	<div class="mt-20">
+		<table class="table table-border table-bordered table-bg table-hover table-sort table-responsive">
+			<thead>
+				<tr class="text-c">
+					<!-- <th width="25"><input type="checkbox" name="" value=""></th> -->
+					<th width="100">日期</th>
+					<th width="70">导航车ID</th>
+					<th width="80">导航车编号</th>
+					<th width="80">警告数量</th>
+					<th width="90">充电警告数量</th>
+					<th width="90">电量警告数量</th>
+					<th width="90">机械警告数量</th>
+					<th width="90">订单警告数量</th>
+					<th width="90">任务警告数量</th>					
+					
+				</tr>
+			</thead>
+			<tbody id="DayWarn-list">
+				
+			</tbody>
+		</table>
+	</div>
+	<div id="mainA" style="min-width:700px;height:400px">	
+	</div>
+	<div id="mainB" style="min-width:700px;height:400px">
+	</div>
 </div>
 <!--_footer 作为公共模版分离出去-->
 <script type="text/javascript" src="lib/jquery/1.9.1/jquery.min.js"></script> 
 <script type="text/javascript" src="lib/layer/2.4/layer.js"></script>
 <script type="text/javascript" src="static/h-ui/js/H-ui.min.js"></script> 
 <script type="text/javascript" src="static/h-ui.admin/js/H-ui.admin.js"></script> <!--/_footer 作为公共模版分离出去-->
-
+<script src="lib/echarts/3.4.0/echarts.common.min.js"></script>
 <!--请在下方写此页面业务相关的脚本-->
-<script type="text/javascript" src="lib/hcharts/Highcharts/5.0.6/js/highcharts.js"></script>
-<script type="text/javascript" src="lib/hcharts/Highcharts/5.0.6/js/modules/exporting.js"></script>
 <script type="text/javascript">
-$(function () {
-    $('#container').highcharts({
-        chart: {
-            plotBackgroundColor: null,
-            plotBorderWidth: null,
-            plotShadow: false
-        },
-        title: {
-            text: 'Browser market shares at a specific website, 2010'
-        },
-        tooltip: {
-    	    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-        },
-        plotOptions: {
-            pie: {
-                allowPointSelect: true,
-                cursor: 'pointer',
-                dataLabels: {
-                    enabled: true,
-                    color: '#000000',
-                    connectorColor: '#000000',
-                    format: '<b>{point.name}</b>: {point.percentage:.1f} %'
-                }
-            }
-        },
-        series: [{
-            type: 'pie',
-            name: 'Browser share',
-            data: [
-                ['Firefox',   45.0],
-                ['IE',       26.8],
+		$(document).ready(function(){
+			showDayWarnList();
+		});
+		var myChart1 = echarts.init(document.getElementById("mainA"));
+		var option1 = {
+			title:{
+				text:'日预警(总表)	'
+			},	
+			tooltip:{	
+			},
+			legend:{
+				data:['数量']	
+			},
+			xAxis:{
+				data:["警告数量","充电警告数量","电量警告数量","机械警告数量","订单警告数量","任务警告数量"]	
+			},
+			yAxis: {},
+			series: [{
+                name: '数量',
+                type: 'bar',
+                data: []
+            }]
+		};	
+				
+		var myChart2 = echarts.init(document.getElementById("mainB"));
+		var option2 = {
+			title:{
+				text:'日预警'
+			},	
+			tooltip:{	
+			},
+			legend:{
+				data:['数量']	
+			},
+			xAxis:{
+				data:["警告数量","充电警告数量","电量警告数量","机械警告数量","订单警告数量","任务警告数量"]	
+			},
+			yAxis: {},
+			series: [
+				{
+                	name: 'T1',
+                	type: 'bar',
+                	data: []	
+            	},
+				{
+                	name: 'T2',
+                	type: 'bar',
+                	data: []	
+            	},
+            	{
+                	name: 'T3',
+           			type: 'bar',
+                	data: []
+               	},
                 {
-                    name: 'Chrome',
-                    y: 12.8,
-                    sliced: true,
-                    selected: true
-                },
-                ['Safari',    8.5],
-                ['Opera',     6.2],
-                ['Others',   0.7]
+                     name: 'T4',
+                     type: 'bar',
+                     data: []
+              	},	
+              	{
+                	name: 'T5',
+                	type: 'bar',
+                	data: []	
+            	},          
             ]
-        }]
-    });
-});
-</script>
+		};	
+		var nums=[];
+		
+		var numsA=[];
+		var w = 0;
+		var cw = 0;
+		var pw = 0;
+		var mw = 0;
+		var ow = 0;
+		var tw = 0;
+
+		function showDayWarnList(){
+			$.ajax({
+				"url":"/day/warn",
+				"type":"GET",
+				"dataType":"json",
+				"success":function(json){
+					if(json.state == 200){		
+						$("#DayWarn-list").empty();
+						var list = json.data;
+						
+						for(var i=0;i<list.length;i++){
+							console.log(list[i]);
+							var html = '<tr class="text-c">'
+									+'<td>#{SD}</td>'
+									+'<td>#{AGVID}</td>'
+									+'<td>#{AGVNo}</td>'
+									+'<td>#{Warn}</td>'
+									+'<td>#{CharW}</td>'
+									+'<td>#{PoweW}</td>'
+									+'<td>#{MechW}</td>'
+									+'<td>#{OrdeW}</td>'
+									+'<td>#{TaskW}</td>'
+									+'</tr>';	
+							html = html.replace(/#{SD}/g,list[i].sd);	
+							html = html.replace(/#{AGVID}/g,list[i].agvid);	
+							html = html.replace(/#{AGVNo}/g,list[i].agvno);	
+							html = html.replace(/#{Warn}/g,list[i].warn);	
+							html = html.replace(/#{CharW}/g,list[i].charW);	
+							html = html.replace(/#{PoweW}/g,list[i].poweW);
+							html = html.replace(/#{MechW}/g,list[i].mechW);	
+							html = html.replace(/#{OrdeW}/g,list[i].ordeW);	
+							html = html.replace(/#{TaskW}/g,list[i].taskW);
+							w +=list[i].warn;
+							cw +=list[i].charW;
+							pw +=list[i].poweW;
+							mw +=list[i].mechW;
+							ow +=list[i].ordeW;
+							tw +=list[i].taskW;
+
+							$("#DayWarn-list").append(html)
+							
+							nums.push([list[i].warn,list[i].charW,list[i].poweW,list[i].mechW,list[i].ordeW,list[i].taskW]);						
+							myChart2.setOption(option2)	
+							myChart2.setOption({
+								series:[
+								{
+									name:'T1',
+									data:nums[0]
+								},
+								{
+									name:'T2',
+									data:nums[1]
+								},
+								{
+									name:'T3',
+									data:nums[2]
+								},
+								{
+									name:'T4',
+									data:nums[3]
+								},
+								{
+									name:'T5',
+									data:nums[4]
+								}			
+								]
+							})
+					}
+					numsA.push(w,cw,pw,mw,ow,tw);						
+					myChart1.setOption(option1)	
+					myChart1.setOption({
+						series:[{
+							name:'数量',
+							data:numsA
+						}]
+					
+					});
+					}else{
+						alert(json.message);
+						//退出登录
+						
+					}
+				}
+			});
+		};
+		
+	</script>
+
 </body>
 </html>
