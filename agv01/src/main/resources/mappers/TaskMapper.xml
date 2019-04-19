@@ -12,24 +12,24 @@
 		insert into Task(
 		TaskID,TaskType,Grade,
 		SourPosiID,DestPosiID,Dist,
-		Deadline,MateName,Quan,
-		TStat,CreatDate,UserID
+		Deadline,TStat,CreatDate,UserID,IsDelete
 		)values (
 		#{TaskID},#{TaskType},#{Grade},
 		#{SourPosiID},#{DestPosiID},#{Dist},
-		#{Deadline},#{MateName},#{Quan},
-		#{TStat},#{CreatDate},#{UserID}
+		#{Deadline},#{TStat},#{CreatDate},#{UserID},#{IsDelete}
 		)			
 	</insert>	
 	
 	<!-- 删除任务数据 -->
 	<!--Integer deleteTask(String TaskID); -->
-	<delete id="deleteTask">
-	delete from
+	<update id="deleteTask">
+	update
 		Task
-	where
-		TaskID=#{TaskID}	
-	</delete>
+	set
+		IsDelete=1
+		where
+		TaskID=#{TaskID}
+	</update>
 	
 	<!-- 修改任务数据 -->
 	<!-- Integer updateTask(@Param("TaskID")Integer TaskID,@Param("TaskType")String TaskType); -->
@@ -45,16 +45,17 @@
 	<!--得到任务数据-->
 	<!-- List<Task> getTask() -->
 	<select id="getTask" resultType="group.agv01.entity.Task">
-		select * from Task;
+		select * from Task where IsDelete=0
 	</select>
 	
 	<!-- 根据ID得到Task -->
 	<!--Task getTaskByID(String TaskID);  -->
 	<select id="getTaskByID" resultType="group.agv01.entity.Task">
 		select * from Task 
-		where TaskID=#{TaskID}
+		where TaskID=#{TaskID} and IsDelete=0
 	</select>
-
+	
+	
 
 
 

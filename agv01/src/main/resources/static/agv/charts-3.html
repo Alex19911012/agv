@@ -32,9 +32,9 @@
 					<th width="100">日期</th>
 					<th width="70">导航车ID</th>
 					<th width="80">导航车编号</th>
-					<th width="80">行驶距离</th>
-					<th width="90">载重行驶距离</th>
-					<th width="90">空驶行驶距离</th>
+					<th width="80">行驶距离(m)</th>
+					<th width="90">载重行驶距离(m)</th>
+					<th width="90">空驶行驶距离(m)</th>
 				</tr>
 			</thead>
 			<tbody id="DayRunDist-list">
@@ -60,24 +60,33 @@
 		});
 		var myChart1 = echarts.init(document.getElementById("mainA"));
 		var option1 = {
-			title:{
-				text:'日行驶距离(总表)	'
-			},	
-			tooltip:{	
-			},
-			legend:{
-				data:['距离']	
-			},
-			xAxis:{
-				data:["行驶距离","载重行驶距离","空驶行驶距离"]	
-			},
-			yAxis: {},
-			series: [{
-                name: '距离',
-                type: 'bar',
-                data: []
-            }]
-		};	
+				title: {
+			        text: '日行驶距离(总表)',
+			    },
+			    tooltip: {
+			        trigger: 'axis',
+			        axisPointer: {
+			            type: 'shadow'
+			        }
+			    },
+			    grid: {
+			        left: '3%',
+			        right: '4%',
+			        bottom: '3%',
+			        containLabel: true
+			    },
+			    xAxis: {
+			    },
+			    yAxis: {
+			    	data:["行驶距离","载重行驶距离","空驶行驶距离"]						    },
+			    series: [
+			        {
+			            name: '距离',
+			            type: 'bar',
+			            data: []
+			        }
+			    ]
+			};
 				
 		var myChart2 = echarts.init(document.getElementById("mainB"));
 		var option2 = {

@@ -37,14 +37,7 @@ public class Task implements Serializable{
 	@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
 	Date Deadline;
 
-	//货物名称
-
-	String MateName;
-
-	//货物数量
-
-	String Quan;
-
+	
 	//任务状态
 
 	String TStat;
@@ -56,6 +49,9 @@ public class Task implements Serializable{
 	//用户ID
 
 	String UserID;
+	
+	//是否删除
+	Integer IsDelete;
 
 	public String getTaskID() {
 		return TaskID;
@@ -97,11 +93,11 @@ public class Task implements Serializable{
 		DestPosiID = destPosiID;
 	}
 
-	public double getDist() {
+	public Double getDist() {
 		return Dist;
 	}
 
-	public void setDist(double dist) {
+	public void setDist(Double dist) {
 		Dist = dist;
 	}
 
@@ -111,22 +107,6 @@ public class Task implements Serializable{
 
 	public void setDeadline(Date deadline) {
 		Deadline = deadline;
-	}
-
-	public String getMateName() {
-		return MateName;
-	}
-
-	public void setMateName(String mateName) {
-		MateName = mateName;
-	}
-
-	public String getQuan() {
-		return Quan;
-	}
-
-	public void setQuan(String quan) {
-		Quan = quan;
 	}
 
 	public String getTStat() {
@@ -153,13 +133,23 @@ public class Task implements Serializable{
 		UserID = userID;
 	}
 
+	public Integer getIsDelete() {
+		return IsDelete;
+	}
+
+	public void setIsDelete(Integer isDelete) {
+		IsDelete = isDelete;
+	}
+
 	@Override
 	public String toString() {
 		return "Task [TaskID=" + TaskID + ", TaskType=" + TaskType + ", Grade=" + Grade + ", SourPosiID=" + SourPosiID
-				+ ", DestPosiID=" + DestPosiID + ", Dist=" + Dist + ", Deadline=" + Deadline + ", MateName=" + MateName
-				+ ", Quan=" + Quan + ", TStat=" + TStat + ", CreatDate=" + CreatDate + ", UserID=" + UserID + "]";
+				+ ", DestPosiID=" + DestPosiID + ", Dist=" + Dist + ", Deadline=" + Deadline + ", TStat=" + TStat
+				+ ", CreatDate=" + CreatDate + ", UserID=" + UserID + ", IsDelete=" + IsDelete + "]";
 	}
+
 	
+
 	
 	
 }

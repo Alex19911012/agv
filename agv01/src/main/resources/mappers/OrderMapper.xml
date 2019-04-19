@@ -13,23 +13,27 @@
 		OrderID,Grade,ONO,
 		OType,ODate,SourPosiID,
 		DestPosiID,Deadline,TStat,
-		CreatDate,UserID,Dist,OStat
+		CreatDate,UserID,Dist,OStat,
+		TID,AGVID,IsDelete
 		)values (
 		#{OrderID},#{Grade},#{ONO},
 		#{OType},#{ODate},#{SourPosiID},
 		#{DestPosiID},#{Deadline},#{TStat},
-		#{CreatDate},#{UserID},#{Dist},#{OStat}
+		#{CreatDate},#{UserID},#{Dist},#{OStat},
+		#{TID},#{AGVID},#{IsDelete}
 		)	
 	</insert>
 
 	<!-- 删除订单数据 -->
 	<!--Integer deleteOrder(String OrderID); -->
-	<delete id="deleteOrder">
-	delete from
+	<update id="deleteOrder">
+	update
 		TransferOrder
+	set
+		IsDelete=1	
 	where
 		OrderID=#{OrderID}	
-	</delete>
+	</update>
 
 	<!-- 修改订单数据 -->
 	<!-- Integer updateOrder(@Param("OrderID")String OrderID,@Param("OType")String OType); -->
@@ -39,26 +43,26 @@
 		set
 			OType=#{OType}
 		where
-			OrderID=#{OrderID}
+			OrderID=#{OrderID} 
 	</update>
 	
 	<!--得到订单数据-->
 	<!-- List<Order> getOrders() -->
 	<select id="getOrders" resultType="group.agv01.entity.Order">
-		select * from TransferOrder;
+		select * from TransferOrder where IsDelete=0;
 	</select>
 	
 	<!-- 根据ID得到订单 -->
 	<!--Order getOrderByID(String OrderID);  -->
 	<select id="getOrderByID" resultType="group.agv01.entity.Order">
 		select * from TransferOrder
-		where OrderID=#{OrderID}
+		where OrderID=#{OrderID} and IsDelete=0
 	</select>
 
 	<!--根据任务ID得到订单  -->
 	<!-- List<Order> getOrdersByTID(String TID); -->
 	<select id="getOrdersByTID" resultType="group.agv01.entity.Order">
-		select * from TransferOrder where TID=#{TID} ;
+		select * from TransferOrder where TID=#{TID}  and IsDelete=0;
 	</select>
 
 

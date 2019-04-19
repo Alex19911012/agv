@@ -23,8 +23,11 @@ import group.agv01.service.IAGVRecoService;
 import group.agv01.service.IOrderService;
 import group.agv01.service.ITaskService;
 import group.agv01.service.IUserService;
+import group.agv01.service.ex.AGVIDDuplicateException;
+import group.agv01.service.ex.DeleteException;
 import group.agv01.service.ex.InsertException;
 import group.agv01.service.ex.PasswordNotMatchException;
+import group.agv01.service.ex.TaskIDDuplicateException;
 import group.agv01.service.ex.UserNotFoundException;
 
 
@@ -41,22 +44,60 @@ public class AGVInfoServiceImpl implements IAGVInfoService {
 	private AGVInfoMapper AGVInfoTMapper;
 
 	@Override
-	public List<AGVInfo> findAGVInfos() {
-		return getAGVInfos();
+	public void addAGVInfo(AGVInfo AGVInfo) throws AGVIDDuplicateException, InsertException {
+		String AGVID = AGVInfo.getAGVID();
+		AGVInfo result = getAGVByID(AGVID);
+		if(result==null) {
+			insertAGVInfo(AGVInfo);
+		}else {
+			throw new TaskIDDuplicateException("AGV已存在");
+		}
+		
+		
+	}
+
+
+	@Override
+	public void delete(String AGVID) throws DeleteException {
+		deleteAGV(AGVID);	
 	}
 	
 	
+	@Override
+	public List<AGVInfo> findAGVInfos() {
+		return getAGVInfos();
+
+	}
+	
+	private void insertAGVInfo(AGVInfo AGVInfo) {
+		Integer rows = AGVInfoTMapper.insertAGVInfo(AGVInfo);
+		if(rows!=1) {
+			throw new InsertException();
+		}
+	}
+
+	
+	private void deleteAGV(String AGVID) {
+		Integer rows = AGVInfoTMapper.deleteAGV(AGVID);
+		if(rows!=1) {
+			throw new DeleteException();
+		}
+	}
+	
+
+		
 	private List<AGVInfo> getAGVInfos(){
 		return AGVInfoTMapper.getAGVInfos();
 	}
 	
 	
+	private AGVInfo getAGVByID(String AGVID) {
+		return AGVInfoTMapper.getAGVByID(AGVID);
+	}
 
-		
+
 	
-	
-	
-	
+
 	
 	
 

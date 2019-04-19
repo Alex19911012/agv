@@ -1,6 +1,9 @@
 package group.agv01.controller;
 
+import java.util.Date;
 import java.util.List;
+
+import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -35,7 +38,11 @@ public class OrderController extends BaseController{
 	}
 	
 	@PostMapping("/addOrder")
-	public ResponseResult<Void> addOrder(Order order) {	
+	public ResponseResult<Void> addOrder(Order order,HttpSession session) {	
+		String UserID = getUidFromSession(session).toString();
+		order.setUserID(UserID);
+		order.setODate(new Date());
+		order.setIsDelete(0);
 		System.err.println(order);
 		orderService.addOrder(order);				
 		return new ResponseResult<Void>(SUCCESS);

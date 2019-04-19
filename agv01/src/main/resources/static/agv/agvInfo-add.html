@@ -24,112 +24,123 @@
 <![endif]-->
 <!--/meta 作为公共模版分离出去-->
 
-<title>新增订单</title>
+<title>新增车档案信息</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 </head>
 <body>
 <article class="page-container">
-	<form class="form form-horizontal" id="form-order-add" role="form">
+	<form class="form form-horizontal" id="form-article-add" role="form">
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>订单ID</label>
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>导航车ID</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" value="" placeholder="" id="articletitle" name="OrderID">
+				<input type="text" class="input-text" value="" placeholder="" id="articletitle" name="AGVID">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>导航车编号</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" value="" placeholder="" id="articletitle" name="AGVNo">
 			</div>
 		</div>
 		
+		
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>级别</label>
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>导航车类型</label>
 			<div class="formControls col-xs-8 col-sm-9"> <span class="select-box">
-				<select name="Grade" class="select">
-					<option value="4003">一级紧急程度</option>
-					<option value="4033">二级紧急程度</option>
-					<option value="4333">三级紧急程度</option>
+				<select name="AType" class="select">
+					<option value="2001">1T</option>
+					<option value="2011">2T</option>
+					<option value="2022">3T</option>
 				</select>
 				</span> </div>
 		</div>
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>订单编号</label>
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>导航车规格</label>
+			<div class="formControls col-xs-8 col-sm-9"> <span class="select-box">
+				<select name="ASize" class="select">
+					<option value="4">特大</option>
+					<option value="3">大</option>
+					<option value="2">小</option>
+					<option value="1">特小</option>
+				</select>
+				</span> </div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">载重</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" value="" placeholder="" id="articletitle" name="ONO">
+				<input type="text" class="input-text" value="0" placeholder="" id="articlesort13" name="LoadCarry">
 			</div>
 		</div>
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>订单类型</label>
-			<div class="formControls col-xs-8 col-sm-9"> <span class="select-box">
-				<select name="OType" class="select">
-					<option value="4001">运输订单</option>
-					<option value="4011">临时订单</option>
-				</select>
-				</span> </div>
+			<label class="form-label col-xs-4 col-sm-2">自重</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" value="" placeholder="" id="keywords15" name="Weight">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">速度</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" value="" placeholder="" id="keywords14" name="Speed">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">电池续航时间</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" value="" placeholder="" id="keywords14" name="BattTime">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">电池续航距离</label>
+			<div class="formControls col-xs-8 col-sm-9">
+			 	<input type="text" class="input-text" value="" placeholder="" id="keywords14" name="BattDist">
+ 			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">电池功率</label>
+			<div class="formControls col-xs-8 col-sm-9">
+			 	<input type="text" class="input-text" value="" placeholder="" id="keywords14" name="BattPower">
+ 			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">导航车IP</label>
+			<div class="formControls col-xs-8 col-sm-9">
+			 	<input type="text" class="input-text" value="" placeholder="" id="keywords14" name="AGVIP">
+ 			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">服务器IP</label>
+			<div class="formControls col-xs-8 col-sm-9">
+			 	<input type="text" class="input-text" value="" placeholder="" id="keywords14" name="ServerIP">
+ 			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">域名</label>
+			<div class="formControls col-xs-8 col-sm-9">
+			 	<input type="text" class="input-text" value="" placeholder="" id="keywords14" name="DNS">
+ 			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">通讯协议接口号</label>
+			<div class="formControls col-xs-8 col-sm-9">
+			 	<input type="text" class="input-text" value="" placeholder="" id="keywords14" name="DNS">
+ 			</div>
 		</div>
 		
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2">起点位置ID</label>
+			<label class="form-label col-xs-4 col-sm-2">导航车RFID</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" value="0" placeholder="" id="articlesort13" name="SourPosiID">
-			</div>
-		</div>
-		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2">终点位置ID</label>
-			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" value="" placeholder="" id="keywords15" name="DestPosiID">
-			</div>
-		</div>
-		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2">最后期限</label>
-			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd HH:mm:ss',maxDate:'' })" id="commentdatemax" name="Deadline" class="input-text Wdate">
-			</div>
-		</div>
-		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>任务状态</label>
-			<div class="formControls col-xs-8 col-sm-9"> <span class="select-box">
-				<select name="TStat" class="select">
-					<option value="302">未执行</option>
-					<option value="3022">执行中</option>
-					<option value="3222">任务完成</option>
-					<option value="3332">任务取消</option>
-				</select>
-				</span> </div>
-		</div>
-		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2">任务创建时间</label>
-			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd HH:mm:ss',maxDate:'' })" id="commentdatemin" name="CreatDate" class="input-text Wdate">
-			</div>
+			 	<input type="text" class="input-text" value="" placeholder="" id="keywords14" name="DNS">
+ 			</div>
 		</div>
 		
-				
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2">距离</label>
+			<label class="form-label col-xs-4 col-sm-2">导航车SIM号</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" value="" placeholder="" id="keywords11" name="Dist">
-			</div>
+			 	<input type="text" class="input-text" value="" placeholder="" id="keywords14" name="DNS">
+ 			</div>
 		</div>
-		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>订单状态</label>
-			<div class="formControls col-xs-8 col-sm-9"> <span class="select-box">
-				<select name="OStat" class="select">
-					<option value="4002">订单待执行</option>
-					<option value="4022">订单执行中</option>
-					<option value="4222">订单完成</option>
-					<option value="4332">订单取消</option>
-				</select>
-				</span> </div>
-		</div>
-		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2">任务ID</label>
-			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" value="" placeholder="" id="keywords11" name="TID">
-			</div>
-		</div>
-		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2">AGVID</label>
-			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" value="" placeholder="" id="keywords11" name="AGVID">
-			</div>
-		</div>
+		
 		<div class="row cl">
 			<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
 				<button id="btn-addnew"  class="btn btn-primary radius" type="button"><i class="Hui-iconfont">&#xe632;</i> 生成任务</button>
@@ -158,8 +169,8 @@
 <script type="text/javascript">
 		$("#btn-addnew").click(function(){
 			$.ajax({
-				"url":"/order/addOrder",
-				"data":$("#form-order-add").serialize(),
+				"url":"/agv/add",
+				"data":$("#form-article-add").serialize(),
 				"type":"POST",
 				"dataType":"json",
 				"success":function(json){

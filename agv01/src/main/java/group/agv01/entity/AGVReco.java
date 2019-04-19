@@ -28,25 +28,13 @@ public class AGVReco implements Serializable{
 			
 			Double Speed;
 			
-			//电池功率
 			
-			Double BattPower;
 			
-			//电压
+						
+			//电量
 			
-			Double Volt;
+			Integer perc;
 			
-			//温度
-			
-			Double Temp;
-			
-			//电流
-			
-			Double Curr;
-			
-			//电量%
-			
-			Double perc;
 			
 			//导航车状态
 			
@@ -91,43 +79,11 @@ public class AGVReco implements Serializable{
 				Speed = speed;
 			}
 
-			public Double getBattPower() {
-				return BattPower;
-			}
-
-			public void setBattPower(Double battPower) {
-				BattPower = battPower;
-			}
-
-			public Double getVolt() {
-				return Volt;
-			}
-
-			public void setVolt(Double volt) {
-				Volt = volt;
-			}
-
-			public Double getTemp() {
-				return Temp;
-			}
-
-			public void setTemp(Double temp) {
-				Temp = temp;
-			}
-
-			public Double getCurr() {
-				return Curr;
-			}
-
-			public void setCurr(Double curr) {
-				Curr = curr;
-			}
-
-			public Double getPerc() {
+			public Integer getPerc() {
 				return perc;
 			}
 
-			public void setPerc(Double perc) {
+			public void setPerc(Integer perc) {
 				this.perc = perc;
 			}
 
@@ -158,9 +114,10 @@ public class AGVReco implements Serializable{
 			@Override
 			public String toString() {
 				return "AGVReco [AGVID=" + AGVID + ", ATime=" + ATime + ", AGVNo=" + AGVNo + ", Speed=" + Speed
-						+ ", BattPower=" + BattPower + ", Volt=" + Volt + ", Temp=" + Temp + ", Curr=" + Curr
 						+ ", perc=" + perc + ", AStat=" + AStat + ", PosiID=" + PosiID + ", OID=" + OID + "]";
 			}
+
+			
 				
 			
 	

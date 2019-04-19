@@ -6,14 +6,50 @@
 <!--namespace:匹配的Java接口  -->
 <mapper namespace="group.agv01.mapper.AGVInfoMapper">
 	
+	<!-- 插入插入AGV档案数据 -->
+	<!--Integer insertAGVInfo(AGVInfo AGVInfo);  -->
+	<insert id="insertAGVInfo">
+		insert into AGV(
+		AGVID,AGVNo,AType,
+		ASize,LoadCarry,Weight,
+		Speed,BattTime,BattDist,
+		BattPower,AGVIP,ServerIP,
+		DNS,Port,AGVRFID,
+		AGVSIMNo,IsDelete
+		)values (
+		#{AGVID},#{AGVNo},#{AType},
+		#{ASize},#{LoadCarry},#{Weight},
+		#{Speed},#{BattTime},#{BattDist},
+		#{BattPower},#{AGVIP},#{ServerIP},
+		#{DNS},#{Port},#{AGVRFID},#{AGVSIMNo},#{IsDelete}
+		)			
+	</insert>	
+	
+	<!-- 删除AGV档案数据 -->
+	<!--Integer deleteAGV(String AGVID); -->
+	<update id="deleteTask">
+	update
+		AGV
+	set
+		IsDelete=1
+		where
+		AGVID=#{AGVID}
+	</update>
+	
 	
 	<!--得到AGV基本信息-->
 	<!-- List<AGVInfo> getAGVInfos();-->
 	<select id="getAGVInfos" resultType="group.agv01.entity.AGVInfo">
-		select * from AGV;
+		select * from AGV where IsDelete=0;
 	</select>
 	
 
+	<!-- 根据ID得到AGV -->
+	<!--AGVInfo getAGVByID(String AGVID);  -->
+	<select id="getAGVByID" resultType="group.agv01.entity.AGVInfo">
+		select * from AGV 
+		where AGVID=#{AGVID} and IsDelete=0
+	</select>
 
 
 

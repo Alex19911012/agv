@@ -68,6 +68,8 @@ public class Order implements Serializable{
 	String TID;
 	
 	String AGVID;
+	
+	Integer IsDelete;
 
 	public String getOrderID() {
 		return OrderID;
@@ -189,14 +191,23 @@ public class Order implements Serializable{
 		AGVID = aGVID;
 	}
 
+	public Integer getIsDelete() {
+		return IsDelete;
+	}
+
+	public void setIsDelete(Integer isDelete) {
+		IsDelete = isDelete;
+	}
+
 	@Override
 	public String toString() {
 		return "Order [OrderID=" + OrderID + ", Grade=" + Grade + ", ONO=" + ONO + ", OType=" + OType + ", ODate="
 				+ ODate + ", SourPosiID=" + SourPosiID + ", DestPosiID=" + DestPosiID + ", Deadline=" + Deadline
 				+ ", TStat=" + TStat + ", CreatDate=" + CreatDate + ", UserID=" + UserID + ", Dist=" + Dist + ", OStat="
-				+ OStat + ", TID=" + TID + ", AGVID=" + AGVID + "]";
+				+ OStat + ", TID=" + TID + ", AGVID=" + AGVID + ", IsDelete=" + IsDelete + "]";
 	}
 
+	
 		
 	
 }

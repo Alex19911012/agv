@@ -24,56 +24,56 @@
 <![endif]-->
 <!--/meta 作为公共模版分离出去-->
 
-<title>新增订单</title>
+<title>新增任务</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 </head>
 <body>
 <article class="page-container">
-	<form class="form form-horizontal" id="form-order-add" role="form">
+	<form class="form form-horizontal" id="form-article-add" role="form">
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>订单ID</label>
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>任务ID</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" value="" placeholder="" id="articletitle" name="OrderID">
+				<input type="text" class="input-text" value="" placeholder="" id="articletitle" name="TaskID">
 			</div>
 		</div>
 		
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>任务类型</label>
+			<div class="formControls col-xs-8 col-sm-9"> <span class="select-box">
+				<select name="TaskType" class="select">
+					<option value="3001">运输任务</option>
+					<option value="3011">充电任务</option>
+					<option value="3111">临时任务</option>
+				</select>
+				</span> </div>
+		</div>
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>级别</label>
 			<div class="formControls col-xs-8 col-sm-9"> <span class="select-box">
 				<select name="Grade" class="select">
-					<option value="4003">一级紧急程度</option>
-					<option value="4033">二级紧急程度</option>
-					<option value="4333">三级紧急程度</option>
+					<option value="3003">一级紧急程度</option>
+					<option value="3033">二级紧急程度</option>
+					<option value="3333">三级紧急程度</option>
 				</select>
 				</span> </div>
 		</div>
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>订单编号</label>
-			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" value="" placeholder="" id="articletitle" name="ONO">
-			</div>
-		</div>
-		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>订单类型</label>
-			<div class="formControls col-xs-8 col-sm-9"> <span class="select-box">
-				<select name="OType" class="select">
-					<option value="4001">运输订单</option>
-					<option value="4011">临时订单</option>
-				</select>
-				</span> </div>
-		</div>
-		
-		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2">起点位置ID</label>
+			<label class="form-label col-xs-4 col-sm-2">起点ID</label>
 			<div class="formControls col-xs-8 col-sm-9">
 				<input type="text" class="input-text" value="0" placeholder="" id="articlesort13" name="SourPosiID">
 			</div>
 		</div>
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2">终点位置ID</label>
+			<label class="form-label col-xs-4 col-sm-2">终点ID</label>
 			<div class="formControls col-xs-8 col-sm-9">
 				<input type="text" class="input-text" value="" placeholder="" id="keywords15" name="DestPosiID">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">距离</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" value="" placeholder="" id="keywords14" name="Dist">
 			</div>
 		</div>
 		<div class="row cl">
@@ -83,52 +83,15 @@
 			</div>
 		</div>
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>任务状态</label>
+			<label class="form-label col-xs-4 col-sm-2">任务状态</label>
 			<div class="formControls col-xs-8 col-sm-9"> <span class="select-box">
 				<select name="TStat" class="select">
-					<option value="302">未执行</option>
+					<option value="3002">未执行</option>
 					<option value="3022">执行中</option>
 					<option value="3222">任务完成</option>
 					<option value="3332">任务取消</option>
 				</select>
 				</span> </div>
-		</div>
-		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2">任务创建时间</label>
-			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd HH:mm:ss',maxDate:'' })" id="commentdatemin" name="CreatDate" class="input-text Wdate">
-			</div>
-		</div>
-		
-				
-		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2">距离</label>
-			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" value="" placeholder="" id="keywords11" name="Dist">
-			</div>
-		</div>
-		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>订单状态</label>
-			<div class="formControls col-xs-8 col-sm-9"> <span class="select-box">
-				<select name="OStat" class="select">
-					<option value="4002">订单待执行</option>
-					<option value="4022">订单执行中</option>
-					<option value="4222">订单完成</option>
-					<option value="4332">订单取消</option>
-				</select>
-				</span> </div>
-		</div>
-		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2">任务ID</label>
-			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" value="" placeholder="" id="keywords11" name="TID">
-			</div>
-		</div>
-		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2">AGVID</label>
-			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" value="" placeholder="" id="keywords11" name="AGVID">
-			</div>
 		</div>
 		<div class="row cl">
 			<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
@@ -158,8 +121,8 @@
 <script type="text/javascript">
 		$("#btn-addnew").click(function(){
 			$.ajax({
-				"url":"/order/addOrder",
-				"data":$("#form-order-add").serialize(),
+				"url":"/task/addTask",
+				"data":$("#form-article-add").serialize(),
 				"type":"POST",
 				"dataType":"json",
 				"success":function(json){

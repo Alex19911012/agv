@@ -22,8 +22,30 @@ import group.agv01.entity.User;
 public interface AGVInfoMapper {
 	
 	/**
+	 * 插入AGV档案数据
+	 * @param AGVInfo
+	 * @return
+	 */
+	Integer insertAGVInfo(AGVInfo AGVInfo);
+	
+	/**
+	 * 删除AGV档案数据
+	 * @param AGVID
+	 * @return
+	 */
+	Integer deleteAGV(String AGVID);
+
+	
+	/**
 	 * 得到AGV基本信息
 	 */
 	List<AGVInfo> getAGVInfos();
+	
+	/**
+	 * 根据ID得到AGV
+	 * @param AGVID
+	 * @return
+	 */
+	AGVInfo getAGVByID(String AGVID);
 	
 }

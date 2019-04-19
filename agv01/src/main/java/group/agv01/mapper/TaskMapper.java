@@ -33,12 +33,13 @@ public interface TaskMapper {
 	Integer deleteTask(String TaskID);
 	
 	/**
-	 * 更改任务数据
+	 * 更改数据
 	 * @param TaskID
 	 * @param TaskType
 	 * @return
 	 */
 	Integer updateTask(@Param("TaskID")String TaskID,@Param("TaskType")String TaskType);
+	
 	
 	/**
 	 * 得到任务数据

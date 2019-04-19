@@ -78,9 +78,7 @@ public class AGVInfo implements Serializable{
 
 	String AGVSIMNo;
 
-	//导航车状态
-
-	String AStat;
+	Integer IsDelete;
 
 	public String getAGVID() {
 		return AGVID;
@@ -210,12 +208,14 @@ public class AGVInfo implements Serializable{
 		AGVSIMNo = aGVSIMNo;
 	}
 
-	public String getAStat() {
-		return AStat;
+	
+	
+	public Integer getIsDelete() {
+		return IsDelete;
 	}
 
-	public void setAStat(String aStat) {
-		AStat = aStat;
+	public void setIsDelete(Integer isDelete) {
+		IsDelete = isDelete;
 	}
 
 	@Override
@@ -223,7 +223,7 @@ public class AGVInfo implements Serializable{
 		return "AGVInfo [AGVID=" + AGVID + ", AGVNo=" + AGVNo + ", AType=" + AType + ", ASize=" + ASize + ", LoadCarry="
 				+ LoadCarry + ", Weight=" + Weight + ", Speed=" + Speed + ", BattTime=" + BattTime + ", BattDist="
 				+ BattDist + ", BattPower=" + BattPower + ", AGVIP=" + AGVIP + ", ServerIP=" + ServerIP + ", DNS=" + DNS
-				+ ", Port=" + Port + ", AGVRFID=" + AGVRFID + ", AGVSIMNo=" + AGVSIMNo + ", AStat=" + AStat + "]";
+				+ ", Port=" + Port + ", AGVRFID=" + AGVRFID + ", AGVSIMNo=" + AGVSIMNo + "]";
 	}
 			
 	

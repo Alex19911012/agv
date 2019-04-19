@@ -1,5 +1,6 @@
 package group.agv01.controller;
 
+import java.util.Date;
 import java.util.List;
 
 import javax.servlet.http.HttpSession;
@@ -36,7 +37,11 @@ public class TaskController extends BaseController{
 	}
 	
 	@PostMapping("/addTask")
-	public ResponseResult<Void> addTask(Task task) {	
+	public ResponseResult<Void> addTask(Task task,HttpSession session) {	
+		String UserID = getUidFromSession(session).toString();
+		task.setUserID(UserID);
+		task.setCreatDate(new Date());
+		task.setIsDelete(0);
 		System.err.println(task);
 		taskService.addTask(task);				
 		return new ResponseResult<Void>(SUCCESS);
