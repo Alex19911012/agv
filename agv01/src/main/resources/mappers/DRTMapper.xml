@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+
+<!-- 这是在写映射 -->
+<!--namespace:匹配的Java接口  -->
+<mapper namespace="group.agv01.mapper.DRTMapper">
+	
+	
+	<!--得到高低峰数据-->
+	<!-- List<DRT> getDRT();-->
+	<select id="getDRT" resultType="group.agv01.vo.DRT">
+	select * from TimeSege as t4 right join (SELECT t1.*
+		FROM DayRouterTimeSege AS t1
+		INNER JOIN
+		(
+		SELECT t2.DRTID, MAX(SD) AS maxdate
+		FROM DayRouterTimeSege AS t2
+		GROUP BY t2.DRTID
+		) AS t3 ON t1.DRTID = t3.DRTID AND t1.SD = t3.maxdate) as t5
+		on t4.TimeSegeID = t5.TimeSegeID;
+	</select>
+	
+
+
+
+
+
+	
+	
+</mapper>

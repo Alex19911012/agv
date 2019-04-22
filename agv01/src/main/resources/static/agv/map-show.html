@@ -1,0 +1,156 @@
+﻿<!--_meta 作为公共模版分离出去-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<link rel="Bookmark" href="/favicon.ico" >
+<link rel="Shortcut Icon" href="/favicon.ico" />
+
+<link rel="stylesheet" type="text/css" href="static/h-ui/css/H-ui.min.css" />
+<link rel="stylesheet" type="text/css" href="static/h-ui.admin/css/H-ui.admin.css" />
+<link rel="stylesheet" type="text/css" href="lib/Hui-iconfont/1.0.8/iconfont.css" />
+<link rel="stylesheet" type="text/css" href="static/h-ui.admin/skin/default/skin.css" id="skin" />
+<link rel="stylesheet" type="text/css" href="static/h-ui.admin/css/style.css" />
+
+<!--/meta 作为公共模版分离出去-->
+
+<title>地图展示</title>
+</head>
+<body>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页
+	<span class="c-gray en">&gt;</span>
+	地图数据
+	<span class="c-gray en">&gt;</span>
+	地图展示
+	<a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a>
+</nav>
+<div id="mainA" style="min-width:600px;height:800px">	
+	
+
+</div>
+
+<!--_footer 作为公共模版分离出去-->
+<script type="text/javascript" src="lib/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="lib/layer/2.4/layer.js"></script>
+<script type="text/javascript" src="static/h-ui/js/H-ui.min.js"></script>
+<script type="text/javascript" src="static/h-ui.admin/js/H-ui.admin.js"></script> <!--/_footer 作为公共模版分离出去-->
+
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript" src="lib/My97DatePicker/4.8/WdatePicker.js"></script>
+<script type="text/javascript" src="lib/jquery.validation/1.14.0/jquery.validate.js"></script>
+<script type="text/javascript" src="lib/jquery.validation/1.14.0/validate-methods.js"></script>
+<script type="text/javascript" src="lib/jquery.validation/1.14.0/messages_zh.js"></script>
+<script src="incubator-echarts-4.2.1/dist/echarts.js"></script>
+<script type="text/javascript">
+var myChart1 = echarts.init(document.getElementById("mainA"));
+var option1 = {
+	    xAxis: {},
+	    yAxis: {},
+	   
+	    series: [
+	    	
+	    	{
+	    	name: "AB",
+	        data: [[10, 20], [15, 25], [25, 30],[30, 30], [40, 30], [50, 40],[60,60],[70, 80],[70, 70], [70, 60], [70, 40],{
+                value: [80,40],
+                symbol: 'diamond',
+                symbolSize : 20,
+                symbolRotate : 10,
+                itemStyle: {        // 数据级个性化折线样式
+                    normal: {
+                        color: 'blue'
+                    },
+                    emphasis: {
+                        color: 'orange',
+                        label : {
+                            show: true,
+                            position: 'inside',
+                            textStyle : {
+                                fontSize : '20'
+                            }
+                        }
+                    }
+                }
+            }],
+	        type: 'line',
+	        symbol:'arrow',
+            symbolSize: 12,
+            symbolRotate: -90,
+	        },
+	        
+			{
+	        name: "AC",
+	        data:[[10, 20], [15, 25], [25, 30],[30, 60], [40, 60], [50, 60],[60,80],[70, 80], [80, 80], {
+                value: [100,100],
+                symbol: 'star6',
+                symbolSize : 20,
+                symbolRotate : 10,
+                itemStyle: {        // 数据级个性化折线样式
+                    normal: {
+                        color: 'red'
+                    },
+                    emphasis: {
+                        color: 'orange',
+                        label : {
+                            show: true,
+                            position: 'inside',
+                            textStyle : {
+                                fontSize : '20'
+                            }
+                        }
+                    }
+                }
+            }],
+	        type: 'line',
+	        symbol:'arrow',
+	        symbolSize: 12,
+	        symbolRotate: -90,
+	        },
+			{
+	        name: "BC",
+	        data: [[100, 100], [90, 90], [90, 80],[90, 70], [80, 70],[70,70,],[70, 70], [50, 70],[40,70],[20,70], {
+                value: [0,70],
+                symbol: 'triangle',
+                symbolSize : 20,
+                symbolRotate : 10,
+                itemStyle: {        // 数据级个性化折线样式
+                    normal: {
+                        color: 'yellowgreen'
+                    },
+                    emphasis: {
+                        color: 'orange',
+                        label : {
+                            show: true,
+                            position: 'inside',
+                            textStyle : {
+                                fontSize : '20'
+                            }
+                        }
+                    }
+                }
+            }],
+	        type: 'line',
+	        symbol:'arrow',
+	        symbolSize: 12,
+	        symbolRotate: 90,
+	        }]
+
+
+};	
+myChart1.setOption(option1);
+/* myChart1.setOption({
+	series:[{
+		name:'次数',
+		data:nums
+	}]
+
+}); */	
+
+</script>
+<!--/请在上方写此页面业务相关的脚本-->
+</body>
+</html>
