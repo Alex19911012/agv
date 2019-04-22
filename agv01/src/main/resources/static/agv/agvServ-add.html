@@ -16,7 +16,7 @@
 <link rel="stylesheet" type="text/css" href="static/h-ui.admin/css/style.css" />
 <!--/meta 作为公共模版分离出去-->
 
-<title>新增车档案信息</title>
+<title>新增车维保信息</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 </head>
@@ -30,112 +30,68 @@
 			</div>
 		</div>
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>导航车编号</label>
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>维护保养时间</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" value="" placeholder="" id="articletitle" name="AGVNo">
+				<input type="text" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd HH:mm:ss',maxDate:'' })" id="commentdatemax" name="ServDate" class="input-text Wdate">
 			</div>
 		</div>
 		
 		
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>导航车类型</label>
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>维护保养类型</label>
 			<div class="formControls col-xs-8 col-sm-9"> <span class="select-box">
-				<select name="AType" class="select">
-					<option value="2001">1T</option>
-					<option value="2011">2T</option>
-					<option value="2022">3T</option>
+				<select name="ServType" class="select">
+					<option value="2003">维保</option>
+					<option value="2013">维修</option>
 				</select>
 				</span> </div>
 		</div>
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>导航车规格</label>
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>维护保养项目</label>
 			<div class="formControls col-xs-8 col-sm-9"> <span class="select-box">
-				<select name="ASize" class="select">
-					<option value="4">特大</option>
-					<option value="3">大</option>
-					<option value="2">小</option>
-					<option value="1">特小</option>
+				<select name="ServItem" class="select">
+					<option value="4">项目1</option>
+					<option value="3">项目2</option>
+					<option value="2">项目3</option>
+					<option value="1">项目4</option>
 				</select>
 				</span> </div>
 		</div>
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2">载重</label>
+			<label class="form-label col-xs-4 col-sm-2">部件名称</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" value="0" placeholder="" id="articlesort13" name="LoadCarry">
+				<input type="text" class="input-text" value="0" placeholder="" id="articlesort13" name="PartName">
 			</div>
 		</div>
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2">自重</label>
+			<label class="form-label col-xs-4 col-sm-2">行驶距离</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" value="" placeholder="" id="keywords15" name="Weight">
+				<input type="text" class="input-text" value="" placeholder="" id="keywords15" name="RunDist">
 			</div>
 		</div>
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2">速度</label>
+			<label class="form-label col-xs-4 col-sm-2">行驶时间</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" value="" placeholder="" id="keywords14" name="Speed">
+				<input type="text" class="input-text" value="" placeholder="" id="keywords14" name="RunTime">
 			</div>
 		</div>
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2">电池续航时间</label>
+			<label class="form-label col-xs-4 col-sm-2">下次维护保养距离</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" value="" placeholder="" id="keywords14" name="BattTime">
+				<input type="text" class="input-text" value="" placeholder="" id="keywords14" name="NextDist">
 			</div>
 		</div>
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2">电池续航距离</label>
+			<label class="form-label col-xs-4 col-sm-2">下次维护保养时间</label>
 			<div class="formControls col-xs-8 col-sm-9">
-			 	<input type="text" class="input-text" value="" placeholder="" id="keywords14" name="BattDist">
- 			</div>
+				<input type="text" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd HH:mm:ss',maxDate:'' })" id="commentdatemax" name="NextTime" class="input-text Wdate">
+			</div>
+ 			
 		</div>
-		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2">电池功率</label>
-			<div class="formControls col-xs-8 col-sm-9">
-			 	<input type="text" class="input-text" value="" placeholder="" id="keywords14" name="BattPower">
- 			</div>
-		</div>
-		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2">导航车IP</label>
-			<div class="formControls col-xs-8 col-sm-9">
-			 	<input type="text" class="input-text" value="" placeholder="" id="keywords14" name="AGVIP">
- 			</div>
-		</div>
-		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2">服务器IP</label>
-			<div class="formControls col-xs-8 col-sm-9">
-			 	<input type="text" class="input-text" value="" placeholder="" id="keywords14" name="ServerIP">
- 			</div>
-		</div>
-		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2">域名</label>
-			<div class="formControls col-xs-8 col-sm-9">
-			 	<input type="text" class="input-text" value="" placeholder="" id="keywords14" name="DNS">
- 			</div>
-		</div>
-		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2">通讯协议接口号</label>
-			<div class="formControls col-xs-8 col-sm-9">
-			 	<input type="text" class="input-text" value="" placeholder="" id="keywords14" name="Port">
- 			</div>
-		</div>
-		
-		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2">导航车RFID</label>
-			<div class="formControls col-xs-8 col-sm-9">
-			 	<input type="text" class="input-text" value="" placeholder="" id="keywords14" name="AGVRFID">
- 			</div>
-		</div>
-		
-		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2">导航车SIM号</label>
-			<div class="formControls col-xs-8 col-sm-9">
-			 	<input type="text" class="input-text" value="" placeholder="" id="keywords14" name="AGVSIMNo">
- 			</div>
-		</div>
-		
+				
 		<div class="row cl">
 			<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
-				<button id="btn-addnew"  class="btn btn-primary radius" type="button"><i class="Hui-iconfont">&#xe632;</i> 生成任务</button>
+				<button id="btn-addnew"  class="btn btn-primary radius" type="button"><i class="Hui-iconfont">&#xe632;</i> 生成记录</button>
 				<button onClick="removeIframe();" class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
 			</div>
 		</div>
@@ -161,7 +117,7 @@
 <script type="text/javascript">
 		$("#btn-addnew").click(function(){
 			$.ajax({
-				"url":"/agv/add",
+				"url":"/agv/addServ",
 				"data":$("#form-article-add").serialize(),
 				"type":"POST",
 				"dataType":"json",

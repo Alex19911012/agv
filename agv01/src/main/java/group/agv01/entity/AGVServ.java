@@ -47,6 +47,8 @@ public class AGVServ implements Serializable{
 	//下次维护保养时间
 	@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
 	Date NextTime;
+	
+	String UserID;
 
 	public String getAGVID() {
 		return AGVID;
@@ -120,13 +122,22 @@ public class AGVServ implements Serializable{
 		NextTime = nextTime;
 	}
 
+	public String getUserID() {
+		return UserID;
+	}
+
+	public void setUserID(String userID) {
+		UserID = userID;
+	}
+
 	@Override
 	public String toString() {
 		return "AGVServ [AGVID=" + AGVID + ", ServDate=" + ServDate + ", ServType=" + ServType + ", ServItem="
 				+ ServItem + ", PartName=" + PartName + ", RunDist=" + RunDist + ", RunTime=" + RunTime + ", NextDist="
-				+ NextDist + ", NextTime=" + NextTime + "]";
+				+ NextDist + ", NextTime=" + NextTime + ", UserID=" + UserID + "]";
 	}
 
+	
 	
 	
 	

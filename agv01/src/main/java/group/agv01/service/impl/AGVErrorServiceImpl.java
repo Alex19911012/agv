@@ -44,14 +44,31 @@ public class AGVErrorServiceImpl implements IAGVErrorService {
 	private AGVErrorMapper AGVErrorMapper;
 	
 	@Override
+	public void addAGVError(AGVError AGVError) throws InsertException {
+		insertAGVError(AGVError);
+		
+	}
+
+	
+	@Override
 	public List<AGVError> findAGVErrors() {
 		return getAGVErrors();
 	}
 
 	
+	private void insertAGVError(AGVError AGVError) {
+		Integer rows = AGVErrorMapper.insertAGVError(AGVError);
+		if(rows!=1) {
+			throw new InsertException();
+		}
+	}
+	
 	private List<AGVError> getAGVErrors(){
 		return AGVErrorMapper.getAGVErrors();
 	}
+
+
+	
 	
 
 

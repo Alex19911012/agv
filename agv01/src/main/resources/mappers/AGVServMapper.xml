@@ -7,6 +7,22 @@
 <mapper namespace="group.agv01.mapper.AGVServMapper">
 	
 	
+	<!-- 插入插入AGV维保数据 -->
+	<!--Integer insertAGVServ(AGVServ AGVServ);  -->
+	<insert id="insertAGVServ">
+		insert into AGVDoc(
+		AGVID,ServDate,ServType,
+		ServItem,PartName,RunDist,
+		RunTime,NextDist,NextTime,
+		UserID
+		)values (
+		#{AGVID},#{ServDate},#{ServType},
+		#{ServItem},#{PartName},#{RunDist},
+		#{RunTime},#{NextDist},#{NextTime},
+		#{UserID}
+		)			
+	</insert>	
+	
 	<!--得到AGV维保数据-->
 	<!-- List<AGVReco> getAGVServs();-->
 	<select id="getAGVServs" resultType="group.agv01.entity.AGVServ">

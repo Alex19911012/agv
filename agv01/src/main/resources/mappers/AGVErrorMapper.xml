@@ -7,8 +7,24 @@
 <mapper namespace="group.agv01.mapper.AGVErrorMapper">
 	
 	
-	<!--得到AGV监控数据-->
-	<!-- List<AGVReco> getAGVErrors();-->
+	<!-- 插入AGV故障数据 -->
+	<!--Integer insertAGVError(AGVError AGVError);  -->
+	<insert id="insertAGVError">
+		insert into AGVError(
+		EID,AGVID,EDate,
+		ECode,EType,ELevel,
+		EDesc,ECause,Speed,
+		Perc,UserID
+		)values (
+		#{EID},#{AGVID},#{EDate},
+		#{ECode},#{EType},#{ELevel},
+		#{EDesc},#{ECause},#{Speed},
+		#{Perc},#{UserID}
+		)			
+	</insert>	
+	
+	<!--得到AGV故障数据-->
+	<!-- List<AGVError> getAGVErrors();-->
 	<select id="getAGVErrors" resultType="group.agv01.entity.AGVError">
 		SELECT * FROM AGVError;
 	</select>

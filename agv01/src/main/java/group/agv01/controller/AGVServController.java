@@ -2,12 +2,15 @@ package group.agv01.controller;
 
 import java.util.List;
 
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import group.agv01.entity.AGVInfo;
 import group.agv01.entity.AGVReco;
 import group.agv01.entity.AGVServ;
 import group.agv01.entity.Order;
@@ -36,6 +39,14 @@ public class AGVServController extends BaseController{
 		return new ResponseResult<List<AGVServ>>(SUCCESS,data);
 	}
 	
+	@PostMapping("/addServ")
+	public ResponseResult<Void> addServ(AGVServ AGVServ,HttpSession session) {	
+		String UserID = getUidFromSession(session).toString();
+		AGVServ.setUserID(UserID);
+		System.err.println(AGVServ);
+		AGVServService.addAGVServ(AGVServ);				
+		return new ResponseResult<Void>(SUCCESS);
+	}
 	
 	
 }

@@ -2,6 +2,8 @@ package group.agv01.controller;
 
 import java.util.List;
 
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -9,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import group.agv01.entity.AGVError;
+import group.agv01.entity.AGVInfo;
 import group.agv01.entity.AGVReco;
 import group.agv01.entity.AGVServ;
 import group.agv01.entity.Order;
@@ -32,12 +35,20 @@ public class AGVErrorController extends BaseController{
 	
 	
 	@GetMapping("/error")
-	public ResponseResult<List<AGVError>> AGVServList() {	
+	public ResponseResult<List<AGVError>> AGVErrorList() {	
 		System.err.println("请求车辆故障列表");
 		List<AGVError> data = AGVErrorService.findAGVErrors();
 		return new ResponseResult<List<AGVError>>(SUCCESS,data);
 	}
 	
+	@PostMapping("/addError")
+	public ResponseResult<Void> addError(AGVError AGVError,HttpSession session) {	
+		String UserID = getUidFromSession(session).toString();
+		AGVError.setUserID(UserID);
+		System.err.println(AGVError);
+		AGVErrorService.addAGVError(AGVError);				
+		return new ResponseResult<Void>(SUCCESS);
+	}
 	
 	
 }

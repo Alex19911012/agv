@@ -39,6 +39,7 @@
 					<th width="120">通讯协议接口号</th>
 					<th width="120">导航车RFID</th>
 					<th width="120">导航车SIM号</th>
+					<th width="80">操作</th>
 				</tr>
 			</thead>
 			<tbody id="AGVInfo-list">
@@ -91,6 +92,8 @@
 									+'<td>#{Port}</td>'
 									+'<td>#{AGVRFID}</td>'
 									+'<td>#{AGVSIMNo}</td>'
+									+'<td class="f-14 td-manage">'
+									+'<a   class="ml-5"   title="删除" href="javascript:void(0);" onclick="deleteAGV(&quot;#{AGVID}&quot;)"><i class="Hui-iconfont">&#xe6e2;</i>删除</a></td>'
 									+'</tr>';	
 							html = html.replace(/#{AGVID}/g,list[i].agvid);	
 							html = html.replace(/#{AGVNo}/g,list[i].agvno);	
@@ -122,7 +125,24 @@
 				}
 			});
 		};
-		
+		window.deleteAGV = function deleteAGV(AGVID){
+			$.ajax({
+				"url":"/agv/"+AGVID+"/delete",
+				"type":"POST",
+				"dataType":"json",
+				"success":function(json){
+					if(json.state == 200){
+						showAGVInfoList();
+					}else{
+						alert(json.message);
+					}
+				},
+				"error":function(){
+					alert("删除出错了");
+					//location.href="login.html";
+				}
+			});
+		};
 	</script>
 
 </body>

@@ -7,6 +7,7 @@ import org.apache.ibatis.annotations.Param;
 
 import group.agv01.entity.AGVError;
 import group.agv01.entity.AGVReco;
+import group.agv01.entity.AGVServ;
 import group.agv01.entity.Order;
 import group.agv01.entity.Task;
 import group.agv01.entity.User;
@@ -20,6 +21,13 @@ import group.agv01.entity.User;
  *
  */
 public interface AGVErrorMapper {
+	
+	/**
+	 * 插入AGV故障数据
+	 * @param AGVError
+	 * @return
+	 */
+	Integer insertAGVError(AGVError AGVError);
 	
 	/**
 	 * 得到AGV监控数据

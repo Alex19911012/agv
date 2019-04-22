@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.DigestUtils;
 
+import group.agv01.entity.AGVInfo;
 import group.agv01.entity.AGVReco;
 import group.agv01.entity.AGVServ;
 import group.agv01.entity.Order;
@@ -25,6 +26,7 @@ import group.agv01.service.ITaskService;
 import group.agv01.service.IUserService;
 import group.agv01.service.ex.InsertException;
 import group.agv01.service.ex.PasswordNotMatchException;
+import group.agv01.service.ex.TaskIDDuplicateException;
 import group.agv01.service.ex.UserNotFoundException;
 
 
@@ -41,13 +43,30 @@ public class AGVServServiceImpl implements IAGVServService {
 	private AGVServMapper AGVServMapper;
 
 	@Override
+	public void addAGVServ(AGVServ AGVServ) throws InsertException {
+			insertAGVServ(AGVServ);	
+		
+	}
+	
+	@Override
 	public List<AGVServ> findAGVServs() {
 		return getAGVServs();
 	}
 	
+	private void insertAGVServ(AGVServ AGVServ) {
+		Integer rows = AGVServMapper.insertAGVServ(AGVServ);
+		if(rows!=1) {
+			throw new InsertException();
+		}
+	}
+
+	
+	
 	private List<AGVServ> getAGVServs(){
 		return AGVServMapper.getAGVServs();
 	}
+
+	
 
 
 

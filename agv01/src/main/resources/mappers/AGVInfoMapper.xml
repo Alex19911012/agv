@@ -27,7 +27,7 @@
 	
 	<!-- 删除AGV档案数据 -->
 	<!--Integer deleteAGV(String AGVID); -->
-	<update id="deleteTask">
+	<update id="deleteAGV">
 	update
 		AGV
 	set

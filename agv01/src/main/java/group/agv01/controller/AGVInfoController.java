@@ -1,9 +1,13 @@
 package group.agv01.controller;
 
+import java.util.Date;
 import java.util.List;
+
+import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -30,12 +34,26 @@ public class AGVInfoController extends BaseController{
 	
 	
 	@GetMapping("/info")
-	public ResponseResult<List<AGVInfo>> OAGVTList() {	
+	public ResponseResult<List<AGVInfo>> AGVInfoList() {	
 		System.err.println("请求AGV基本信息列表");
 		List<AGVInfo> data = AGVInfoService.findAGVInfos();
 		return new ResponseResult<List<AGVInfo>>(SUCCESS,data);
 	}
 	
+	@PostMapping("/add")
+	public ResponseResult<Void> addAGVInfo(AGVInfo AGVInfo,HttpSession session) {	
+		String UserID = getUidFromSession(session).toString();
+		AGVInfo.setIsDelete(0);
+		System.err.println(AGVInfo);
+		AGVInfoService.addAGVInfo(AGVInfo);				
+		return new ResponseResult<Void>(SUCCESS);
+	}
 	
+	@PostMapping("/{AGVID}/delete")
+	public ResponseResult<Void> delete(@PathVariable("AGVID")String AGVID){
+		System.err.println(AGVID);
+		AGVInfoService.delete(AGVID);
+		return new ResponseResult<Void>(SUCCESS);
+	}
 	
 }

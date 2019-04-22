@@ -49,135 +49,133 @@ public class AGVError implements Serializable{
 
 	Double Speed;
 
-	//电池功率
+	//电量
 
-	Double BattPower;
+	Integer Perc;
 
-	//电压
-
-	Double Volt;
-
-	//温度
-
-	Double Temp;
 
 	//用户ID
 
 	String UserID;
 
+
 	public String getEID() {
 		return EID;
 	}
+
 
 	public void setEID(String eID) {
 		EID = eID;
 	}
 
+
 	public String getAGVID() {
 		return AGVID;
 	}
+
 
 	public void setAGVID(String aGVID) {
 		AGVID = aGVID;
 	}
 
+
 	public Date getEDate() {
 		return EDate;
 	}
+
 
 	public void setEDate(Date eDate) {
 		EDate = eDate;
 	}
 
+
 	public String getECode() {
 		return ECode;
 	}
+
 
 	public void setECode(String eCode) {
 		ECode = eCode;
 	}
 
+
 	public String getEType() {
 		return EType;
 	}
+
 
 	public void setEType(String eType) {
 		EType = eType;
 	}
 
+
 	public String getELevel() {
 		return ELevel;
 	}
+
 
 	public void setELevel(String eLevel) {
 		ELevel = eLevel;
 	}
 
+
 	public String getEDesc() {
 		return EDesc;
 	}
+
 
 	public void setEDesc(String eDesc) {
 		EDesc = eDesc;
 	}
 
+
 	public String getECause() {
 		return ECause;
 	}
+
 
 	public void setECause(String eCause) {
 		ECause = eCause;
 	}
 
+
 	public Double getSpeed() {
 		return Speed;
 	}
+
 
 	public void setSpeed(Double speed) {
 		Speed = speed;
 	}
 
-	public Double getBattPower() {
-		return BattPower;
+
+	public Integer getPerc() {
+		return Perc;
 	}
 
-	public void setBattPower(Double battPower) {
-		BattPower = battPower;
+
+	public void setPerc(Integer perc) {
+		Perc = perc;
 	}
 
-	public Double getTemp() {
-		return Temp;
-	}
-
-	public void setTemp(Double temp) {
-		Temp = temp;
-	}
 
 	public String getUserID() {
 		return UserID;
 	}
 
+
 	public void setUserID(String userID) {
 		UserID = userID;
 	}
 
-	
-	
-	public Double getVolt() {
-		return Volt;
-	}
-
-	public void setVolt(Double volt) {
-		Volt = volt;
-	}
 
 	@Override
 	public String toString() {
 		return "AGVError [EID=" + EID + ", AGVID=" + AGVID + ", EDate=" + EDate + ", ECode=" + ECode + ", EType="
 				+ EType + ", ELevel=" + ELevel + ", EDesc=" + EDesc + ", ECause=" + ECause + ", Speed=" + Speed
-				+ ", BattPower=" + BattPower + ", Volt=" + Volt + ", Temp=" + Temp + ", UserID=" + UserID + "]";
+				+ ", Perc=" + Perc + ", UserID=" + UserID + "]";
 	}
-	
-	
+
+		
 	
 }
