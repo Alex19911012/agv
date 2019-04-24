@@ -46,8 +46,358 @@
 <script type="text/javascript" src="lib/jquery.validation/1.14.0/messages_zh.js"></script>
 <script src="incubator-echarts-4.2.1/dist/echarts.js"></script>
 <script type="text/javascript">
-var myChart1 = echarts.init(document.getElementById("mainA"));
-var option1 = {
+	
+	var myChart1 = echarts.init(document.getElementById("mainA"));
+
+	var pointSP = [];
+	var pointDP = [];
+	var option1 = {
+			xAxis: [{
+				show : false,
+				
+			}],
+		    yAxis: [{
+		    	show : false,
+		    	
+		    }],
+		    series: [
+		    	{
+				 	name:0,
+					data:[],
+					type: 'line',
+			        smooth: true,
+			        symbolSize: 0,
+			        lineStyle:{
+		                 color:'#D3D3D3'
+		         }
+
+				 },	
+				 {
+					 name:1,
+					data:[],
+					type:'line',
+					symbolSize: 0,
+					lineStyle:{
+		                 color:'#D3D3D3'
+		         }
+				 },	
+				{
+					name:2,
+					data:[],
+					type:'line',
+					symbolSize: 0,
+					 lineStyle:{
+		                 color:'#D3D3D3'
+		         }
+
+				},
+				{
+				 	name:3,
+					data:[],
+					type: 'line',
+			        smooth: 0.5,
+			        symbolSize: 0,
+			        lineStyle:{
+		                 color:'#D3D3D3'
+		         }
+
+			        
+				 },	
+				 {
+					 name:4,
+					data:[],
+					type:'line',
+					symbolSize: 0,
+					 lineStyle:{
+		                 color:'#D3D3D3'
+		         }
+				 },	
+				{
+					name:5,
+					data:[],
+					type:'line',
+					symbolSize: 0,
+					 lineStyle:{
+		                 color:'#D3D3D3'
+		         }				
+				 },
+				{
+				 	name:6,
+					data:[],
+					type: 'line',
+			        smooth: 0.5,
+			        symbolSize: 0,
+			        lineStyle:{
+		                 color:'#D3D3D3'
+		         }
+				 },	
+				 {
+					 name:7,
+					data:[],
+					type:'line',
+					symbolSize: 0,
+					 lineStyle:{
+		                 color:'#D3D3D3'
+		         }
+				 },	
+				{
+					name:8,
+					data:[],
+					type:'line',
+					symbolSize: 0,
+					 lineStyle:{
+		                 color:'#D3D3D3'
+		         }
+				},
+				{
+				 	name:9,
+					data:[],
+					type: 'line',
+			        smooth: true,
+			        symbolSize: 0,
+			        lineStyle:{
+		                 color:'#D3D3D3'
+		         }
+
+				 },	
+				 {
+					 name:10,
+					data:[],
+					type:'line',
+					symbol:'none',
+					symbolSize: 0,
+					lineStyle:{
+		                 color:'#D3D3D3'
+		         }
+
+				 },	
+				{
+					name:11,
+					data:[],
+					type:'line',
+					symbolSize: 0,
+					lineStyle:{
+			                 color:'#D3D3D3'
+			         }
+
+				},	
+				{
+				 	name:12,
+					data:[],
+					type: 'line',
+			        smooth: true,
+			        symbolSize: 0,
+					lineStyle:{
+			                 color:'#D3D3D3'
+			         }
+				 },	
+				 {
+					 name:13,
+					data:[],
+					type:'line',
+					symbolSize: 0,
+					lineStyle:{
+			                 color:'#D3D3D3'
+			         }
+				 },	
+				{
+					name:14,
+					data:[],
+					type:'line',
+					symbolSize: 0,
+					lineStyle:{
+			                 color:'#D3D3D3'
+			         }
+				},
+				{
+				 	name:15,
+					data:[],
+					type: 'line',
+			        smooth: true,
+			        symbolSize: 0,
+					lineStyle:{
+			                 color:'#D3D3D3'
+			         }
+				 },	
+				 {
+					 name:16,
+					data:[],
+					type:'line',
+					symbolSize: 0,
+					lineStyle:{
+			                 color:'#D3D3D3'
+			         }
+				 },	
+				{
+					name:17,
+					data:[],
+					type:'line',
+					symbolSize: 0,
+					lineStyle:{
+			                 color:'#D3D3D3'
+			         }
+				},	
+				{
+					name:18,
+					data:[],
+					type:'line',
+					symbolSize: 0,
+					lineStyle:{
+			                 color:'#D3D3D3'
+			         }
+				},	
+
+				{
+					name:19,
+					data:[],
+					type:'line',
+					symbolSize: 0,
+					lineStyle:{
+			                 color:'#D3D3D3'
+			         }
+				},	
+
+
+		    	
+		    ],
+			
+	};
+	
+	var listSP;
+	var listDP;
+	$(document).ready(
+		
+		$.ajax({
+			"url":"/map/pathSP",
+			"type":"GET",
+			"dataType":"json",
+			"success":function(json){
+				if(json.state == 200){		
+					listSP = json.data;
+					console.log(listSP);
+				}else{
+					alert(json.message);
+					//退出登录
+					
+				}
+			}
+		}),
+		
+		$.ajax({
+			"url":"/map/pathDP",
+			"type":"GET",
+			"dataType":"json",
+			"success":function(json){
+				if(json.state == 200){		
+					listDP = json.data;	
+					console.log(listSP);
+					console.log(listDP);
+
+					for(var i=0;i<listDP.length;i++){
+						
+						pointSP.push([listSP[i].px,listSP[i].py]);	
+						pointDP.push([listDP[i].px,listDP[i].py]);
+						myChart1.setOption(option1,true);
+						myChart1.setOption({
+							series:[
+							{
+							   name:0,
+							   data:[pointSP[0],[12,12],pointDP[0]],
+							   
+							 },
+							 {
+								name:1,
+								data:[pointSP[1],pointDP[1]],
+							},
+							{
+								 name:2,
+								 data:[pointSP[2],pointDP[2]],
+								 },
+							{
+								name:3,
+								data:[pointSP[3],pointDP[3]],
+							},
+							{
+								name:4,
+								data:[pointSP[4],pointDP[4]],
+							},
+							{
+								name:5,
+								data:[pointSP[5],pointDP[5]],
+							},
+							{
+								   name:6,
+								   data:[pointSP[6],pointDP[6]],
+								   
+								 },
+								 {
+									name:7,
+									data:[pointSP[7],pointDP[7]],
+								},
+								{
+									 name:8,
+									 data:[pointSP[8],pointDP[8]],
+									 },
+								{
+									name:9,
+									data:[pointSP[9],pointDP[9]],
+								},
+								{
+									name:10,
+									data:[pointSP[10],pointDP[10]],
+								},
+								{
+									name:11,
+									data:[pointSP[11],pointDP[11]],
+								},
+								{
+									   name:12,
+									   data:[pointSP[12],[40,40],pointDP[12]],
+									   
+									 },
+									 {
+										name:13,
+										data:[pointSP[13],pointDP[13]],
+									},
+									{
+										 name:14,
+										 data:[pointSP[14],pointDP[14]],
+										 },
+									{
+										name:15,
+										data:[pointSP[15],pointDP[15]],
+									},
+									{
+										name:16,
+										data:[pointSP[16],pointDP[16]],
+									},
+									{
+										name:17,
+										data:[pointSP[17],pointDP[17]],
+									},
+	
+
+							]
+						})
+
+					
+					}
+				
+				
+				}else{
+					alert(json.message);
+					//退出登录
+					
+				}
+			}
+		}),
+
+		
+);
+
+
+/* 
+ var option1 = {
 	    xAxis: {},
 	    yAxis: {},
 	   
@@ -80,6 +430,14 @@ var option1 = {
 	        symbol:'arrow',
             symbolSize: 12,
             symbolRotate: -90,
+	        },
+	        
+	        {
+	            id: 'a',
+	            type: 'line',
+	            smooth: true,
+	            symbolSize: 12,
+	            data: [[15, 0], [50, 10], [56.5, 20], [46.5, 30], [22.1, 40]]
 	        },
 	        
 			{
@@ -137,18 +495,25 @@ var option1 = {
 	        symbol:'arrow',
 	        symbolSize: 12,
 	        symbolRotate: 90,
+	      lineStyle: {
+                normal: {
+                    color: 'green',
+                    width: 4,
+                    type: 'dashed'
+                }
+            }, 
 	        }]
 
 
 };	
 myChart1.setOption(option1);
-/* myChart1.setOption({
+myChart1.setOption({
 	series:[{
 		name:'次数',
 		data:nums
 	}]
 
-}); */	
+}); */
 
 </script>
 <!--/请在上方写此页面业务相关的脚本-->

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+
+<!-- 这是在写映射 -->
+<!--namespace:匹配的Java接口  -->
+<mapper namespace="group.agv01.mapper.MapMapper">
+	
+	
+	<!--得到地图数据-->
+	<!-- List<Map> getSourPoint();-->
+	<select id="getSourPoint" resultType="group.agv01.vo.Map">
+	select * from Point as t1 right join Path as t2
+		on t1.PointID = t2.SourPointID order by PathID;
+	</select>
+	
+	
+	<!-- List<Map> getDestPoint();-->
+	<select id="getDestPoint" resultType="group.agv01.vo.Map">
+	select * from Point as t1 right join Path as t2
+		on t1.PointID = t2.DestPointID  order by PathID;
+	</select>
+	
+
+
+
+
+
+	
+	
+</mapper>
