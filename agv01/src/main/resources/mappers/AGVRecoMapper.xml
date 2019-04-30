@@ -20,6 +20,20 @@
 		) AS t3 ON t1.AGVID = t3.AGVID AND t1.ATime = t3.maxdate;
 	</select>
 	
+	
+	<!--得到AGVXY-->
+	<!-- List<AGVReco> getAGVXY();-->
+	<select id="getAGVXY" resultType="group.agv01.entity.AGVReco">
+		SELECT t1.*
+		FROM AGVReco AS t1
+		INNER JOIN
+		(
+		SELECT t2.AGVID, MAX(ATime) AS maxdate
+		FROM AGVReco AS t2
+		GROUP BY t2.AGVID
+		) AS t3 ON t1.AGVID = t3.AGVID AND t1.ATime = t3.maxdate;
+	</select>
+	
 
 
 

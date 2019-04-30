@@ -54,6 +54,13 @@ public class AGVErrorServiceImpl implements IAGVErrorService {
 	public List<AGVError> findAGVErrors() {
 		return getAGVErrors();
 	}
+	
+
+	@Override
+	public List<AGVError> findAGVErrorsDesc() {
+		return getAGVErrorsDesc();
+	}
+
 
 	
 	private void insertAGVError(AGVError AGVError) {
@@ -66,6 +73,11 @@ public class AGVErrorServiceImpl implements IAGVErrorService {
 	private List<AGVError> getAGVErrors(){
 		return AGVErrorMapper.getAGVErrors();
 	}
+	
+	private List<AGVError> getAGVErrorsDesc(){
+		return AGVErrorMapper.getAGVErrorsDesc();
+	}
+
 
 
 	

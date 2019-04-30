@@ -41,6 +41,7 @@ public class AGVErrorController extends BaseController{
 		return new ResponseResult<List<AGVError>>(SUCCESS,data);
 	}
 	
+	
 	@PostMapping("/addError")
 	public ResponseResult<Void> addError(AGVError AGVError,HttpSession session) {	
 		String UserID = getUidFromSession(session).toString();
@@ -48,6 +49,13 @@ public class AGVErrorController extends BaseController{
 		System.err.println(AGVError);
 		AGVErrorService.addAGVError(AGVError);				
 		return new ResponseResult<Void>(SUCCESS);
+	}
+	
+	@GetMapping("/errorDesc")
+	public ResponseResult<List<AGVError>> AGVErrorListDesc() {	
+		System.err.println("请求车辆故障列表");
+		List<AGVError> data = AGVErrorService.findAGVErrorsDesc();
+		return new ResponseResult<List<AGVError>>(SUCCESS,data);
 	}
 	
 	

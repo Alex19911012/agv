@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+
+<!-- 这是在写映射 -->
+<!--namespace:匹配的Java接口  -->
+<mapper namespace="group.agv01.mapper.AGVWarnMapper">
+	
+	
+		
+	<!--得到AGV预警数据-->
+	<!-- List<AGVWarn> getAGVWarns();-->
+	<select id="getAGVWarns" resultType="group.agv01.entity.AGVWarn">
+		SELECT * FROM Warn order by WDate desc limit 0,10;
+	</select>
+	
+
+
+
+
+	
+	
+</mapper>

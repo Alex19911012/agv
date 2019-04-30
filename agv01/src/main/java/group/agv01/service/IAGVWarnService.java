@@ -5,6 +5,7 @@ import java.util.List;
 import group.agv01.entity.AGVError;
 import group.agv01.entity.AGVInfo;
 import group.agv01.entity.AGVReco;
+import group.agv01.entity.AGVWarn;
 import group.agv01.entity.Order;
 import group.agv01.entity.Task;
 import group.agv01.entity.User;
@@ -16,11 +17,7 @@ import group.agv01.service.ex.InsertException;
  * @author soft01
  *
  */
-public interface IAGVErrorService {
-	void addAGVError(AGVError AGVError)throws InsertException;
+public interface IAGVWarnService {
 
-	
-	List<AGVError> findAGVErrors();
-	
-	List<AGVError> findAGVErrorsDesc();
+	List<AGVWarn> findAGVWarns();
 }

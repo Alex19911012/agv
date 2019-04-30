@@ -34,6 +34,13 @@ public class AGVRecoMapperTestCase {
 		System.err.println("完成1");
 	}
 	
+	@Test
+	public void testGetXYs() {		
+		List<AGVReco> list = mapper.getAGVXY();
+		for(AGVReco r : list) {
+			System.err.println(r);
+		}
+	}	
 	
 	
 

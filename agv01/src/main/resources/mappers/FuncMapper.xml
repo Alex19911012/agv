@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+
+<!-- 这是在写映射 -->
+<!--namespace:匹配的Java接口  -->
+<mapper namespace="group.agv01.mapper.FuncMapper">
+	<!-- 插入功能数据 -->
+	<!--Integer insertFunc(Func func)  -->
+	<insert id="insertUser">
+		insert into Func(
+		Func,State
+		)values (
+		#{Func},#{State}
+		)			
+	</insert>	
+	
+	<!-- 删除功能数据 -->
+	<!--Integer deleteFunc(Integer FuncID);  -->
+	<update id="deleteFunc">
+	update 
+		Func
+	set
+		State=2
+	where
+		FuncID=#{FuncID}	
+	</update>
+	
+	<!-- 停用功能数据 -->
+	<!--Integer stopFunc(Integer FuncID);  -->
+	<update id="stopFunc">
+	update 
+		Func
+	set
+		State=1
+	where
+		FuncID=#{FuncID}	
+	</update>
+	
+	<!-- 启用功能数据 -->
+	<!--Integer startFunc(Integer FuncID);  -->
+	<update id="startFunc">
+	update 
+		Func
+	set
+		State=0
+	where
+		FuncID=#{FuncID}	
+	</update>
+	
+	
+	<!--得到功能数据-->
+	<!-- Integer getFunc(Func func); -->
+	<select id="getFunc" resultType="group.agv01.entity.Func">
+		select * from Func where Func=#{Func};
+	</select>
+	
+	<!--得到启用的功能数据-->
+	<!-- Integer getStartFuncs(Func func); -->
+	<select id="getStartFuncs" resultType="group.agv01.entity.Func">
+		select * from Func where State=0;
+	</select>
+	
+	
+	<!--得到停用的功能数据-->
+	<!-- Integer getStopFuncs(Func func); -->
+	<select id="getStopFuncs" resultType="group.agv01.entity.Func">
+		select * from Func where State=1;
+	</select>
+	
+	
+	
+
+
+
+
+
+	
+	
+</mapper>

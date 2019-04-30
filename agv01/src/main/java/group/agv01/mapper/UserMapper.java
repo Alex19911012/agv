@@ -1,6 +1,8 @@
 package group.agv01.mapper;
 
 import java.util.Date;
+import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 import group.agv01.entity.User;
@@ -29,6 +31,22 @@ public interface UserMapper {
 	Integer deleteUser(Integer UserID);
 	
 	/**
+	 * 停用用户数据
+	 * @param UserID
+	 * @return
+	 */
+	Integer stopUser(Integer UserID);
+	
+	/**
+	 * 启用用户数据
+	 * @param UserID
+	 * @return
+	 */
+	Integer startUser(Integer UserID);
+
+
+	
+	/**
 	 * 更改用户密码
 	 * @param UserID
 	 * @param PW
@@ -39,10 +57,23 @@ public interface UserMapper {
 	
 	
 	/**
-	 * 得到所有用户数据
+	 * 得到用户数据根据用户名
 	 * @param user
 	 * @return
 	 */
 	User getUser(User user);
 	
+	/**
+	 * 得到启用的用户数据
+	 * @param user
+	 * @return
+	 */
+	List<User> getStartUsers();
+	
+	/**
+	 * 得到停用的用户数据
+	 * @param user
+	 * @return
+	 */
+	List<User> getStopUsers();
 }

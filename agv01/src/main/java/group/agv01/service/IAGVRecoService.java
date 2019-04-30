@@ -16,4 +16,5 @@ public interface IAGVRecoService {
 	
 	
 	List<AGVReco> findAGVRecos();
+	List<AGVReco> findAGVXY();
 }

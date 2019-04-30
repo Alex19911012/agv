@@ -46,6 +46,10 @@ public class AGVReco implements Serializable{
 			
 			//订单ID
 			String OID;
+			
+			Double AGVX;
+			
+			Double AGVY;
 
 			public String getAGVID() {
 				return AGVID;
@@ -111,12 +115,32 @@ public class AGVReco implements Serializable{
 				OID = oID;
 			}
 
+			public Double getAGVX() {
+				return AGVX;
+			}
+
+			public void setAGVX(Double aGVX) {
+				AGVX = aGVX;
+			}
+
+			public Double getAGVY() {
+				return AGVY;
+			}
+
+			public void setAGVY(Double aGVY) {
+				AGVY = aGVY;
+			}
+
 			@Override
 			public String toString() {
 				return "AGVReco [AGVID=" + AGVID + ", ATime=" + ATime + ", AGVNo=" + AGVNo + ", Speed=" + Speed
-						+ ", perc=" + perc + ", AStat=" + AStat + ", PosiID=" + PosiID + ", OID=" + OID + "]";
+						+ ", perc=" + perc + ", AStat=" + AStat + ", PosiID=" + PosiID + ", OID=" + OID + ", AGVX="
+						+ AGVX + ", AGVY=" + AGVY + "]";
 			}
 
+			
+			
+			
 			
 				
 			

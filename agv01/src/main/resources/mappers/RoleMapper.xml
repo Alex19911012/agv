@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+
+<!-- 这是在写映射 -->
+<!--namespace:匹配的Java接口  -->
+<mapper namespace="group.agv01.mapper.RoleMapper">
+	<!-- 插入角色数据 -->
+	<!--Integer insertRole(Role role);-->
+	<insert id="insertRole">
+		insert into Role(
+		Role,State
+		)values (
+		#{Role},#{State}
+		)			
+	</insert>	
+	
+	<!-- 删除角色数据 -->
+	<!--Integer deleteRole(Integer RoleID);  -->
+	<update id="deleteRole">
+	update 
+		Role
+	set
+		State=2
+	where
+		RoleID=#{RoleID}	
+	</update>
+	
+	<!-- 停用角色数据 -->
+	<!--Integer stopRole(Integer RoleID);  -->
+	<update id="stopRole">
+	update 
+		Role
+	set
+		State=1
+	where
+		RoleID=#{RoleID}	
+	</update>
+	
+	<!-- 启用角色数据 -->
+	<!--Integer startRole(Integer RoleID);  -->
+	<update id="startRole">
+	update 
+		Role
+	set
+		State=0
+	where
+		RoleID=#{RoleID}	
+	</update>
+	
+		
+	
+	
+	<!--得到启用的角色数据-->
+	<!-- Integer getStartRoles(); -->
+	<select id="getStartRoles" resultType="group.agv01.entity.Role">
+		select R.RoleID,R.Role,R.State, GROUP_CONCAT(DISTINCT U.UserName) as UserName,GROUP_CONCAT(DISTINCT F.Func) as Func from Role as R left join UserRole as UR  on R.RoleID=UR.RoleID left join UserT as U on UR.UserID=U.UserID left join RoleFunc as RF on RF.RoleID=R.RoleID left join Func as F on RF.FuncID=F.FuncID where R.State=0 group by R.RoleID; 
+	</select>
+	
+	
+	<!--得到停用的角色数据-->
+	<!-- Integer getStopRoles(); -->
+	<select id="getStopRoles" resultType="group.agv01.entity.Role">
+		select R.RoleID,R.Role,R.State, GROUP_CONCAT(DISTINCT U.UserName) as UserName,GROUP_CONCAT(DISTINCT F.Func) as Func from Role as R left join UserRole as UR  on R.RoleID=UR.RoleID left join UserT as U on UR.UserID=U.UserID left join RoleFunc as RF on RF.RoleID=R.RoleID left join Func as F on RF.FuncID=F.FuncID where R.State=1 group by R.RoleID; 
+	</select>
+	
+	<!--得到角色数据-->
+	<!-- Role getRole(Role role); -->
+	<select id="getRole" resultType="group.agv01.entity.Role">
+		select * from Role where Role=#{Role};
+	</select>
+	
+	
+	
+
+
+
+
+
+	
+	
+</mapper>

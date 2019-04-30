@@ -34,4 +34,9 @@ public interface AGVErrorMapper {
 	 */
 	List<AGVError> getAGVErrors();
 	
+	/**
+	 * 得到AGV监控数据
+	 */
+	List<AGVError> getAGVErrorsDesc();
+	
 }

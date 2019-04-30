@@ -36,6 +36,16 @@ public class AGVRecoServiceTestCase {
 		System.err.println("完成1");
 	}
 	
+	@Test
+	public void testFindXY() {		
+		List<AGVReco> list = service.findAGVXY();
+		for(AGVReco t : list) {
+			System.err.println(t);
+		}
+		System.err.println("完成1");
+	}
+
+	
 	
 		
 	

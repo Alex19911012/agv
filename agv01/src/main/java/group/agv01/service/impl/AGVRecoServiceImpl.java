@@ -46,7 +46,11 @@ public class AGVRecoServiceImpl implements IAGVRecoService {
 	};
 	
 	
-	
+	@Override
+	public List<AGVReco> findAGVXY() {
+		return getAGVXY();
+	}
+
 	
 	
 	
@@ -54,6 +58,14 @@ public class AGVRecoServiceImpl implements IAGVRecoService {
 		return AGVRecoTMapper.getAGVRecos();
 	}
 
+
+
+	private List<AGVReco> getAGVXY(){
+		return AGVRecoTMapper.getAGVXY();
+	}
+
+
+	
 
 
 

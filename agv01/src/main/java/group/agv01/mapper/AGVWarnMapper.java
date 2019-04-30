@@ -5,7 +5,10 @@ import java.util.List;
 
 import org.apache.ibatis.annotations.Param;
 
+import group.agv01.entity.AGVError;
 import group.agv01.entity.AGVReco;
+import group.agv01.entity.AGVServ;
+import group.agv01.entity.AGVWarn;
 import group.agv01.entity.Order;
 import group.agv01.entity.Task;
 import group.agv01.entity.User;
@@ -18,16 +21,13 @@ import group.agv01.entity.User;
  * @author Alex
  *
  */
-public interface AGVRecoMapper {
+public interface AGVWarnMapper {
+	
+	
 	
 	/**
-	 * 得到AGV监控数据
+	 * 得到AGV预警数据
 	 */
-	List<AGVReco> getAGVRecos();
-	
-	/**
-	 * 得到AGV最新XY
-	 */
-	List<AGVReco> getAGVXY();
+	List<AGVWarn> getAGVWarns();
 	
 }

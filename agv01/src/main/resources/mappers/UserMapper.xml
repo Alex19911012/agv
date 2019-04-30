@@ -9,20 +9,44 @@
 	<!--Integer insertUser(User user)  -->
 	<insert id="insertUser">
 		insert into UserT(
-		UserName,PW
+		UserName,PW,State,Phone
 		)values (
-		#{UserName},#{PW}
+		#{UserName},#{PW},#{State},#{Phone}
 		)			
 	</insert>	
 	
 	<!-- 删除用户数据 -->
 	<!--Integer deleteUser(Integer UserID);  -->
-	<delete id="deleteUser">
-	delete from
+	<update id="deleteUser">
+	update 
 		UserT
+	set
+		State=2
 	where
 		UserID=#{UserID}	
-	</delete>
+	</update>
+	
+	<!-- 停用用户数据 -->
+	<!--Integer stopUser(Integer UserID);  -->
+	<update id="stopUser">
+	update 
+		UserT
+	set
+		State=1
+	where
+		UserID=#{UserID}	
+	</update>
+	
+	<!-- 启用用户数据 -->
+	<!--Integer startUser(Integer UserID);  -->
+	<update id="startUser">
+	update 
+		UserT
+	set
+		State=0
+	where
+		UserID=#{UserID}	
+	</update>
 	
 	<!-- 修改密码 -->
 	<!-- Integer updatePassword(@Param("UserID")Integer UserID,@Param("PW")String PW); -->
@@ -40,6 +64,21 @@
 	<select id="getUser" resultType="group.agv01.entity.User">
 		select * from UserT where UserName=#{UserName};
 	</select>
+	
+	<!--得到启用的用户数据-->
+	<!-- Integer getStartUsers(User user); -->
+	<select id="getStartUsers" resultType="group.agv01.entity.User">
+		select U.UserID,U.UserName,U.State,U.Phone,R.RoleID,GROUP_CONCAT(R.Role) as Role from UserT as U left join UserRole as UR  on U.UserID=UR.UserID left join Role as R on UR.RoleID=R.RoleID where U.State=0 group by U.UserID; 
+	</select>
+	
+	
+	<!--得到停用的用户数据-->
+	<!-- Integer getStopUsers(User user); -->
+	<select id="getStopUsers" resultType="group.agv01.entity.User">
+		select U.UserID,U.UserName,U.State,U.Phone,R.RoleID,GROUP_CONCAT(R.Role) as Role from UserT as U left join UserRole as UR  on U.UserID=UR.UserID left join Role as R on UR.RoleID=R.RoleID where U.State=1 group by U.UserID; 
+	</select>
+	
+	
 	
 
 

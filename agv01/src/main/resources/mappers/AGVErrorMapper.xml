@@ -29,6 +29,12 @@
 		SELECT * FROM AGVError;
 	</select>
 	
+	<!--得到AGV故障数据-->
+	<!-- List<AGVError> getAGVErrorsDesc();-->
+	<select id="getAGVErrorsDesc" resultType="group.agv01.entity.AGVError">
+		SELECT * FROM AGVError order by EDate desc limit 0,10;
+	</select>
+	
 
 
 

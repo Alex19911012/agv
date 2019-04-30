@@ -1,6 +1,7 @@
 package group.agv01.service.impl;
 
 import java.util.Date;
+import java.util.List;
 import java.util.UUID;
 
 import org.apache.ibatis.annotations.Param;
@@ -47,6 +48,17 @@ public class UserServiceImpl implements IUserService {
 		deleteUser(UserID);
 		
 	}
+	
+	@Override
+	public void stop(Integer UserID) throws UpdateException {
+		stopUser(UserID);
+	}
+
+	@Override
+	public void start(Integer UserID) throws UpdateException {
+		startUser(UserID);
+	}
+
 
 
 
@@ -82,7 +94,16 @@ public class UserServiceImpl implements IUserService {
 		return result;
 	};
 	
-	
+	@Override
+	public List<User> findStartUsers() {
+		return getStartUsers();
+	}
+
+	@Override
+	public List<User> findStopUsers() {
+		return getStopUsers();
+	}
+
 	
 	
 	private void insertUser(User user) {
@@ -99,6 +120,33 @@ public class UserServiceImpl implements IUserService {
 		}
 	}
 	
+	/**
+	 * 停用用户数据
+	 * @param UserID
+	 * @return
+	 */
+	private void stopUser(Integer UserID) {
+		Integer rows = userMapper.stopUser(UserID);
+		if(rows!=1) {
+			throw new DeleteException("停用数据异常");
+		}
+
+	};
+	
+	/**
+	 * 启用用户数据
+	 * @param UserID
+	 * @return
+	 */
+	private void startUser(Integer UserID) {
+		Integer rows = userMapper.startUser(UserID);
+		if(rows!=1) {
+			throw new DeleteException("启用数据异常");
+		}
+
+	}
+
+	
 	
 	private void updatePassword(Integer UserID,String PW) {
 		Integer rows = userMapper.updatePassword(UserID, PW);
@@ -111,6 +159,25 @@ public class UserServiceImpl implements IUserService {
 		return userMapper.getUser(user);
 	}
 
+	/**
+	 * 得到启用的用户数据
+	 * @param user
+	 * @return
+	 */
+	private List<User> getStartUsers(){
+		return userMapper.getStartUsers();
+	}
+	
+	/**
+	 * 得到停用的用户数据
+	 * @param user
+	 * @return
+	 */
+	private List<User> getStopUsers(){
+		return userMapper.getStopUsers();
+	}
+
+	
 
 
 	
