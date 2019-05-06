@@ -58,7 +58,7 @@ public interface RoleMapper {
 	
 		
 	/**
-	 * 得到启用的角色数据
+	 * 得到启用的角色数据和用户数据关联
 	 * @param user
 	 * @return
 	 */
@@ -70,4 +70,10 @@ public interface RoleMapper {
 	 * @return
 	 */
 	List<Role> getStopRoles();
+	
+	/**
+	 * 	得到所有启用角色数据
+	 * @return
+	 */
+	List<Role> getAllRoles();
 }

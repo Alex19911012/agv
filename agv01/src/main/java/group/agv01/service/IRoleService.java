@@ -32,4 +32,6 @@ public interface IRoleService {
 	
 	List<Role> findStopRoles();
 	
+	List<Role> findAllRoles();
+	
 }

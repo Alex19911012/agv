@@ -21,23 +21,12 @@
 <article class="page-container">
 	<form id="form-reg" class="form form-horizontal" >
 	<div class="row cl">
-		<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
-		<input type="checkbox" name="RoleID" value="1" />高级管理
+		<div id="UR" class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
+			
 		</div>
 	</div>
 	
-	<div class="row cl">
-		<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
-		<input type="checkbox" name="RoleID" value="2" />管理
-		</div>
-	</div>
-	
-	<div class="row cl">
-		<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
-		<input type="checkbox" name="RoleID" value="3" />工人
-		</div>
-	</div>
-	
+		
 	
 	<div class="row cl">
 		<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
@@ -58,6 +47,37 @@
 
 
 <script type="text/javascript">
+		$(document).ready(function(){
+			showAllRoleList();
+		});
+		
+		function showAllRoleList(){
+			$.ajax({
+				"url":"/roles/all",
+				"data":$("#form-reg").serialize(),
+				"type":"GET",
+				"dataType":"json",
+				"success":function(json){
+					if(json.state == 200){
+						$("#UR").empty();
+						var list = json.data;					
+						for(var i=0;i<list.length;i++){
+							console.log(list[i]);
+							var html = '<input type="checkbox" name="RoleID" value="#{RoleID}" />#{Role}';
+							html = html.replace(/#{RoleID}/g,list[i].roleID);	
+							html = html.replace(/#{Role}/g,list[i].role);	
+							
+							$("#UR").append(html)
+						}	
+						
+						 
+					}else{
+						alert(json.message);
+					}
+				}
+			});
+		}
+		
 		$("#btn-reg").click(function(){
 			event.preventDefault()
 			//发出异常请求，并处理请求
@@ -66,7 +86,7 @@
 			//dataType：服务器响应的数据的类型，取值可以是是json xml等 
 			//success:当服务器成功响应时(Http响应码是200)的回调函数
 			$.ajax({
-				"url":"/users/reg",
+				"url":"/users/"+UID+"/deleteRole"
 				"data":$("#form-reg").serialize(),
 				"type":"POST",
 				"dataType":"json",
@@ -79,6 +99,7 @@
 					}
 				}
 			});
+
 		});
 	</script>
 	

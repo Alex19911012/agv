@@ -73,6 +73,12 @@ public class RoleServiceImpl implements IRoleService {
 		return getStopRoles();
 	}
 
+	@Override
+	public List<Role> findAllRoles() {
+		return getAllRoles();
+	}
+
+
 
 	
 	
@@ -145,8 +151,12 @@ public class RoleServiceImpl implements IRoleService {
 	private Role getRole(Role role) {
 		return roleMapper.getRole(role);
 	}
+	
+	private List<Role> getAllRoles(){
+		return roleMapper.getAllRoles();
+	}
 
-
+	
 	
 
 

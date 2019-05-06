@@ -76,6 +76,14 @@ public class RoleController extends BaseController{
 		System.err.println(data);
 		return new ResponseResult<List<Role>>(SUCCESS,data);
 	}
+	
+	@GetMapping("/all")
+	public ResponseResult<List<Role>> allList(){
+		System.err.println("请求所有角色列表");
+		List<Role> data = roleService.findAllRoles();	
+		System.err.println(data);
+		return new ResponseResult<List<Role>>(SUCCESS,data);
+	}
 
 		
 }
