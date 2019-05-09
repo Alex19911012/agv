@@ -52,4 +52,15 @@ public interface TaskMapper {
 	 * @return
 	 */
 	Task getTaskByID(String TaskID);
+	
+	/**
+	 * 根据日期等获得任务数据
+	 * @param datemin
+	 * @param datemax
+	 * @param tState
+	 * @param AGVID
+	 * @return
+	 */
+	List<Task> getTaskBydate(@Param("datemin")Date datemin,@Param("datemax")Date datemax,@Param("tState")String tState,@Param("AGVID")String AGVID);
+	
 }

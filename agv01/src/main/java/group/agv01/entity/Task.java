@@ -50,8 +50,14 @@ public class Task implements Serializable{
 
 	String UserID;
 	
+	//AGVID
+	String AGVID;
+	
 	//是否删除
 	Integer IsDelete;
+	
+	
+	
 
 	public String getTaskID() {
 		return TaskID;
@@ -141,13 +147,26 @@ public class Task implements Serializable{
 		IsDelete = isDelete;
 	}
 
+	public String getAGVID() {
+		return AGVID;
+	}
+
+	public void setAGVID(String aGVID) {
+		AGVID = aGVID;
+	}
+	
+	
+
+	
 	@Override
 	public String toString() {
 		return "Task [TaskID=" + TaskID + ", TaskType=" + TaskType + ", Grade=" + Grade + ", SourPosiID=" + SourPosiID
 				+ ", DestPosiID=" + DestPosiID + ", Dist=" + Dist + ", Deadline=" + Deadline + ", TStat=" + TStat
-				+ ", CreatDate=" + CreatDate + ", UserID=" + UserID + ", IsDelete=" + IsDelete + "]";
+				+ ", CreatDate=" + CreatDate + ", UserID=" + UserID + ", AGVID=" + AGVID + ", IsDelete=" + IsDelete
+				+ "]";
 	}
 
+	
 	
 
 	

@@ -82,6 +82,14 @@ public class TaskServiceImpl implements ITaskService {
 		return getTasks();
 		
 	};
+	
+	
+	@Override
+	public List<Task> findTasksByInfo(Date datemin,Date datemax,String tState,String AGVID) {
+		return getTaskBydate(datemin, datemax, tState, AGVID);
+	}
+
+
 
 
 
@@ -119,6 +127,23 @@ public class TaskServiceImpl implements ITaskService {
 	}
 
 
+	 /**
+	 * 根据日期等获得任务数据
+	 * @param datemin
+	 * @param datemax
+	 * @param tState
+	 * @param AGVID
+	 * @return
+	 */
+	private List<Task> getTaskBydate(Date datemin,Date datemax,String tState,String AGVID){
+		return taskMapper.getTaskBydate(datemin, datemax, tState, AGVID);
+	}
+
+
+
+
+
+	
 
 
 

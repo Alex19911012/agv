@@ -6,6 +6,7 @@ import java.util.List;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -58,6 +59,16 @@ public class TaskController extends BaseController{
 	public ResponseResult<Void> updateTask(@RequestParam String TaskID,@RequestParam String TaskType){		
 		taskService.changeInfo(TaskID, TaskType);
 		return new ResponseResult<Void>(SUCCESS);
+	}
+	
+	@PostMapping("/{datemin}&{datemax}&{tState}&{AGVID}/listByDate")
+	public ResponseResult<List<Task>> listByDate(@PathVariable("datemin") Date datemin,@PathVariable("datemax")  Date datemax,@PathVariable("tState") String tState,@PathVariable("AGVID") String AGVID){	
+		System.err.println(datemin);
+		System.err.println(datemax);
+		System.err.println(tState);
+		System.err.println(AGVID);
+		List<Task> data = taskService.findTasksByInfo(datemin, datemax, tState, AGVID);
+		return new ResponseResult<List<Task>>(SUCCESS,data);
 	}
 	
 	

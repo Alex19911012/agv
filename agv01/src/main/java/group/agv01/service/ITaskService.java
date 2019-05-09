@@ -1,5 +1,6 @@
 package group.agv01.service;
 
+import java.util.Date;
 import java.util.List;
 
 import group.agv01.entity.Task;
@@ -27,4 +28,6 @@ public interface ITaskService {
 	void changeInfo(String TaskID,String TaskType)throws TaskNotFoundException,UpdateException;
 		
 	List<Task> findTasks();
+	
+	List<Task> findTasksByInfo(Date datemin,Date datemax,String tState,String AGVID);
 }

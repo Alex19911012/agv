@@ -24,12 +24,24 @@
 	<div class="cl pd-5 bg-1 bk-gray mt-20"> 
 		<span class="l">
 			<a class="btn btn-primary radius" data-title="添加任务" data-href="task-add.html" onclick="Hui_admin_tab(this)" href="javascript:;"><i class="Hui-iconfont">&#xe600;</i> 添加任务</a></span>
-	<div class="text-c"> 日期范围：
+		<div class="formControls col-xs-8 col-sm-9"> 日期范围：
 		<input type="text" onfocus="WdatePicker({ maxDate:'#F{$dp.$D(\'datemax\')||\'%y-%M-%d\'}' })" id="datemin" class="input-text Wdate" style="width:120px;">
 		-
 		<input type="text" onfocus="WdatePicker({ minDate:'#F{$dp.$D(\'datemin\')}',maxDate:'%y-%M-%d' })" id="datemax" class="input-text Wdate" style="width:120px;">
-		<button type="submit" class="btn btn-success" id="" name=""><i class="Hui-iconfont">&#xe665;</i> 搜用户</button>
+		 车辆ID<input type="text"  id="AGVID"  style="width:120px;">
+		<div style="width:200px" class="formControls col-xs-8 col-sm-9">
+				<select id="tState" name="TStat" class="select">
+					<option value="3002">未执行</option>
+					<option value="3022">执行中</option>
+					<option value="3222">任务完成</option>
+					<option value="3332">任务取消</option>
+				</select>
+		 </div>
+		<button id="showTaskByTime" type="button" class="btn btn-success" id="" name=""><i class="Hui-iconfont">&#xe665;</i> 搜任务</button>
 	</div>
+		
+		
+					
 	<div class="mt-20">
 		<table id="tableSort" class="table table-border table-bordered table-bg table-hover table-sort table-responsive">
 			<thead>
@@ -44,7 +56,8 @@
 					<th onclick="$.sortTable.sort('tableSort',7)" width="60">任务状态</th>
 					<th onclick="$.sortTable.sort('tableSort',8)" width="120">任务创建时间</th>
 					<th onclick="$.sortTable.sort('tableSort',9)" width="60">用户ID</th>
-					<th width="80">操作</th>
+					<th onclick="$.sortTable.sort('tableSort',9)" width="60">AGVID</th>
+					<th width="90">操作</th>
 				</tr>
 			</thead>
 			<tbody id="task-list">
@@ -110,7 +123,7 @@
 						var list = json.data;					
 						for(var i=0;i<list.length;i++){
 							console.log(list[i]);
-							var html = '<tr class="text-c" onclick="listOrder(&quot;#{TaskID}&quot;)" >'
+							var html = '<tr class="text-c"  >'
 									+'<td>#{TaskID}</td>'
 									+'<td>#{TaskType}</td>'
 									+'<td>#{Grade}</td>'
@@ -121,9 +134,10 @@
 									+'<td>#{TStat}</td>'
 									+'<td>#{CreatDate}</td>'
 									+'<td>#{UserID}</td>'
+									+'<td>#{AGVID}</td>'
 									+'<td class="f-14 td-manage">'
-									+'<a  style="text-decoration:none" class="ml-5"   title="编辑"><i class="Hui-iconfont">&#xe6df;</i>中止</a> '
-									+'<a   class="ml-5"   title="删除" href="javascript:void(0);" onclick="deleteTask(&quot;#{TaskID}&quot;)"><i class="Hui-iconfont">&#xe6e2;</i>取消</a></td>'
+									+'<a  style="text-decoration:none" class="ml-5"   title="" onclick="listOrder(&quot;#{TaskID}&quot;)"><i class="Hui-iconfont">&#xe6df;</i>显示该任务的指令内容</a> '
+									+'<a   class="ml-5"   title="" href="javascript:void(0);" onclick="deleteTask(&quot;#{TaskID}&quot;)"><i class="Hui-iconfont">&#xe6e2;</i>取消该任务</a></td>'
 									+'</tr>';	
 							html = html.replace(/#{TaskID}/g,list[i].taskID);	
 							html = html.replace(/#{TaskType}/g,list[i].taskType);	
@@ -135,6 +149,8 @@
 							html = html.replace(/#{TStat}/g,list[i].tstat);	
 							html = html.replace(/#{CreatDate}/g,list[i].creatDate);
 							html = html.replace(/#{UserID}/g,list[i].userID);
+							html = html.replace(/#{AGVID}/g,list[i].agvid);
+
 							
 							
 							
@@ -233,6 +249,68 @@
 				}
 			});
 		}
+		
+		
+		$("#showTaskByTime").click(function(){
+			var datemin = document.getElementById("datemin").value;
+			var datemax = document.getElementById("datemax").value;
+			var tState = document.getElementById("tState").value;
+			var AGVID = document.getElementById("AGVID").value;
+			$.ajax({
+				"url":"/task/"+datemin+"&"+datemax+"&"+tState+"&"+AGVID+"/listByDate",
+				"type":"POST",
+				"dataType":"json",
+				"success":function(json){
+					if(json.state == 200){		
+						$("#task-list").empty();
+						var list = json.data;					
+						for(var i=0;i<list.length;i++){
+							console.log(list[i]);
+							var html = '<tr class="text-c"  >'
+									+'<td>#{TaskID}</td>'
+									+'<td>#{TaskType}</td>'
+									+'<td>#{Grade}</td>'
+									+'<td>#{SourPosiID}</td>'
+									+'<td>#{DestPosiID}</td>'
+									+'<td>#{Dist}</td>'
+									+'<td>#{Deadline}</td>'
+									+'<td>#{TStat}</td>'
+									+'<td>#{CreatDate}</td>'
+									+'<td>#{UserID}</td>'
+									+'<td>#{AGVID}</td>'
+									+'<td class="f-14 td-manage">'
+									+'<a  style="text-decoration:none" class="ml-5"   title="" onclick="listOrder(&quot;#{TaskID}&quot;)"><i class="Hui-iconfont">&#xe6df;</i>显示该任务的指令内容</a> '
+									+'<a   class="ml-5"   title="" href="javascript:void(0);" onclick="deleteTask(&quot;#{TaskID}&quot;)"><i class="Hui-iconfont">&#xe6e2;</i>取消该任务</a></td>'
+									+'</tr>';	
+							html = html.replace(/#{TaskID}/g,list[i].taskID);	
+							html = html.replace(/#{TaskType}/g,list[i].taskType);	
+							html = html.replace(/#{Grade}/g,list[i].grade);	
+							html = html.replace(/#{SourPosiID}/g,list[i].sourPosiID);	
+							html = html.replace(/#{DestPosiID}/g,list[i].destPosiID);	
+							html = html.replace(/#{Dist}/g,list[i].dist);	
+							html = html.replace(/#{Deadline}/g,list[i].deadline);	
+							html = html.replace(/#{TStat}/g,list[i].tstat);	
+							html = html.replace(/#{CreatDate}/g,list[i].creatDate);
+							html = html.replace(/#{UserID}/g,list[i].userID);
+							html = html.replace(/#{AGVID}/g,list[i].agvid);
+							
+							
+							
+							$("#task-list").append(html)
+							
+					
+						}	
+						//$(".add-def:eq(0)").hide();
+					}else{
+						alert(json.message);
+						//退出登录
+						
+					}
+				}
+
+			});
+		});
+		
 		</script>
 
 

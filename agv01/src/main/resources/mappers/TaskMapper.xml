@@ -55,6 +55,13 @@
 		where TaskID=#{TaskID} and IsDelete=0
 	</select>
 	
+	<!--根据日期获得任务数据  -->
+	<!--List<Task> getTaskBydate(@Param("datemin")Date datemin,@Param("datemax")Date datemax,@Param("tState")String tState,@Param("AGVID")String AGVID); -->
+	<select id="getTaskBydate" resultType="group.agv01.entity.Task">
+		select * from Task
+		where TStat=#{tState} and AGVID=#{AGVID} and CreatDate between #{datemin} and #{datemax} 
+	</select>
+	
 	
 
 
