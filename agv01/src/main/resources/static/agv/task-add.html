@@ -34,7 +34,7 @@
 		<div class="row cl">
 			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>任务ID</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" value="" placeholder="" id="articletitle" name="TaskID">
+				<input  type="text"  class="input-text" value="" placeholder="" id="articletitle" name="TaskID" autocomplete="off" >
 			</div>
 		</div>
 		
@@ -59,31 +59,31 @@
 				</span> </div>
 		</div>
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2">起点ID</label>
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>起点ID</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" value="0" placeholder="" id="articlesort13" name="SourPosiID">
+				<input type="text" class="input-text" value="" placeholder="" id="articlesort13" name="SourPosiID" autocomplete="off">
 			</div>
 		</div>
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2">终点ID</label>
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>终点ID</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" value="" placeholder="" id="keywords15" name="DestPosiID">
+				<input type="text" class="input-text" value="" placeholder="" id="keywords15" name="DestPosiID" autocomplete="off">
 			</div>
 		</div>
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2">距离</label>
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>距离</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" value="" placeholder="" id="keywords14" name="Dist">
+				<input type="text" class="input-text" value="" placeholder="" id="keywords14" name="Dist" autocomplete="off">
 			</div>
 		</div>
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2">最后期限</label>
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>最后期限</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd HH:mm:ss',maxDate:'' })" id="commentdatemax" name="Deadline" class="input-text Wdate">
+				<input type="text" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd HH:mm:ss',maxDate:'' })" id="commentdatemax" name="Deadline" class="input-text Wdate" autocomplete="off">
 			</div>
 		</div>
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2">任务状态</label>
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>任务状态</label>
 			<div class="formControls col-xs-8 col-sm-9"> <span class="select-box">
 				<select name="TStat" class="select">
 					<option value="3002">未执行</option>
@@ -92,6 +92,12 @@
 					<option value="3332">任务取消</option>
 				</select>
 				</span> </div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>AGVID</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" value="" placeholder="" id="keywords16" name="AGVID" autocomplete="off">
+			</div>
 		</div>
 		<div class="row cl">
 			<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
@@ -128,6 +134,7 @@
 				"success":function(json){
 					if(json.state == 200){
 						alert("增加成功！");
+						window.location.reload();
 					}else{
 						alert(json.message);
 					}

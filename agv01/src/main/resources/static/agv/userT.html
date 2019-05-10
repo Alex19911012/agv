@@ -21,17 +21,19 @@
 <div class="page-container">
 	
 	<div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l"> <a href="javascript:;" onclick="admin_add('添加用户','userT-add.html','800','500')" class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 添加用户</a></span>  
-		<div id="abc" style="display:block;position:fixed ; top:0px ; right:0px;background-color:white" class="mt-20" >
+		<div id="abc" style="display:block;position:fixed ; top:20px ; right:40px;background-color:white" class="mt-20" >
 		<form id="form-reg" class="form form-horizontal" >
 			<div class="row cl">
 				<div id="UR" class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">			
 				</div>
-			</div>
-			<div class="row cl">
 				<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
-					<input id="btn-reg" class="btn btn-primary radius" type="submit" value="&nbsp;&nbsp;提交&nbsp;&nbsp;">
+					<input id="btn-changeUR" class="btn btn-primary radius" type="submit" value="&nbsp;&nbsp;提交&nbsp;&nbsp;">
+					<!-- <input id="btn-cancel" class="btn btn-primary radius" type="submit" value="&nbsp;&nbsp;取消&nbsp;&nbsp;"> -->
 				</div>
 			</div>
+			
+				
+			
 	 	</form>
 		</div>
 		
@@ -239,25 +241,25 @@ function admin_edit(title,url,id,w,h){
 			});
 		};
 		
-		
+		var uID;
 		function showAllRoleList(UserID){
 			if($("#abc").css('display')=='none'){
                 $("#abc").css("display","block");
             }else{
                 $("#abc").css("display","none");
-            }
+            };
 			$.ajax({
 				"url":"/roles/all",
 				"type":"GET",
 				"dataType":"json",
 				"success":function(json){
-					var uID = UserID;
+					uID = UserID;
 					if(json.state == 200){
 						$("#UR").empty();
 						var list = json.data;					
 						for(var i=0;i<list.length;i++){
 							console.log(list[i]);
-							var html = '<input type="checkbox" name="RoleID" value="#{RoleID}" />#{Role}';
+							var html = '<input type="checkbox" name="RoleID" value="#{RoleID}" />#{Role}<BR/>';
 							html = html.replace(/#{RoleID}/g,list[i].roleID);	
 							html = html.replace(/#{Role}/g,list[i].role);	
 							
@@ -270,11 +272,37 @@ function admin_edit(title,url,id,w,h){
 					}
 				}
 			});
-		}
+		};
 		
 		
+	
+		
+		
+		$("#btn-changeUR").click(function(){
+			var rID = document.getElementByName("RoleID").value;
+			$.ajax({
+				"url":"/ur/"+uID+"&"+rID+"/User",
+				"type":"POST",
+				"dataType":"json",
+				"success":function(json){
+					if(json.state == 200){
+						
+					}else{
+						alert(json.message);
+					}
+				},
+				"error":function(){
+					alert("修改出错了");
+				}
+			});	
 
-		
+            
+		});
+
+	/* 	$("#btn-cancel").click(function(){
+            $("#abc").css("display","none");
+		});
+ */		
 	</script>
 
 </body>

@@ -16,7 +16,7 @@
 <title>车辆维保信息</title>
 </head>
 <body>
-<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 调度管理 <span class="c-gray en">&gt;</span> 车辆维保信息 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 车辆档案<span class="c-gray en">&gt;</span> 车辆维保信息 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
 <div class="page-container">
 <div class="cl pd-5 bg-1 bk-gray mt-20"> 
 		<span class="l">
@@ -40,6 +40,37 @@
 				</tr>
 			</thead>
 			<tbody id="AGVServ-list">
+				
+			</tbody>
+		</table>
+	</div>
+	</div>
+</div>
+<div class="page-container">
+<div class="cl pd-5 bg-1 bk-gray mt-20"> 
+		<div class="formControls col-xs-8 col-sm-9">
+		 查询车辆维保记录----车辆ID<input type="text"  id="AGVID"  style="width:120px;">	
+		<button id="showServByID" type="button" class="btn btn-success" id="" name=""><i class="Hui-iconfont">&#xe665;</i> 搜记录</button>
+	</div>
+	<div class="mt-20">
+		<table class="table table-border table-bordered table-bg table-hover table-sort table-responsive">
+			<thead>
+				<tr class="text-c">
+					<!-- <th width="25"><input type="checkbox" name="" value=""></th> -->
+					<th width="70">导航车ID</th>
+					<th width="80">维护保养时间</th>
+					<th width="80">维护保养类型</th>
+					<th width="80">维护保养项目</th>
+					<th width="60">部件名称</th>
+					<th width="60">行驶距离</th>
+					<th width="60">行驶时间</th>
+					<th width="100">下次维护保养距离</th>
+					<th width="100">下次维护保养时间</th>
+					<th width="100">用户ID</th>
+					
+				</tr>
+			</thead>
+			<tbody id="AGVServ-list2">
 				
 			</tbody>
 		</table>
@@ -106,7 +137,54 @@
 				}
 			});
 		};
-		
+		$("#showServByID").click(function(){
+			var AGVID = document.getElementById("AGVID").value;
+			$.ajax({
+				"url":"/agv/"+AGVID+"/listServByID",
+				"type":"POST",
+				"dataType":"json",
+				"success":function(json){
+					if(json.state == 200){		
+						$("#AGVServ-list2").empty();
+						var list = json.data;					
+						for(var i=0;i<list.length;i++){
+							console.log(list[i]);
+							var html = '<tr class="text-c">'
+									+'<td>#{AGVID}</td>'
+									+'<td>#{ServDate}</td>'
+									+'<td>#{ServType}</td>'
+									+'<td>#{ServItem}</td>'
+									+'<td>#{PartName}</td>'
+									+'<td>#{RunDist}</td>'
+									+'<td>#{RunTime}</td>'
+									+'<td>#{NextDist}</td>'
+									+'<td>#{NextTime}</td>'
+									+'<td>#{UserID}</td>'
+									+'</tr>';	
+							html = html.replace(/#{AGVID}/g,list[i].agvid);	
+							html = html.replace(/#{ServDate}/g,list[i].servDate);	
+							html = html.replace(/#{ServType}/g,list[i].servType);	
+							html = html.replace(/#{ServItem}/g,list[i].servItem);	
+							html = html.replace(/#{PartName}/g,list[i].partName);	
+							html = html.replace(/#{RunDist}/g,list[i].runDist);	
+							html = html.replace(/#{RunTime}/g,list[i].runTime);	
+							html = html.replace(/#{NextDist}/g,list[i].nextDist);	
+							html = html.replace(/#{NextTime}/g,list[i].nextTime);	
+							html = html.replace(/#{UserID}/g,list[i].userID);	
+
+							$("#AGVServ-list2").append(html)
+						}	
+						//$(".add-def:eq(0)").hide();
+					}else{
+						alert(json.message);
+						//退出登录
+						
+					}
+				}
+
+			});
+		});
+
 	</script>
 
 </body>

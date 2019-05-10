@@ -1,11 +1,13 @@
 package group.agv01.controller;
 
+import java.util.Date;
 import java.util.List;
 
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -58,5 +60,11 @@ public class AGVErrorController extends BaseController{
 		return new ResponseResult<List<AGVError>>(SUCCESS,data);
 	}
 	
+	@PostMapping("/{AGVID}/listErrorByID")
+	public ResponseResult<List<AGVError>> listByDate(@PathVariable("AGVID") String AGVID){	
+		System.err.println(AGVID);
+		List<AGVError> data = AGVErrorService.findAGVErrorsByID(AGVID);
+		return new ResponseResult<List<AGVError>>(SUCCESS,data);
+	}
 	
 }

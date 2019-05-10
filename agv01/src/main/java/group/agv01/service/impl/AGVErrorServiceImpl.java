@@ -61,7 +61,10 @@ public class AGVErrorServiceImpl implements IAGVErrorService {
 		return getAGVErrorsDesc();
 	}
 
-
+	@Override
+	public List<AGVError> findAGVErrorsByID(String AGVID) {
+		return getAGVErrorsByID(AGVID);
+	}
 	
 	private void insertAGVError(AGVError AGVError) {
 		Integer rows = AGVErrorMapper.insertAGVError(AGVError);
@@ -77,6 +80,14 @@ public class AGVErrorServiceImpl implements IAGVErrorService {
 	private List<AGVError> getAGVErrorsDesc(){
 		return AGVErrorMapper.getAGVErrorsDesc();
 	}
+	
+	
+	private List<AGVError> getAGVErrorsByID(String AGVID){
+		return AGVErrorMapper.getAGVErrorsByID(AGVID);
+	}
+
+
+	
 
 
 

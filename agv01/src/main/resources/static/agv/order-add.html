@@ -24,7 +24,7 @@
 <![endif]-->
 <!--/meta 作为公共模版分离出去-->
 
-<title>新增订单</title>
+<title>新增指令</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 </head>
@@ -32,7 +32,7 @@
 <article class="page-container">
 	<form class="form form-horizontal" id="form-order-add" role="form">
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>订单ID</label>
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>指令ID</label>
 			<div class="formControls col-xs-8 col-sm-9">
 				<input type="text" class="input-text" value="" placeholder="" id="articletitle" name="OrderID">
 			</div>
@@ -49,35 +49,35 @@
 				</span> </div>
 		</div>
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>订单编号</label>
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>指令编号</label>
 			<div class="formControls col-xs-8 col-sm-9">
 				<input type="text" class="input-text" value="" placeholder="" id="articletitle" name="ONO">
 			</div>
 		</div>
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>订单类型</label>
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>指令类型</label>
 			<div class="formControls col-xs-8 col-sm-9"> <span class="select-box">
 				<select name="OType" class="select">
-					<option value="4001">运输订单</option>
-					<option value="4011">临时订单</option>
+					<option value="4001">运输指令</option>
+					<option value="4011">临时指令</option>
 				</select>
 				</span> </div>
 		</div>
 		
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2">起点位置ID</label>
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>起点位置ID</label>
 			<div class="formControls col-xs-8 col-sm-9">
-				<input type="text" class="input-text" value="0" placeholder="" id="articlesort13" name="SourPosiID">
+				<input type="text" class="input-text" value="" placeholder="" id="articlesort13" name="SourPosiID">
 			</div>
 		</div>
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2">终点位置ID</label>
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>终点位置ID</label>
 			<div class="formControls col-xs-8 col-sm-9">
 				<input type="text" class="input-text" value="" placeholder="" id="keywords15" name="DestPosiID">
 			</div>
 		</div>
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2">最后期限</label>
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>最后期限</label>
 			<div class="formControls col-xs-8 col-sm-9">
 				<input type="text" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd HH:mm:ss',maxDate:'' })" id="commentdatemax" name="Deadline" class="input-text Wdate">
 			</div>
@@ -94,7 +94,7 @@
 				</span> </div>
 		</div>
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2">任务创建时间</label>
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>任务创建时间</label>
 			<div class="formControls col-xs-8 col-sm-9">
 				<input type="text" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd HH:mm:ss',maxDate:'' })" id="commentdatemin" name="CreatDate" class="input-text Wdate">
 			</div>
@@ -102,37 +102,37 @@
 		
 				
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2">距离</label>
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>距离</label>
 			<div class="formControls col-xs-8 col-sm-9">
 				<input type="text" class="input-text" value="" placeholder="" id="keywords11" name="Dist">
 			</div>
 		</div>
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>订单状态</label>
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>指令状态</label>
 			<div class="formControls col-xs-8 col-sm-9"> <span class="select-box">
 				<select name="OStat" class="select">
-					<option value="4002">订单待执行</option>
-					<option value="4022">订单执行中</option>
-					<option value="4222">订单完成</option>
-					<option value="4332">订单取消</option>
+					<option value="4002">指令待执行</option>
+					<option value="4022">指令执行中</option>
+					<option value="4222">指令完成</option>
+					<option value="4332">指令取消</option>
 				</select>
 				</span> </div>
 		</div>
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2">任务ID</label>
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>任务ID</label>
 			<div class="formControls col-xs-8 col-sm-9">
 				<input type="text" class="input-text" value="" placeholder="" id="keywords11" name="TID">
 			</div>
 		</div>
 		<div class="row cl">
-			<label class="form-label col-xs-4 col-sm-2">AGVID</label>
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>AGVID</label>
 			<div class="formControls col-xs-8 col-sm-9">
 				<input type="text" class="input-text" value="" placeholder="" id="keywords11" name="AGVID">
 			</div>
 		</div>
 		<div class="row cl">
 			<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
-				<button id="btn-addnew"  class="btn btn-primary radius" type="button"><i class="Hui-iconfont">&#xe632;</i> 生成任务</button>
+				<button id="btn-addnew"  class="btn btn-primary radius" type="button"><i class="Hui-iconfont">&#xe632;</i> 生成指令</button>
 				<button onClick="removeIframe();" class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
 			</div>
 		</div>
@@ -165,6 +165,7 @@
 				"success":function(json){
 					if(json.state == 200){
 						alert("增加成功！");
+						window.location.reload();
 					}else{
 						alert(json.message);
 					}

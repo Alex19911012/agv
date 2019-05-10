@@ -36,6 +36,11 @@
 		) AS t3 ON t1.AGVID = t3.AGVID AND t1.ServDate = t3.maxdate;
 	</select>
 	
+	<!-- 根据AGVID得到AGV维保数据 -->
+	<!-- List<AGVServ> getAGVServsByID(String AGVID); -->
+	<select id="getAGVServsByID" resultType="group.agv01.entity.AGVServ">
+		select * from AGVDoc where AGVID=#{AGVID};
+	</select>
 
 
 

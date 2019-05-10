@@ -16,7 +16,7 @@
 <title>车辆故障信息</title>
 </head>
 <body>
-<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 调度管理 <span class="c-gray en">&gt;</span> 车辆故障信息 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 车辆档案 <span class="c-gray en">&gt;</span> 车辆故障信息 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
 <div class="page-container">
 <div class="cl pd-5 bg-1 bk-gray mt-20"> 
 		<span class="l">
@@ -40,6 +40,38 @@
 				</tr>
 			</thead>
 			<tbody id="AGVError-list">
+				
+			</tbody>
+		</table>
+	</div>
+	</div>
+</div>
+
+<div class="page-container">
+<div class="cl pd-5 bg-1 bk-gray mt-20"> 
+	<div class="formControls col-xs-8 col-sm-9">
+		 查询车辆故障记录----车辆ID<input type="text"  id="AGVID"  style="width:120px;">	
+		<button id="showErrorByID" type="button" class="btn btn-success" id="" name=""><i class="Hui-iconfont">&#xe665;</i> 搜记录</button>
+	</div>
+	<div class="mt-20">
+		<table class="table table-border table-bordered table-bg table-hover table-sort table-responsive">
+			<thead>
+				<tr class="text-c">
+					<!-- <th width="25"><input type="checkbox" name="" value=""></th> -->
+					<th width="80">故障ID</th>
+					<th width="70">导航车ID</th>
+					<th width="70">故障发生时间</th>
+					<th width="70">故障码</th>
+					<th width="60">故障类型</th>
+					<th width="60">故障级别</th>
+					<th width="80">故障说明</th>
+					<th width="90">故障原因</th>
+					<th width="90">速度</th>
+					<th width="90">电量</th>
+					<th width="120">用户ID</th>
+				</tr>
+			</thead>
+			<tbody id="AGVError-list2">
 				
 			</tbody>
 		</table>
@@ -111,6 +143,56 @@
 				}
 			});
 		};
+		
+		$("#showErrorByID").click(function(){
+			var AGVID = document.getElementById("AGVID").value;
+			$.ajax({
+				"url":"/agv/"+AGVID+"/listErrorByID",
+				"type":"POST",
+				"dataType":"json",
+				"success":function(json){
+					if(json.state == 200){		
+						$("#AGVError-list2").empty();
+						var list = json.data;					
+						for(var i=0;i<list.length;i++){
+							console.log(list[i]);
+							var html = '<tr class="text-c">'
+									+'<td>#{EID}</td>'
+									+'<td>#{AGVID}</td>'
+									+'<td>#{EDate}</td>'
+									+'<td>#{ECode}</td>'
+									+'<td>#{EType}</td>'
+									+'<td>#{ELevel}</td>'
+									+'<td>#{EDesc}</td>'
+									+'<td>#{ECause}</td>'
+									+'<td>#{Speed}</td>'
+									+'<td>#{Perc}</td>'
+									+'<td>#{UserID}</td>'
+									+'</tr>';	
+							html = html.replace(/#{EID}/g,list[i].eid);	
+							html = html.replace(/#{AGVID}/g,list[i].agvid);	
+							html = html.replace(/#{EDate}/g,list[i].edate);	
+							html = html.replace(/#{ECode}/g,list[i].ecode);	
+							html = html.replace(/#{EType}/g,list[i].etype);	
+							html = html.replace(/#{ELevel}/g,list[i].elevel);	
+							html = html.replace(/#{EDesc}/g,list[i].edesc);	
+							html = html.replace(/#{ECause}/g,list[i].ecause);	
+							html = html.replace(/#{Speed}/g,list[i].speed);	
+							html = html.replace(/#{Perc}/g,list[i].perc);	
+							html = html.replace(/#{UserID}/g,list[i].userID);
+							
+							$("#AGVError-list2").append(html)
+						}	
+						//$(".add-def:eq(0)").hide();
+					}else{
+						alert(json.message);
+						//退出登录
+						
+					}
+				}
+
+			});
+		});
 		
 	</script>
 

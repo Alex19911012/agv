@@ -21,4 +21,6 @@ public interface IAGVServService {
 
 	
 	List<AGVServ> findAGVServs();
+	
+	List<AGVServ> findAGVServsByID(String AGVID);
 }

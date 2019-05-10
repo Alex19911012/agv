@@ -23,4 +23,7 @@ public interface IAGVErrorService {
 	List<AGVError> findAGVErrors();
 	
 	List<AGVError> findAGVErrorsDesc();
+	
+	List<AGVError> findAGVErrorsByID(String AGVID);
+
 }

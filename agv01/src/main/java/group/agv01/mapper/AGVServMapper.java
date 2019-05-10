@@ -34,5 +34,11 @@ public interface AGVServMapper {
 	 */
 	List<AGVServ> getAGVServs();
 	
+	/**
+	 * 根据AGVID得到AGV维保数据
+	 */
+	List<AGVServ> getAGVServsByID(String AGVID);
+	
+	
 	
 }

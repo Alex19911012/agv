@@ -53,6 +53,12 @@ public class AGVServServiceImpl implements IAGVServService {
 		return getAGVServs();
 	}
 	
+	@Override
+	public List<AGVServ> findAGVServsByID(String AGVID) {
+		return getAGVServsByID(AGVID);
+	}
+
+	
 	private void insertAGVServ(AGVServ AGVServ) {
 		Integer rows = AGVServMapper.insertAGVServ(AGVServ);
 		if(rows!=1) {
@@ -65,7 +71,12 @@ public class AGVServServiceImpl implements IAGVServService {
 	private List<AGVServ> getAGVServs(){
 		return AGVServMapper.getAGVServs();
 	}
+	
+	private List<AGVServ> getAGVServsByID(String AGVID){
+		return AGVServMapper.getAGVServsByID(AGVID);
+	}
 
+	
 	
 
 

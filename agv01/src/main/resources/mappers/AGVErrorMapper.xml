@@ -35,8 +35,12 @@
 		SELECT * FROM AGVError order by EDate desc limit 0,10;
 	</select>
 	
-
-
+	<!--根据ID得到AGV故障数据-->
+	<!-- List<AGVError> getAGVErrorsByID(String AGVID);-->
+	<select id="getAGVErrorsByID" resultType="group.agv01.entity.AGVError">
+		SELECT * FROM AGVError where AGVID=#{AGVID};
+	</select>
+	
 
 
 	

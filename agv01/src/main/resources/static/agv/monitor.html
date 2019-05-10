@@ -18,14 +18,14 @@
 
 <!--/meta 作为公共模版分离出去-->
 
-<title>地图展示</title>
+<title>AGV监控</title>
 </head>
 <body>
 <nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页
 	<span class="c-gray en">&gt;</span>
-	地图数据
+	监控
 	<span class="c-gray en">&gt;</span>
-	地图展示
+	AGV监控
 	<a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a>
 </nav>
 	<div id="mainA" style="width:800px;height: 800px;margin:0 auto">	
@@ -36,7 +36,6 @@
 	<table class="table table-border table-bordered table-bg table-hover table-sort table-responsive">
 			<thead>
 				<tr class="text-c">
-					<!-- <th width="25"><input type="checkbox" name="" value=""></th> -->
 					<th width="100">导航车ID</th>
 					<th width="100">速度m/s</th>
 					<th width="100">电量%</th>
@@ -311,7 +310,54 @@
 					lineStyle:{
 			                 color:'#D3D3D3'
 			         }
+				},
+				{
+					name:20,
+					data:[],
+					type:'line',
+					symbolSize: 0,
+					lineStyle:{
+			                 color:'#D3D3D3'
+			         }
 				},	
+				{
+					name:21,
+					data:[],
+					type:'line',
+					symbolSize: 0,
+					lineStyle:{
+			                 color:'#D3D3D3'
+			         }
+				},	
+				{
+					name:22,
+					data:[],
+					type:'line',
+					symbolSize: 0,
+					lineStyle:{
+			                 color:'#D3D3D3'
+			         }
+				},	
+				{
+					name:23,
+					data:[],
+					type:'line',
+					symbolSize: 0,
+					lineStyle:{
+			                 color:'#D3D3D3'
+			         }
+				},	
+				{
+					name:24,
+					data:[],
+					type:'line',
+					symbolSize: 0,
+					lineStyle:{
+			                 color:'#D3D3D3'
+			         }
+				},	
+
+
 
  				{
 					name:'A01',
@@ -355,6 +401,18 @@
 					type:'scatter', 
 					
 				},
+				{
+					name:'A07',
+					data:[],
+					type:'scatter', 
+					
+				},
+				{
+					name:'A08',
+					data:[],
+					type:'scatter', 
+					
+				},
 
  
 					    	
@@ -366,9 +424,6 @@
 	var listDP;
 	var t1 = window.setInterval(AGVXY,1000);
 	$(document).ready(
-			
-			
-			
 		$.ajax({
 			"url":"/map/pathSP",
 			"type":"GET",
@@ -379,7 +434,6 @@
 					console.log(listSP);
 				}else{
 					alert(json.message);
-					//退出登录
 					
 				}
 			}
@@ -507,6 +561,35 @@
 									data:[pointSP[17],pointDP[17]],
 						},
 						{
+							name:18,
+							data:[pointSP[18],pointDP[18]],
+						},
+						{
+							name:19,
+							data:[pointSP[19],pointDP[19]],
+						},
+						{
+							name:20,
+							data:[pointSP[20],pointDP[20]],
+						},
+						{
+							name:21,
+							data:[pointSP[21],pointDP[21]],
+						},
+						{
+							name:22,
+							data:[pointSP[22],pointDP[22]],
+						},
+						{
+							name:23,
+							data:[pointSP[23],pointDP[23]],
+						},
+						{
+							name:24,
+							data:[pointSP[24],pointDP[24]],
+						},
+
+						{
 									name:listXY[0].agvid,
 									data: [[listXY[0].agvx,listXY[0].agvy]],
 									symbolSize:15,
@@ -517,7 +600,7 @@
 									}	
 									
 						},
-						{	
+						{
 							name:listXY[1].agvid,
 							data: [[listXY[1].agvx,listXY[1].agvy]],
 							symbolSize:15,

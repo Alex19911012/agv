@@ -12,11 +12,12 @@
 		insert into Task(
 		TaskID,TaskType,Grade,
 		SourPosiID,DestPosiID,Dist,
-		Deadline,TStat,CreatDate,UserID,IsDelete
+		Deadline,TStat,CreatDate,UserID,IsDelete,AGVID
 		)values (
 		#{TaskID},#{TaskType},#{Grade},
 		#{SourPosiID},#{DestPosiID},#{Dist},
-		#{Deadline},#{TStat},#{CreatDate},#{UserID},#{IsDelete}
+		#{Deadline},#{TStat},#{CreatDate},
+		#{UserID},#{IsDelete},#{AGVID}
 		)			
 	</insert>	
 	

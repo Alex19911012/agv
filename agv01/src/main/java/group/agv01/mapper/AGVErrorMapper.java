@@ -30,13 +30,20 @@ public interface AGVErrorMapper {
 	Integer insertAGVError(AGVError AGVError);
 	
 	/**
-	 * 得到AGV监控数据
+	 * 得到AGV故障数据
 	 */
 	List<AGVError> getAGVErrors();
 	
 	/**
-	 * 得到AGV监控数据
+	 * 得到AGV监控中故障最新数据
 	 */
 	List<AGVError> getAGVErrorsDesc();
+	
+	/**
+	 * 根据ID得到AGV故障数据
+	 * @param AGVID
+	 * @return
+	 */
+	List<AGVError> getAGVErrorsByID(String AGVID);
 	
 }
