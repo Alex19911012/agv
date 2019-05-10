@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import group.agv01.entity.Func;
 import group.agv01.entity.Order;
+import group.agv01.entity.Role;
 import group.agv01.entity.Task;
 import group.agv01.entity.User;
 import group.agv01.service.IFuncService;
@@ -75,6 +76,15 @@ public class FuncController extends BaseController{
 		System.err.println(data);
 		return new ResponseResult<List<Func>>(SUCCESS,data);
 	}
+	
+	@GetMapping("/all")
+	public ResponseResult<List<Func>> allList(){
+		System.err.println("请求所有功能列表");
+		List<Func> data = funcService.findAllFuncs();	
+		System.err.println(data);
+		return new ResponseResult<List<Func>>(SUCCESS,data);
+	}
+
 
 		
 }

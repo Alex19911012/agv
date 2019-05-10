@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+
+<!-- 这是在写映射 -->
+<!--namespace:匹配的Java接口  -->
+<mapper namespace="group.agv01.mapper.URMapper">
+	<!-- 插入用户和角色数据 -->
+	<!--Integer insertUR(UR ur);-->
+	<insert id="insertUR">
+		insert into UserRole(
+		UserID,RoleID
+		)values (
+		#{UserID},#{RoleID}
+		)			
+	</insert>	
+	
+	<!-- 删除用户和角色数据 -->
+	<!--Integer deleteUR(Integer UserID);-->
+	<delete id="deleteUR">
+	delete from
+		UserRole
+	where
+		UserID=#{UserID}
+	</delete>
+
+
+	
+	
+</mapper>

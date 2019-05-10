@@ -73,6 +73,12 @@ public class FuncServiceImpl implements IFuncService {
 	public List<Func> findStopFuncs() {
 		return getStopFuncs();
 	}
+	
+	@Override
+	public List<Func> findAllFuncs() {
+		
+		return getAllFuncs();
+	}
 
 	
 	
@@ -141,6 +147,18 @@ public class FuncServiceImpl implements IFuncService {
 	private List<Func> getStopFuncs(){
 		return funcMapper.getStopFuncs();
 	}
+
+
+	/**
+	 * 得到所有启用的功能数据用于修改RF
+	 * @return
+	 */
+	private List<Func> getAllFuncs(){
+		return funcMapper.getAllFuncs();
+	}
+
+
+	
 
 	
 	

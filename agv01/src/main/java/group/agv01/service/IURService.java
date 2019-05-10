@@ -4,10 +4,10 @@ package group.agv01.service;
 import group.agv01.service.ex.DeleteException;
 import group.agv01.service.ex.InsertException;
 import group.agv01.service.ex.UsernameDuplicateException;
+import group.agv01.vo.UR;
 
 import java.util.List;
 
-import group.agv01.entity.Func;
 import group.agv01.entity.Role;
 import group.agv01.entity.User;
 import group.agv01.service.ex.PasswordNotMatchException;
@@ -19,19 +19,12 @@ import group.agv01.service.ex.UserNotFoundException;
  * @author soft01
  *
  */
-public interface IFuncService {
+public interface IURService {
 	
-	void regFunc(Func func)throws UsernameDuplicateException,InsertException;
+	void addUR(UR ur)throws InsertException;
 	
-	void delete(Integer FuncID)throws DeleteException;
+	void moveUR(String UserID);
 	
-	void stop(Integer FuncID)throws UpdateException;
 	
-	void start(Integer FuncID)throws UpdateException;
-		
-	List<Func> findStartFuncs();
 	
-	List<Func> findStopFuncs();
-	
-	List<Func> findAllFuncs();
 }

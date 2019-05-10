@@ -70,4 +70,10 @@ public interface FuncMapper {
 	 * @return
 	 */
 	List<Func> getStopFuncs();
+	
+	/**
+	 * 得到所有启用的功能数据用于修改RF
+	 * @return
+	 */
+	List<Func> getAllFuncs();
 }

@@ -279,14 +279,21 @@ function admin_edit(title,url,id,w,h){
 		
 		
 		$("#btn-changeUR").click(function(){
-			var rID = document.getElementByName("RoleID").value;
+			var obj = document.getElementsByName("RoleID");
+			var rID = [];
+			for(var i=0;i<obj.length;i++){
+				if(obj[i].checked){
+					rID.push(obj[i].value);
+				};
+			};
+			console.log(rID);
 			$.ajax({
-				"url":"/ur/"+uID+"&"+rID+"/User",
+				"url":"/ur/"+uID+"&"+rID+"/change",
 				"type":"POST",
 				"dataType":"json",
 				"success":function(json){
 					if(json.state == 200){
-						
+						alert("修改成功");
 					}else{
 						alert(json.message);
 					}

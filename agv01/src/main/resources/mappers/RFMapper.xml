@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+
+<!-- 这是在写映射 -->
+<!--namespace:匹配的Java接口  -->
+<mapper namespace="group.agv01.mapper.RFMapper">
+	<!-- 插入角色和功能数据 -->
+	<!--Integer insertRF(RF rf);-->
+	<insert id="insertRF">
+		insert into RoleFunc(
+		RoleID,FuncID
+		)values (
+		#{RoleID},#{FuncID}
+		)
+	</insert>	
+	
+	<!-- 删除角色和功能数据 -->
+	<!--Integer deleteRF(String RoleID);-->
+	<delete id="deleteRF">
+	delete from
+		RoleFunc
+	where
+		RoleID=#{RoleID}
+	</delete>
+
+
+	
+	
+</mapper>

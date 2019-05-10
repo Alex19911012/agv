@@ -7,7 +7,7 @@
 <mapper namespace="group.agv01.mapper.FuncMapper">
 	<!-- 插入功能数据 -->
 	<!--Integer insertFunc(Func func)  -->
-	<insert id="insertUser">
+	<insert id="insertFunc">
 		insert into Func(
 		Func,State
 		)values (
@@ -68,7 +68,11 @@
 		select * from Func where State=1;
 	</select>
 	
-	
+	<!-- 得到所有启用的功能数据用于修改RF -->
+	<!-- List<Func> getAllFuncs(); -->
+	<select id="getAllFuncs" resultType="group.agv01.entity.Func">
+		select * from Func where State=0;
+	</select>
 	
 
 
