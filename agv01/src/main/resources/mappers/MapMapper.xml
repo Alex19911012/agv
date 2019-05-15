@@ -6,6 +6,27 @@
 <!--namespace:匹配的Java接口  -->
 <mapper namespace="group.agv01.mapper.MapMapper">
 	
+	<!--插入路段信息(起点-终点,绘制地图用)  -->
+	<!-- Integer insertSegmentSDID(Map map); -->
+	<insert id="insertSegmentSDID">
+	insert into Path(
+		PathID,SourPointID,DestPointID,Dist,PathType,Angle
+		)values (
+		#{PathID},#{SourPointID},#{DestPointID},#{Dist},#{PathType},#{Angle}
+		)				
+	</insert>
+	
+	
+	<!-- 插入路段点的信息,绘制地图用 -->
+	<!-- Integer insertSegmentPoint(Map map); -->
+	<insert id="insertSegmentPoint">
+	insert into Point(
+		PointID,PX,PY
+		)values (
+		#{PointID},#{PX},#{PY}
+	)		
+	
+	</insert>
 	
 	<!--得到地图数据-->
 	<!-- List<Map> getSourPoint();-->
@@ -20,6 +41,20 @@
 	select * from Point as t1 right join Path as t2
 		on t1.PointID = t2.DestPointID  order by PathID;
 	</select>
+	
+	<!-- 根据ID查path是否存在 -->
+	<!-- Map getPathByID(String PathID); -->
+	<select id="getPathByID" resultType="group.agv01.vo.Map">
+	select * from Path where PathID = #{PathID};
+	</select>
+	
+	
+	<!-- 根据ID查point是否存在 -->
+	<!-- Map getPointByID(String PointID); -->
+	<select id="getPointByID" resultType="group.agv01.vo.Map">
+	select * from Point where PointID = #{PointID};
+	</select>
+	
 	
 
 

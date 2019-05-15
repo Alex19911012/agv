@@ -52,14 +52,31 @@ public class MapServiceImpl implements IMapService {
 	
 	
 	@Override
-	public List<Map> findSourPoint() {
+	public void addSegmentSDID(Map map) throws InsertException {
+		Map result = getPathByID(map.getPathID());
+		if(result==null) {
+			insertSegmentSDID(map);
+		}	
 		
+	}
+
+	@Override
+	public void addSegmentPoint(Map map) throws InsertException{
+		Map result = getPointByID(map.getPointID());
+		if(result==null) {
+			insertSegmentPoint(map);
+		}
+		
+	}
+	
+	
+	@Override
+	public List<Map> findSourPoint() {
 		return getSourPoint();
 	}
 
 	@Override
 	public List<Map> findDestPoint() {
-		// TODO Auto-generated method stub
 		return getDestPoint();
 	}	
 
@@ -72,11 +89,44 @@ public class MapServiceImpl implements IMapService {
 		return MapMapper.getDestPoint();
 	}
 
-	
+	/**
+	 * 插入路段信息(起点-终点,绘制地图用)
+	 * @return
+	 */
+	private void insertSegmentSDID(Map map) throws InsertException{
+		Integer rows = MapMapper.insertSegmentSDID(map);
+		if(rows!=1) {
+			throw new InsertException("插入数据异常");
+		}
 
+	}
 	
+	/**
+	 * 插入路段点的信息,绘制地图用
+	 */
+	private void insertSegmentPoint(Map map) throws InsertException{
+		Integer rows = MapMapper.insertSegmentPoint(map);
+		if(rows!=1) {
+			throw new InsertException("插入数据异常");
+		}
 
+	}
 	
+	/**
+	 * 根据ID查path是否存在
+	 * @return
+	 */
+	private Map getPathByID(String PathID) {
+		return MapMapper.getPathByID(PathID);
+	}
+	
+	/**
+	 * 根据ID查point是否存在
+	 * @return
+	 */
+	private Map getPointByID(String PointID) {
+		return MapMapper.getPointByID(PointID);
+	}
 	
 
 

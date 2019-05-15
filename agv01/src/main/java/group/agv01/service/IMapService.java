@@ -9,6 +9,7 @@ import group.agv01.entity.DayWorkTime;
 import group.agv01.entity.Order;
 import group.agv01.entity.Task;
 import group.agv01.entity.User;
+import group.agv01.service.ex.InsertException;
 import group.agv01.vo.DRT;
 import group.agv01.vo.Map;
 
@@ -19,10 +20,15 @@ import group.agv01.vo.Map;
  */
 public interface IMapService {
 	
+	void addSegmentSDID(Map map) throws InsertException;
+	
+	void addSegmentPoint(Map map) throws InsertException;
 	
 	List<Map> findSourPoint();
 	
 	List<Map> findDestPoint();
+	
+	
 	
 	
 }
